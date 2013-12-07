@@ -1,25 +1,28 @@
-krTheme Sphinx Style
-====================
+Modified 'Kr/Flask' Sphinx theme
+================================
 
-This repository contains sphinx styles Kenneth Reitz uses in most of
-his projects. It is a derivative of Mitsuhiko's themes for Flask and Flask related
-projects.  To use this style in your Sphinx documentation, follow
-this guide:
+This repository is a modified "Kr" Sphinx theme from @kennethreitz, which was
+in turn modfied from @mitsuhiko's theme used for Flask & related projects.
 
-1. put this folder as _themes into your docs folder.  Alternatively
-   you can also use git submodules to check out the contents there.
+I named the theme itself back to "flasky" (reflecting that it's relatively
+generic and not used for Kenneth's own projects, but my own or anybody else's
+use) and tried to polish it up. To wit, changes from Kenneth's theme:
 
-2. add this to your conf.py: ::
+* No 'small' theme since I didn't need it & wanted to remove noise;
+* Additional customization hooks, such as header/link/etc colors;
+* Improved documentation for all customizations (pre-existing & new).
+
+To use:
+
+1. Use this folder as the ``_themes`` subdirectory of your Sphinx project (copy
+   it, use a git submodule, whatever.)
+2. Add to your ``conf.py``::
+
+    import os
+    import sys
 
     sys.path.append(os.path.abspath('_themes'))
     html_theme_path = ['_themes']
-    html_theme = 'flask'
+    html_theme = 'flasky'
 
-The following themes exist:
-
-**kr**
-    the standard flask documentation theme for large projects
-
-**kr_small**
-    small one-page theme.  Intended to be used by very small addon libraries.
-
+TK: documented customization hooks
