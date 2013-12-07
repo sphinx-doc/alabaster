@@ -26,4 +26,14 @@ To use:
     html_theme_path = ['_themes']
     html_theme = 'flasky'
 
-TK: documented customization hooks
+3. If desired, add one final option to `conf.py` overriding one or more theme
+   options, like in this example:
+
+      html_theme_options = {
+          'logo': 'static/logo.png',
+      }
+
+   The available theme options are as follows:
+
+   * `logo`: Relative path (from `$PROJECT/_themes/`) to a logo image, which
+     will appear in the upper left corner above the name of the project.
