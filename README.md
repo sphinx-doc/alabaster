@@ -1,5 +1,4 @@
-Modified 'Kr/Flask' Sphinx theme
-================================
+# Modified 'Kr/Flask' Sphinx theme
 
 This repository is a modified "Kr" Sphinx theme from @kennethreitz, which was
 in turn modfied from @mitsuhiko's theme used for Flask & related projects.
@@ -16,9 +15,9 @@ use) and tried to polish it up. To wit, changes from Kenneth's theme:
 
 To use:
 
-1. Use this folder as the ``_themes`` subdirectory of your Sphinx project (copy
+1. Use this folder as the `_themes` subdirectory of your Sphinx project (copy
    it, use a git submodule, whatever.)
-2. Add to your ``conf.py``::
+2. Add to your `conf.py`:
 
     import os
     import sys
