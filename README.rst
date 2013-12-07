@@ -9,6 +9,8 @@ generic and not used for Kenneth's own projects, but my own or anybody else's
 use) and tried to polish it up. To wit, changes from Kenneth's theme:
 
 * No 'small' theme since I didn't need it & wanted to remove noise;
+* Minor style tweaks, such as ensuring code blocks left-align with regular text
+  blocks (in Kenneth's theme they are dedented too far);
 * Additional customization hooks, such as header/link/etc colors;
 * Improved documentation for all customizations (pre-existing & new).
 
