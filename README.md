@@ -56,6 +56,10 @@ To use:
 
    * `logo`: Relative path (from `$PROJECT/_themes/`) to a logo image, which
    will appear in the upper left corner above the name of the project.
+       * **Note:** while this is technically optional, things will look
+       slightly off without one. We recommend coming up with a logo and making
+       it approximately 224x200 pixels. See e.g.
+       [Requests](http://docs.python-requests.org/en/latest/_static/requests-sidebar.png).
    * `description`: Text blurb about your project, to appear under the logo.
    * `github_*`: Used to link to your Github
    repo via the [Github Buttons](http://ghbtns.com/) service. Specific sub-keys
