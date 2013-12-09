@@ -19,21 +19,21 @@ To use:
    it, use a git submodule, whatever.)
 1. Enable the 'flasky' theme in your `conf.py`:
 
-       import os
-       import sys
-       
-       sys.path.append(os.path.abspath('_themes'))
-       html_theme_path = ['_themes']
-       html_theme = 'flasky'
-       html_sidebars = {
-           'index': [
-               'sidebar.html', 'sourcelink.html', 'searchbox.html'
-           ],
-           '**': [
-               'sidebar.html', 'localtoc.html', 'relations.html',
-               'sourcelink.html', 'searchbox.html'
-           ]
-       }
+        import os
+        import sys
+        
+        sys.path.append(os.path.abspath('_themes'))
+        html_theme_path = ['_themes']
+        html_theme = 'flasky'
+        html_sidebars = {
+            'index': [
+                'sidebar.html', 'sourcelink.html', 'searchbox.html'
+            ],
+            '**': [
+                'sidebar.html', 'localtoc.html', 'relations.html',
+                'sourcelink.html', 'searchbox.html'
+            ]
+        }
 
     * Modify the call to `abspath` if your `_themes` folder doesn't live right
     next to your `conf.py`.
@@ -46,11 +46,11 @@ To use:
    options, like in this example (*note*: snippet doesn't include all possible
    options, see following list!):
 
-       html_theme_options = {
-           'logo': 'static/logo.png',
-           'github_user': 'bitprophet',
-           'github_repo': 'sphinx-theme',
-       }
+        html_theme_options = {
+            'logo': 'static/logo.png',
+            'github_user': 'bitprophet',
+            'github_repo': 'sphinx-theme',
+        }
 
    The available theme options (which are all optional) are as follows:
 
