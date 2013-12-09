@@ -1,7 +1,9 @@
 # Modified 'Kr/Flask' Sphinx theme
 
-This repository is a modified "Kr" Sphinx theme from @kennethreitz, which was
-in turn modfied from @mitsuhiko's theme used for Flask & related projects.
+This repository is a modified "Kr" Sphinx theme from @kennethreitz (especially
+as used in his [Requests](https://python-requests.org) project), which was in
+turn modfied from @mitsuhiko's theme used for [Flask](http://flask.pocoo.org/)
+& related projects.
 
 I named the theme itself back to "flasky" (reflecting that it's relatively
 generic and not used for Kenneth's own projects, but my own or anybody else's
