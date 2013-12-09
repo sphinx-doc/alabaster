@@ -17,7 +17,7 @@ To use:
 
 1. Use this folder as the `_themes` subdirectory of your Sphinx project (copy
    it, use a git submodule, whatever.)
-2. Add to your `conf.py`:
+1. Enable the 'flasky' theme in your `conf.py`:
 
        import os
        import sys
@@ -25,8 +25,24 @@ To use:
        sys.path.append(os.path.abspath('_themes'))
        html_theme_path = ['_themes']
        html_theme = 'flasky'
+       html_sidebars = {
+           'index': [
+               'sidebar.html', 'sourcelink.html', 'searchbox.html'
+           ],
+           '**': [
+               'sidebar.html', 'localtoc.html', 'relations.html',
+               'sourcelink.html', 'searchbox.html'
+           ]
+       }
 
-3. If desired, add one final option to `conf.py` overriding one or more theme
+    * Modify the call to `abspath` if your `_themes` folder doesn't live right
+    next to your `conf.py`.
+    * Feel free to adjust `html_sidebars` as desired - the theme is designed
+    assuming you'll have `sidebar.html` activated, but otherwise it doesn't
+    care much. See [the Sphinx
+    docs](http://sphinx-doc.org/config.html#confval-html_sidebars) for details.
+
+1. If desired, add a final option to `conf.py` overriding one or more theme
    options, like in this example (*note*: snippet doesn't include all possible
    options, see following list!):
 
