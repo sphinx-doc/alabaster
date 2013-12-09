@@ -27,13 +27,29 @@ To use:
        html_theme = 'flasky'
 
 3. If desired, add one final option to `conf.py` overriding one or more theme
-   options, like in this example:
+   options, like in this example (*note*: snippet doesn't include all possible
+   options, see following list!):
 
        html_theme_options = {
            'logo': 'static/logo.png',
+           'github_user': 'bitprophet',
+           'github_repo': 'sphinx-theme',
        }
 
    The available theme options are as follows:
 
    * `logo`: Relative path (from `$PROJECT/_themes/`) to a logo image, which
-     will appear in the upper left corner above the name of the project.
+   will appear in the upper left corner above the name of the project.
+   * `github_*`: Used to link to your Github
+   repo via the [Github Buttons](http://ghbtns.com/) service. Specific sub-keys
+   are as follows - when not specified, values behave exactly the same as in
+   [Github Buttons' README](https://github.com/mdo/github-buttons#usage):
+      * `user`, `repo`: The user and repo name, so e.g. `kennethreitz/requests`
+      would have a `github_user` of `kennethreitz` and `github_repo` of
+      `requests`. **Both of these are required if you want a Github button to
+      appear.**
+      * `type`: Defaults to `watch`.
+      * `count`: Defaults to `true` (**note:** `"true"`, the string, not
+      `True`, the Python value for truth.)
+   * `touch-icon`: Path to an image to be used for an iOS application icon, for
+   when pages are saved to an iOS device's home screen via Safari.
