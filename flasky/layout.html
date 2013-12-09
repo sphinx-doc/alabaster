@@ -17,10 +17,11 @@
     </a>
     {% endif %}
 
+    {% if theme_analytics_id %}
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-8742933-11']);
+      _gaq.push(['_setAccount', '{{ theme_analytics_id }}']);
       _gaq.push(['_setDomainName', 'none']);
       _gaq.push(['_setAllowLinker', true]);
       _gaq.push(['_trackPageview']);
@@ -32,4 +33,5 @@
       })();
 
     </script>
+    {% endif %}
 {%- endblock %}

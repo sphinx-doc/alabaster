@@ -84,5 +84,8 @@ To use:
        * If `true`, requires that you set `github_user` and `github_repo`.
    * `gittip_user`: Set to your [Gittip](https://gittip.com) username if you
    want a Gittip 'Donate' section in your sidebar.
+   * `analytics_id`: Set to your [Google
+   Analytics](http://www.google.com/analytics/) ID (e.g. `UA-#######-##`) to
+   enable tracking.
    * `touch_icon`: Path to an image to be used for an iOS application icon, for
    when pages are saved to an iOS device's home screen via Safari.
