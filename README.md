@@ -19,19 +19,19 @@ To use:
    it, use a git submodule, whatever.)
 2. Add to your `conf.py`:
 
-    import os
-    import sys
-
-    sys.path.append(os.path.abspath('_themes'))
-    html_theme_path = ['_themes']
-    html_theme = 'flasky'
+       import os
+       import sys
+       
+       sys.path.append(os.path.abspath('_themes'))
+       html_theme_path = ['_themes']
+       html_theme = 'flasky'
 
 3. If desired, add one final option to `conf.py` overriding one or more theme
    options, like in this example:
 
-      html_theme_options = {
-          'logo': 'static/logo.png',
-      }
+       html_theme_options = {
+           'logo': 'static/logo.png',
+       }
 
    The available theme options are as follows:
 
