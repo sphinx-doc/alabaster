@@ -54,5 +54,5 @@ To use:
       `True`, the Python value for truth.)
    * `gittip_user`: Set to your [Gittip](https://gittip.com) username if you
    want a Gittip 'Donate' section in your sidebar.
-   * `touch-icon`: Path to an image to be used for an iOS application icon, for
+   * `touch_icon`: Path to an image to be used for an iOS application icon, for
    when pages are saved to an iOS device's home screen via Safari.
