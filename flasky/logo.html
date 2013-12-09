@@ -5,6 +5,7 @@
   </a>
 </p>
 {% endif %}
+
 {% if theme_github_user and theme_github_repo %}
 <p>
 <iframe src="http://ghbtns.com/github-btn.html?user={{ theme_github_user }}&repo={{ theme_github_repo }}&type={{ theme_github_type }}&count={{ theme_github_count }}&size=large"
@@ -12,18 +13,18 @@
 </p>
 {% endif %}
 
-<p>
-  Requests is an elegant and simple HTTP library for Python, built for
-  human beings. You are currently looking at the documentation of the
-  development release.
-</p>
+{% if theme_description %}
+<p>{{ theme_description }}</p>
+{% endif %}
 
+{% if theme_gittip_user %}
 <h3>Donate</h3>
 <p>
-    If you love Requests, consider supporting the author <a href="https://www.gittip.com/kennethreitz/">on Gittip</a>:
+Consider supporting the authors <a href="https://www.gittip.com/{{ theme_gittip_user }}/">on Gittip</a>:
 </p>
 <p>
   <iframe style="border: 0; margin: 0; padding: 0;"
-      src="https://www.gittip.com/kennethreitz/widget.html"
+      src="https://www.gittip.com/{{ theme_gittip_user }}/widget.html"
       width="48pt" height="20pt"></iframe>
 </p>
+{% endif %}
