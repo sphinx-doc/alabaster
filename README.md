@@ -71,17 +71,17 @@ To use:
        [Requests](http://docs.python-requests.org/en/latest/_static/requests-sidebar.png).
    * `description`: Text blurb about your project, to appear under the logo.
    * `github_user`, `github_repo`: Used by `github_button` and `github_banner`
-   (see below); does nothing if both of those are set to `False`.
-   * `github_button`: `True` or `False` (default: `True`) - whether to link to
+   (see below); does nothing if both of those are set to `false`.
+   * `github_button`: `true` or `false` (default: `true`) - whether to link to
    your Github.
-       * If `True`, requires that you set `github_user` and `github_repo`.
+       * If `true`, requires that you set `github_user` and `github_repo`.
        * See also these other related options, which behave as described
    in [Github Buttons' README](https://github.com/mdo/github-buttons#usage):
           * `github_button_type`: Defaults to `watch`.
-          * `github_button_count`: Defaults to `True`.
-   * `github_banner`: `True` or `False` (default: `False`) - whether to apply a
+          * `github_button_count`: Defaults to `true`.
+   * `github_banner`: `true` or `false` (default: `false`) - whether to apply a
    'Fork me on Github' banner in the top right corner of the page.
-       * If `True`, requires that you set `github_user` and `github_repo`.
+       * If `true`, requires that you set `github_user` and `github_repo`.
    * `gittip_user`: Set to your [Gittip](https://gittip.com) username if you
    want a Gittip 'Donate' section in your sidebar.
    * `touch_icon`: Path to an image to be used for an iOS application icon, for
