@@ -71,8 +71,9 @@ To use:
    [Github Buttons' README](https://github.com/mdo/github-buttons#usage):
       * `user`, `repo`: The user and repo name, so e.g. `kennethreitz/requests`
       would have a `github_user` of `kennethreitz` and `github_repo` of
-      `requests`. **Both of these are required if you want a Github button to
-      appear.**
+      `requests`.
+          * **Both** of these are required if you want a Github button to
+          appear.
       * `type`: Defaults to `watch`.
       * `count`: Defaults to `true` (**note:** `"true"`, the string, not
       `True`, the Python value for truth.)
