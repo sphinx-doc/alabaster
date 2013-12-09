@@ -41,8 +41,13 @@ To use:
     next to your `conf.py`.
     * Feel free to adjust `html_sidebars` as desired - the theme is designed
     assuming you'll have `sidebar.html` activated, but otherwise it doesn't
-    care much. See [the Sphinx
-    docs](http://sphinx-doc.org/config.html#confval-html_sidebars) for details.
+    care much.
+        * See [the Sphinx
+        docs](http://sphinx-doc.org/config.html#confval-html_sidebars) for
+        details on how this setting behaves.
+        * The theme ships with a modified (improved, sidebar & complex doctree
+        friendly) `relations.html` as well, but does not require that you
+        enable it.
 
 1. If desired, add a final option to `conf.py` overriding one or more theme
    options, like in this example (*note*: snippet doesn't include all possible
