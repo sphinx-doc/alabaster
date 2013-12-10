@@ -51,9 +51,18 @@ To use:
         friendly) `relations.html` as well, but does not require that you
         enable it.
 
-1. If desired, add a final option to `conf.py` overriding one or more theme
-   options, like in this example (*note*: snippet doesn't include all possible
-   options, see following list!):
+1. If you're using either of the image-related options outlined below (logo or
+   touch-icon), you'll also want to tell Sphinx where to get your images from.
+   If so, add a line like this (changing the path if necessary; see [the Sphinx
+   docs](http://sphinx-doc.org/config.html?highlight=static#confval-html_static_path)):
+
+   ```python
+   html_static_path = ['_static']
+   ```
+
+1. Add one more section to `conf.py` setting one or more theme options, like in
+   this example (*note*: snippet doesn't include all possible options, see
+   following list!):
 
    ```python
    html_theme_options = {
