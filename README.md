@@ -1,4 +1,4 @@
-# Modified 'Kr/Flask' Sphinx theme
+# Alabaster: a Sphinx theme
 
 This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially as
 used in his [Requests](https://python-requests.org) project), which was itself
@@ -17,15 +17,14 @@ Features (compared to Kenneth's theme):
 
 To use:
 
-1. `pip install sphinx-theme`, or your favorite equivalent method of installing
-   Python packages.
-1. Enable the 'flasky' theme in your `conf.py`:
+1. `pip install alabaster` (or equivalent command)
+1. Enable the 'alabaster' theme in your `conf.py`:
 
    ```python
-   import sphinx_theme
+   import alabaster
 
-   html_theme_path = [sphinx_theme.get_path()]
-   html_theme = 'flasky'
+   html_theme_path = [alabaster.get_path()]
+   html_theme = 'alabaster'
    html_sidebars = {
        'index': [
            'sidebar.html', 'sourcelink.html', 'searchbox.html'
@@ -66,7 +65,7 @@ To use:
    html_theme_options = {
        'logo': 'logo.png',
        'github_user': 'bitprophet',
-       'github_repo': 'sphinx-theme',
+       'github_repo': 'alabaster',
    }
    ```
 
