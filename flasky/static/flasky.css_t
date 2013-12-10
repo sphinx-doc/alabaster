@@ -92,12 +92,13 @@ div.sphinxsidebarwrapper {
 
 div.sphinxsidebarwrapper p.logo {
     padding: 0;
-    margin: -10px 0 0 -20px;
+    margin: -10px 0 0 0px;
     text-align: center;
 }
 
-div.sphinxsidebarwrapper h1 {
+div.sphinxsidebarwrapper h1.logo {
     margin-top: -10px;
+    text-align: center;
 }
 
 div.sphinxsidebar h3,

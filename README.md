@@ -79,6 +79,9 @@ To use:
       * If `logo` is not set, your `project` name setting (from the top level
       Sphinx config) will be used in a text header instead. This preserves a
       link back to your homepage from inner doc pages.
+   * `logo_name`: Set to `true` to insert your site's `project` name under the
+   logo image as text. Useful if your logo doesn't include the project name
+   itself. Defaults to `false`.
    * `description`: Text blurb about your project, to appear under the logo.
    * `github_user`, `github_repo`: Used by `github_button` and `github_banner`
    (see below); does nothing if both of those are set to `false`.
