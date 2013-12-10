@@ -57,7 +57,7 @@ To use:
 
    ```python
    html_theme_options = {
-       'logo': 'static/logo.png',
+       'logo': 'logo.png',
        'github_user': 'bitprophet',
        'github_repo': 'sphinx-theme',
    }
@@ -65,7 +65,7 @@ To use:
 
    The available theme options (which are all optional) are as follows:
 
-   * `logo`: Relative path (from `$PROJECT/_themes/`) to a logo image, which
+   * `logo`: Relative path (from `$PROJECT/_static/`) to a logo image, which
    will appear in the upper left corner above the name of the project.
       * If `logo` is not set, your `project` name setting (from the top level
       Sphinx config) will be used in a text header instead. This preserves a
@@ -88,5 +88,6 @@ To use:
    * `analytics_id`: Set to your [Google
    Analytics](http://www.google.com/analytics/) ID (e.g. `UA-#######-##`) to
    enable tracking.
-   * `touch_icon`: Path to an image to be used for an iOS application icon, for
-   when pages are saved to an iOS device's home screen via Safari.
+   * `touch_icon`: Path to an image (as with `logo`, relative to
+   `$PROJECT/_static/`) to be used for an iOS application icon, for when pages
+   are saved to an iOS device's home screen via Safari.
