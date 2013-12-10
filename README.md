@@ -9,24 +9,25 @@ I named the theme itself back to "flasky" (reflecting that it's relatively
 generic and not used for Kenneth's own projects, but my own or anybody else's
 use) and tried to polish it up. To wit, changes from Kenneth's theme:
 
-* No 'small' theme since I didn't need it & wanted to remove noise;
+* Easy ability to install/use as a Python package (tip o' the hat to [Dave &
+  Eric's sphinx_rtd_theme](https://github.com/snide/sphinx_rtd_theme) for
+  showing the way);
 * Minor style tweaks, such as ensuring code blocks left-align with regular text
   blocks (in Kenneth's theme they are dedented too far);
 * Additional customization hooks, such as header/link/etc colors;
-* Improved documentation for all customizations (pre-existing & new).
+* Improved documentation for all customizations (pre-existing & new);
+* No 'small' theme since I didn't need it & wanted to remove noise.
 
 To use:
 
-1. Use this folder as the `_themes` subdirectory of your Sphinx project (copy
-   it, use a git submodule, whatever.)
+1. `pip install sphinx-theme`, or your favorite equivalent method of installing
+   Python packages.
 1. Enable the 'flasky' theme in your `conf.py`:
 
    ```python
-   import os
-   import sys
-   
-   sys.path.append(os.path.abspath('_themes'))
-   html_theme_path = ['_themes']
+   import sphinx_theme
+
+   html_theme_path = [sphinx_theme.get_path()]
    html_theme = 'flasky'
    html_sidebars = {
        'index': [
