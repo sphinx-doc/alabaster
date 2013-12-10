@@ -31,12 +31,6 @@ are met:
   promote products derived from this software without specific
   prior written permission.
 
-We kindly ask you to only use these themes in an unmodified manner just
-for Flask and Flask-related products, not for unrelated projects.  If you
-like the visual style and want to use it for your own projects, please
-consider making some larger changes to the themes (such as changing
-font faces, sizes, colors or margins).
-
 THIS THEME IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
