@@ -1,11 +1,3 @@
-/*
- * flasky.css_t
- * ~~~~~~~~~~~~
- *
- * :copyright: Copyright 2010 by Armin Ronacher. Modifications by Kenneth Reitz.
- * :license: Flask Design License, see LICENSE for details.
- */
-
 {% set page_width = '940px' %}
 {% set sidebar_width = '220px' %}
 
