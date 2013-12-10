@@ -1,22 +1,19 @@
 # Modified 'Kr/Flask' Sphinx theme
 
-This repository is a modified "Kr" Sphinx theme from @kennethreitz (especially
-as used in his [Requests](https://python-requests.org) project), which was in
-turn modfied from @mitsuhiko's theme used for [Flask](http://flask.pocoo.org/)
-& related projects.
+This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially as
+used in his [Requests](https://python-requests.org) project), which was itself
+originally based on @mitsuhiko's theme used for
+[Flask](http://flask.pocoo.org/) & related projects.
 
-I named the theme itself back to "flasky" (reflecting that it's relatively
-generic and not used for Kenneth's own projects, but my own or anybody else's
-use) and tried to polish it up. To wit, changes from Kenneth's theme:
+Features (compared to Kenneth's theme):
 
 * Easy ability to install/use as a Python package (tip o' the hat to [Dave &
   Eric's sphinx_rtd_theme](https://github.com/snide/sphinx_rtd_theme) for
   showing the way);
-* Minor style tweaks, such as ensuring code blocks left-align with regular text
-  blocks (in Kenneth's theme they are dedented too far);
+* Minor style tweaks, such as better code-block alignment, Gittip button
+  placement, etc;
 * Additional customization hooks, such as header/link/etc colors;
-* Improved documentation for all customizations (pre-existing & new);
-* No 'small' theme since I didn't need it & wanted to remove noise.
+* Improved documentation for all customizations (pre-existing & new).
 
 To use:
 
