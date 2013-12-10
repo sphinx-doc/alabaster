@@ -4,18 +4,18 @@ from setuptools import setup
 
 # Version info -- read without importing
 _locals = {}
-with open('flasky/_version.py') as fp:
+with open('alabaster/_version.py') as fp:
     exec(fp.read(), None, _locals)
 version = _locals['__version__']
 
 setup(
-    name='flasky',
+    name='alabaster',
     version=version,
     description='A configurable sidebar-enabled Sphinx theme',
     author='Jeff Forcier',
     author_email='jeff@bitprophet.org',
     url='https://github.com/bitprophet/sphinx-theme',
-    packages=['flasky'],
+    packages=['alabaster'],
     include_package_data=True,
     classifiers=[
           'Intended Audience :: Developers',
