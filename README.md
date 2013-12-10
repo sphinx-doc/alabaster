@@ -67,10 +67,9 @@ To use:
 
    * `logo`: Relative path (from `$PROJECT/_themes/`) to a logo image, which
    will appear in the upper left corner above the name of the project.
-       * **Note:** while this is technically optional, things will look
-       slightly off without one. We recommend coming up with a logo and making
-       it approximately 224x200 pixels. See e.g.
-       [Requests](http://docs.python-requests.org/en/latest/_static/requests-sidebar.png).
+      * If `logo` is not set, your `project` name setting (from the top level
+      Sphinx config) will be used in a text header instead. This preserves a
+      link back to your homepage from inner doc pages.
    * `description`: Text blurb about your project, to appear under the logo.
    * `github_user`, `github_repo`: Used by `github_button` and `github_banner`
    (see below); does nothing if both of those are set to `false`.

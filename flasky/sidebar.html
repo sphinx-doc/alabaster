@@ -4,6 +4,8 @@
     <img class="logo" src="{{ pathto(theme_logo, 1) }}" alt="Logo"/>
   </a>
 </p>
+{% else %}
+<h1><a href="{{ pathto(master_doc) }}">{{ project }}</a></h1>
 {% endif %}
 
 {% if theme_github_button|lower == 'true' %}
