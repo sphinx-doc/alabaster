@@ -128,3 +128,5 @@ To use:
    * `anchor_hover_bg`: Background color of above.
    * `note_bg`: Background of `.. note::` blocks
    * `note_border`: Border of same.
+   * `footnote_bg`: Background of footnote blocks.
+   * `footnote_border`: Border of same.

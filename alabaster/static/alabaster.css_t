@@ -277,8 +277,8 @@ table.field-list, table.footnote {
 table.footnote {
     margin: 15px 0;
     width: 100%;
-    border: 1px solid #eee;
-    background: #fdfdfd;
+    border: 1px solid {{ theme_footnote_border }};
+    background: {{ theme_footnote_bg }};
     font-size: 0.9em;
 }
 
