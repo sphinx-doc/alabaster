@@ -5,7 +5,7 @@ from pygments.token import Keyword, Name, Comment, String, Error, \
 
 # Originally based on FlaskyStyle which was based on 'tango'.
 class Alabaster(Style):
-    background_color = "#f8f8f8"
+    background_color = "#f8f8f8" # doesn't seem to override CSS 'pre' styling?
     default_style = ""
 
     styles = {
