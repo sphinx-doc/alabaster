@@ -111,6 +111,7 @@ To use:
    colorscheme. The more granular settings can be used to override as needed.
 
    * `gray_1`: Medium gray.
+   * `gray_2`: Light gray.
    * `body_text`: Main content text.
    * `footer_text`: Footer text (includes links.)
    * `link`: Non-hovered body links.
@@ -129,12 +130,12 @@ To use:
    * `anchor_hover_fg`: Foreground color of section anchor links (as above)
    when moused over. Defaults to `gray_1.
    * `anchor_hover_bg`: Background color of above.
-   * `note_bg`: Background of `.. note::` blocks
+   * `note_bg`: Background of `.. note::` blocks. Defaults to `gray_2`.
    * `note_border`: Border of same.
    * `footnote_bg`: Background of footnote blocks.
-   * `footnote_border`: Border of same.
+   * `footnote_border`: Border of same. Defaults to `gray_2`.
    * `pre_bg`: Background of preformatted text blocks (including code
-   snippets.)
+   snippets.) Defaults to `gray_2`.
    * `narrow_sidebar_bg`: Background of 'sidebar' when narrow window forces it
    to the bottom of the page.
    * `narrow_sidebar_fg`: Text color of same.

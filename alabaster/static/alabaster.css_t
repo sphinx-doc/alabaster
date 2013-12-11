@@ -5,6 +5,10 @@
 {% set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
 {% set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
 
+{% set theme_note_bg = theme_note_bg or theme_gray_2 %}
+{% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
+{% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
+
 @import url("basic.css");
 
 /* -- page layout ----------------------------------------------------------- */
