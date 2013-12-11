@@ -1,6 +1,10 @@
 {% set page_width = '940px' %}
 {% set sidebar_width = '220px' %}
 
+{% set theme_sidebar_header = theme_sidebar_header or theme_gray_1 %}
+{% set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
+{% set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
+
 @import url("basic.css");
 
 /* -- page layout ----------------------------------------------------------- */

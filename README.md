@@ -106,16 +106,19 @@ To use:
    **Style colors**
 
    These should be fully qualified CSS color specifiers such as `#004B6B` or
-   `#444`:
+   `#444`. The first items in the list are "global" colors used as defaults for
+   many of the others; update these to make sweeping changes to the
+   colorscheme. The more granular settings can be used to override as needed.
 
+   * `gray_1`: Medium gray.
    * `body_text`: Main content text.
    * `footer_text`: Footer text (includes links.)
    * `link`: Non-hovered body links.
    * `link_hover`: Body links, hovered.
-   * `sidebar_header`: Sidebar headers.
+   * `sidebar_header`: Sidebar headers. Defaults to `gray_1`.
    * `sidebar_text`: Sidebar paragraph text.
    * `sidebar_link`: Sidebar links (there is no hover variant.) Applies to both
-   header & text links.
+   header & text links. Defaults to `gray_1.
    * `sidebar_link_underscore`: Sidebar links' underline (technically a
    bottom-border.)
    * `sidebar_search_button`: Background color of the search field's 'Go'
@@ -124,7 +127,7 @@ To use:
    * `anchor`: Foreground color of section anchor links (the 'paragraph' symbol
    that shows up when you mouseover page section headers.)
    * `anchor_hover_fg`: Foreground color of section anchor links (as above)
-   when moused over.
+   when moused over. Defaults to `gray_1.
    * `anchor_hover_bg`: Background color of above.
    * `note_bg`: Background of `.. note::` blocks
    * `note_border`: Border of same.
