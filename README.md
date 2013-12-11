@@ -132,3 +132,7 @@ To use:
    * `footnote_border`: Border of same.
    * `pre_bg`: Background of preformatted text blocks (including code
    snippets.)
+   * `narrow_sidebar_bg`: Background of 'sidebar' when narrow window forces it
+   to the bottom of the page.
+   * `narrow_sidebar_fg`: Text color of same.
+   * `narrow_sidebar_link`: Link color of same.
