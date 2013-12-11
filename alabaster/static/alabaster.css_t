@@ -38,7 +38,7 @@ hr {
 
 div.body {
     background-color: #ffffff;
-    color: #3E4349;
+    color: {{ theme_body_text }};
     padding: 0 30px 0 30px;
 }
 
@@ -46,12 +46,12 @@ div.footer {
     width: {{ page_width }};
     margin: 20px auto 30px auto;
     font-size: 14px;
-    color: #888;
+    color: {{ theme_footer_text }};
     text-align: right;
 }
 
 div.footer a {
-    color: #888;
+    color: {{ theme_footer_text }};
 }
 
 div.related {
@@ -59,13 +59,13 @@ div.related {
 }
 
 div.sphinxsidebar a {
-    color: #444;
+    color: {{ theme_sidebar_link }};
     text-decoration: none;
-    border-bottom: 1px dotted #999;
+    border-bottom: 1px dotted {{ theme_sidebar_link_underscore }};
 }
 
 div.sphinxsidebar a:hover {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid {{ theme_sidebar_link_underscore }};
 }
 
 div.sphinxsidebar {
@@ -125,7 +125,7 @@ div.sphinxsidebar ul {
 }
 
 div.sphinxsidebar input {
-    border: 1px solid #ccc;
+    border: 1px solid {{ theme_sidebar_search_button }};
     font-family: 'Georgia', serif;
     font-size: 1em;
 }
@@ -133,12 +133,12 @@ div.sphinxsidebar input {
 /* -- body styles ----------------------------------------------------------- */
 
 a {
-    color: #004B6B;
+    color: {{ theme_link }};
     text-decoration: underline;
 }
 
 a:hover {
-    color: #6D4100;
+    color: {{ theme_link_hover }};
     text-decoration: underline;
 }
 
@@ -162,14 +162,14 @@ div.body h5 { font-size: 100%; }
 div.body h6 { font-size: 100%; }
 
 a.headerlink {
-    color: #ddd;
+    color: {{ theme_anchor }};
     padding: 0 4px;
     text-decoration: none;
 }
 
 a.headerlink:hover {
-    color: #444;
-    background: #eaeaea;
+    color: {{ theme_anchor_hover_fg }};
+    background: {{ theme_anchor_hover_bg }};
 }
 
 div.body p, div.body dd, div.body li {

@@ -71,6 +71,8 @@ To use:
 
    The available theme options (which are all optional) are as follows:
 
+   **Variables and feature toggles**
+
    * `logo`: Relative path (from `$PROJECT/_static/`) to a logo image, which
    will appear in the upper left corner above the name of the project.
       * If `logo` is not set, your `project` name setting (from the top level
@@ -100,3 +102,23 @@ To use:
    * `touch_icon`: Path to an image (as with `logo`, relative to
    `$PROJECT/_static/`) to be used for an iOS application icon, for when pages
    are saved to an iOS device's home screen via Safari.
+
+   **Style colors**
+
+   These should be fully qualified CSS color specifiers such as `#004B6B` or
+   `#444`:
+
+   * `body_text`: Main content text.
+   * `footer_text`: Footer text (includes links.)
+   * `link`: Non-hovered body links.
+   * `link_hover`: Body links, hovered.
+   * `sidebar_link`: Sidebar links (there is no hover variant.)
+   * `sidebar_link_underscore`: Sidebar links' underline (technically a
+   bottom-border.)
+   * `sidebar_search_button`: Background color of the search field's 'Go'
+   button.
+   * `anchor`: Foreground color of section anchor links (the 'paragraph' symbol
+   that shows up when you mouseover page section headers.)
+   * `anchor_hover_fg`: Foreground color of section anchor links (as above)
+   when moused over.
+   * `anchor_hover_bg`: Background color of above.
