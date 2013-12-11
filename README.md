@@ -130,3 +130,5 @@ To use:
    * `note_border`: Border of same.
    * `footnote_bg`: Background of footnote blocks.
    * `footnote_border`: Border of same.
+   * `pre_bg`: Background of preformatted text blocks (including code
+   snippets.)

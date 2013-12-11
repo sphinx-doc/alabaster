@@ -324,7 +324,7 @@ ul, ol {
 }
 
 pre {
-    background: #eee;
+    background: {{ theme_pre_bg }};
     padding: 7px 30px;
     margin: 15px 0px;
     line-height: 1.3em;
