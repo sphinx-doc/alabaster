@@ -112,13 +112,19 @@ To use:
    * `footer_text`: Footer text (includes links.)
    * `link`: Non-hovered body links.
    * `link_hover`: Body links, hovered.
-   * `sidebar_link`: Sidebar links (there is no hover variant.)
+   * `sidebar_header`: Sidebar headers.
+   * `sidebar_text`: Sidebar paragraph text.
+   * `sidebar_link`: Sidebar links (there is no hover variant.) Applies to both
+   header & text links.
    * `sidebar_link_underscore`: Sidebar links' underline (technically a
    bottom-border.)
    * `sidebar_search_button`: Background color of the search field's 'Go'
    button.
+   * `sidebar_list`: Foreground color of sidebar list bullets & unlinked text.
    * `anchor`: Foreground color of section anchor links (the 'paragraph' symbol
    that shows up when you mouseover page section headers.)
    * `anchor_hover_fg`: Foreground color of section anchor links (as above)
    when moused over.
    * `anchor_hover_bg`: Background color of above.
+   * `note_bg`: Background of `.. note::` blocks
+   * `note_border`: Border of same.
