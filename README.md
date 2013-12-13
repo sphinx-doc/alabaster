@@ -106,8 +106,8 @@ To use:
    **Style colors**
 
    These should be fully qualified CSS color specifiers such as `#004B6B` or
-   `#444`. The first items in the list are "global" colors used as defaults for
-   many of the others; update these to make sweeping changes to the
+   `#444`. The first few items in the list are "global" colors used as defaults
+   for many of the others; update these to make sweeping changes to the
    colorscheme. The more granular settings can be used to override as needed.
 
    * `gray_1`: Medium gray.
