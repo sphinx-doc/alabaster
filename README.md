@@ -27,10 +27,11 @@ To use:
    html_theme = 'alabaster'
    html_sidebars = {
        'index': [
-           'sidebar.html', 'sourcelink.html', 'searchbox.html'
+           'about.html', 'sourcelink.html', 'searchbox.html', 'donate.html',
        ],
        '**': [
-           'sidebar.html', 'localtoc.html', 'sourcelink.html', 'searchbox.html'
+           'about.html', 'localtoc.html', 'sourcelink.html',
+           'searchbox.html', 'donate.html',
        ]
    }
    ```
@@ -38,11 +39,15 @@ To use:
     * Modify the call to `abspath` if your `_themes` folder doesn't live right
     next to your `conf.py`.
     * Feel free to adjust `html_sidebars` as desired - the theme is designed
-    assuming you'll have `sidebar.html` activated, but otherwise it doesn't
-    care much.
+    assuming you'll have `about.html` activated, but otherwise it doesn't care
+    much.
         * See [the Sphinx
         docs](http://sphinx-doc.org/config.html#confval-html_sidebars) for
         details on how this setting behaves.
+        * Alabaster provides `about.html` (logo, github buttom + blurb) and
+        `donate.html` (Gittip blurb/button); the others listed come from Sphinx
+        itself. We split out `donate.html` so it could be moved around the
+        sidebar with more freedom.
 
 1. If you're using either of the image-related options outlined below (logo or
    touch-icon), you'll also want to tell Sphinx where to get your images from.
