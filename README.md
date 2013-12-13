@@ -30,8 +30,7 @@ To use:
            'sidebar.html', 'sourcelink.html', 'searchbox.html'
        ],
        '**': [
-           'sidebar.html', 'localtoc.html', 'relations.html',
-           'sourcelink.html', 'searchbox.html'
+           'sidebar.html', 'localtoc.html', 'sourcelink.html', 'searchbox.html'
        ]
    }
    ```
@@ -44,9 +43,6 @@ To use:
         * See [the Sphinx
         docs](http://sphinx-doc.org/config.html#confval-html_sidebars) for
         details on how this setting behaves.
-        * The theme ships with a modified (improved, sidebar & complex doctree
-        friendly) `relations.html` as well, but does not require that you
-        enable it.
 
 1. If you're using either of the image-related options outlined below (logo or
    touch-icon), you'll also want to tell Sphinx where to get your images from.
