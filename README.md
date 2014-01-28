@@ -10,8 +10,8 @@ Features (compared to Kenneth's theme):
 * Easy ability to install/use as a Python package (tip o' the hat to [Dave &
   Eric's sphinx_rtd_theme](https://github.com/snide/sphinx_rtd_theme) for
   showing the way);
-* Style tweaks, such as better code-block alignment, Gittip button placement,
-  page source link moved to footer, etc;
+* Style tweaks, such as better code-block alignment, Gittip and Github button
+  placement, page source link moved to footer, etc;
 * Additional customization hooks, such as header/link/etc colors;
 * Improved documentation for all customizations (pre-existing & new).
 
