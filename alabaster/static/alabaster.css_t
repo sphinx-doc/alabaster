@@ -98,7 +98,7 @@ div.sphinxsidebarwrapper h1.logo {
 }
 
 div.sphinxsidebarwrapper h1.logo-text {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     text-align: {{ theme_logo_text_align }};
 }
 
