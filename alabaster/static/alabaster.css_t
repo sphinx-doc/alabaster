@@ -9,6 +9,9 @@
 {% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
 {% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
 
+{% set theme_narrow_sidebar_link = theme_narrow_sidebar_link or theme_gray_3 %}
+{% set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
+
 
 @import url("basic.css");
 

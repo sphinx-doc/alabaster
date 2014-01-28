@@ -114,8 +114,9 @@ To use:
    for many of the others; update these to make sweeping changes to the
    colorscheme. The more granular settings can be used to override as needed.
 
-   * `gray_1`: Medium gray.
+   * `gray_1`: Dark gray.
    * `gray_2`: Light gray.
+   * `gray_3`: Medium gray.
    * `body_text`: Main content text.
    * `footer_text`: Footer text (includes links.)
    * `link`: Non-hovered body links.
@@ -129,6 +130,8 @@ To use:
    * `sidebar_search_button`: Background color of the search field's 'Go'
    button.
    * `sidebar_list`: Foreground color of sidebar list bullets & unlinked text.
+   * `sidebar_hr`: Color of sidebar horizontal rule dividers. Defaults to
+   `gray_3`.
    * `anchor`: Foreground color of section anchor links (the 'paragraph' symbol
    that shows up when you mouseover page section headers.)
    * `anchor_hover_fg`: Foreground color of section anchor links (as above)
@@ -143,7 +146,7 @@ To use:
    * `narrow_sidebar_bg`: Background of 'sidebar' when narrow window forces it
    to the bottom of the page.
    * `narrow_sidebar_fg`: Text color of same.
-   * `narrow_sidebar_link`: Link color of same.
+   * `narrow_sidebar_link`: Link color of same. Defaults to `gray_3`.
 
 ## Further reading
 
