@@ -97,6 +97,15 @@ div.sphinxsidebarwrapper h1.logo {
     text-align: center;
 }
 
+div.sphinxsidebarwrapper h1.logo-text {
+    margin-bottom: 0;
+    text-align: {{ theme_logo_text_align }};
+}
+
+div.sphinxsidebarwrapper p.blurb {
+    margin-top: 0;
+}
+
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
     font-family: 'Garamond', 'Georgia', serif;
