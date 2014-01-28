@@ -148,6 +148,13 @@ div.sphinxsidebar input {
     font-size: 1em;
 }
 
+div.sphinxsidebar hr {
+    border: none;
+    height: 1px;
+    color: {{ theme_sidebar_link_underscore }};
+    background: {{ theme_sidebar_link_underscore }};
+}
+
 /* -- body styles ----------------------------------------------------------- */
 
 a {

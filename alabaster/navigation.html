@@ -1,0 +1,10 @@
+<h3>Navigation</h3>
+{{ toctree() }}
+{% if theme_extra_nav_links %}
+<hr />
+<ul>
+    {% for text, uri in theme_extra_nav_links.iteritems() %}
+    <li><a href="{{ uri }}">{{ text }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
