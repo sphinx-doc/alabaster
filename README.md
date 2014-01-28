@@ -143,3 +143,10 @@ To use:
    to the bottom of the page.
    * `narrow_sidebar_fg`: Text color of same.
    * `narrow_sidebar_link`: Link color of same.
+
+## Further reading
+
+* [Fabric #419](https://github.com/fabric/fabric/issues/419) contains a lot of
+  general exposition & thoughts as I developed Alabaster, specifically with a
+  mind towards using it on two nearly identical 'sister' sites (single-version
+  www 'info' site & versioned API docs site).
