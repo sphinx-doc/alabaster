@@ -26,11 +26,8 @@ To use:
    html_theme_path = [alabaster.get_path()]
    html_theme = 'alabaster'
    html_sidebars = {
-       'index': [
-           'about.html', 'searchbox.html', 'donate.html',
-       ],
        '**': [
-           'about.html', 'localtoc.html', 'searchbox.html', 'donate.html',
+           'about.html', 'navigation.html', 'searchbox.html', 'donate.html',
        ]
    }
    ```
@@ -43,10 +40,10 @@ To use:
         * See [the Sphinx
         docs](http://sphinx-doc.org/config.html#confval-html_sidebars) for
         details on how this setting behaves.
-        * Alabaster provides `about.html` (logo, github buttom + blurb) and
-        `donate.html` (Gittip blurb/button); the others listed come from Sphinx
-        itself. We split out `donate.html` so it could be moved around the
-        sidebar with more freedom.
+        * Alabaster provides `about.html` (logo, github buttom + blurb),
+        `donate.html` (Gittip blurb/button) and `navigation.html` (a more
+        flexible version of the builtin `localtoc`/`globaltoc` templates); the
+        others listed come from Sphinx itself.
 
 1. If you're using either of the image-related options outlined below (logo or
    touch-icon), you'll also want to tell Sphinx where to get your images from.
@@ -105,6 +102,10 @@ To use:
    * `touch_icon`: Path to an image (as with `logo`, relative to
    `$PROJECT/_static/`) to be used for an iOS application icon, for when pages
    are saved to an iOS device's home screen via Safari.
+   * `extra_nav_links`: Dictionary mapping link names to link targets; these
+   will be added in a UL below the main sidebar navigation (provided you've
+   enabled `navigation.html`.) Useful for static links outside your Sphinx
+   doctree.
 
    **Style colors**
 
