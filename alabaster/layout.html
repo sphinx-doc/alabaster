@@ -9,7 +9,7 @@
 {%- block relbar2 %}{% endblock %}
 {%- block footer %}
     <div class="footer">
-      &copy; Copyright {{ copyright }}.
+      &copy;{{ copyright }}.
       {%- if show_source and has_source and sourcename %}
       |
       <a href="{{ pathto('_sources/' + sourcename, true)|e }}"
