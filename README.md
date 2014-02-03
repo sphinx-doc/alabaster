@@ -18,12 +18,13 @@ Features (compared to Kenneth's theme):
 To use:
 
 1. `pip install alabaster` (or equivalent command)
-1. Enable the 'alabaster' theme in your `conf.py`:
+1. Enable the 'alabaster' theme + mini-extension in your `conf.py`:
 
    ```python
    import alabaster
 
    html_theme_path = [alabaster.get_path()]
+   extensions = ['alabaster']
    html_theme = 'alabaster'
    html_sidebars = {
        '**': [
@@ -148,9 +149,13 @@ To use:
    * `narrow_sidebar_fg`: Text color of same.
    * `narrow_sidebar_link`: Link color of same. Defaults to `gray_3`.
 
-## Further reading
+## Additional info / background
 
 * [Fabric #419](https://github.com/fabric/fabric/issues/419) contains a lot of
   general exposition & thoughts as I developed Alabaster, specifically with a
   mind towards using it on two nearly identical 'sister' sites (single-version
   www 'info' site & versioned API docs site).
+* Alabaster includes/requires a tiny Sphinx extension on top of the theme
+  itself; this is just so we can inject dynamic metadata (like Alabaster's own
+  version number) into template contexts. It doesn't add any additional
+  directives or the like, at least not yet.
