@@ -5,7 +5,10 @@ used in his [Requests](https://python-requests.org) project), which was itself
 originally based on @mitsuhiko's theme used for
 [Flask](http://flask.pocoo.org/) & related projects.
 
-Features (compared to Kenneth's theme):
+A live example of what this theme looks like can be seen on e.g.
+[paramiko.org](http://paramiko.org).
+
+Features (compared to Kenneth's original theme):
 
 * Easy ability to install/use as a Python package (tip o' the hat to [Dave &
   Eric's sphinx_rtd_theme](https://github.com/snide/sphinx_rtd_theme) for
