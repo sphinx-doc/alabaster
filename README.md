@@ -82,9 +82,8 @@ To use:
    * `logo_name`: Set to `true` to insert your site's `project` name under the
    logo image as text. Useful if your logo doesn't include the project name
    itself. Defaults to `false`.
-   * `logo_text_align`: Which CSS `text-align` value to use for logo
-   replacement text (thus only applicable of `logo` is unset.) Defaults to
-   `left`.
+   * `logo_text_align`: Which CSS `text-align` value to use for logo text (if
+   there is any.)
    * `description`: Text blurb about your project, to appear under the logo.
    * `github_user`, `github_repo`: Used by `github_button` and `github_banner`
    (see below); does nothing if both of those are set to `false`.
