@@ -98,11 +98,12 @@ div.sphinxsidebarwrapper p.logo {
 div.sphinxsidebarwrapper h1.logo {
     margin-top: -10px;
     text-align: center;
-}
-
-div.sphinxsidebarwrapper h1.logo-text {
     margin-bottom: 5px;
     text-align: {{ theme_logo_text_align }};
+}
+
+div.sphinxsidebarwrapper h1.logo-name {
+    margin-top: 0px;
 }
 
 div.sphinxsidebarwrapper p.blurb {
