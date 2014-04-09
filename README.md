@@ -97,6 +97,9 @@ To use:
    * `github_banner`: `true` or `false` (default: `false`) - whether to apply a
    'Fork me on Github' banner in the top right corner of the page.
        * If `true`, requires that you set `github_user` and `github_repo`.
+   * `travis_button`: `true`, `false` or a Github-style `"account/repo"`
+   string - used to display a Travis-CI build status button in the sidebar. If
+   `true`, uses your `github_(user|repo)` settings; defaults to `false.`
    * `gittip_user`: Set to your [Gittip](https://gittip.com) username if you
    want a Gittip 'Donate' section in your sidebar.
    * `analytics_id`: Set to your [Google
