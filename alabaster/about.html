@@ -22,7 +22,7 @@
 </p>
 {% endif %}
 
-{% if theme_travis_button %}
+{% if theme_travis_button|lower != 'false' %}
 {% if theme_travis_button|lower == 'true' %}
     {% set path = theme_github_user + '/' + theme_github_repo %}
 {% else %}
