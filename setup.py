@@ -14,7 +14,7 @@ setup(
     description='A configurable sidebar-enabled Sphinx theme',
     author='Jeff Forcier',
     author_email='jeff@bitprophet.org',
-    url='https://github.com/bitprophet/sphinx-theme',
+    url='https://github.com/bitprophet/alabaster',
     packages=['alabaster'],
     include_package_data=True,
     classifiers=[
