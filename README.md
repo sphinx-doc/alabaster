@@ -116,6 +116,9 @@ To use:
    should include hidden Sphinx toctree elements. Defaults to `true` so you can
    use `:hidden:` in your index page's root toctree & avoid having 2x copies of
    your navigation on your landing page.
+   * `show_powered_by`: Boolean controlling display of the `Powered by Sphinx
+   N.N.N. & Alabaster M.M.M` section of the footer. When True, is displayed
+   next to the copyright information; when False, is hidden.
 
    **Style colors**
 
