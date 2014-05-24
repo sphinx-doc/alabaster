@@ -5,6 +5,7 @@
 {% set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
 {% set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
 
+{% set theme_warning_bg = theme_warning_bg or '#ffedcc' %}
 {% set theme_note_bg = theme_note_bg or theme_gray_2 %}
 {% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
 {% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
@@ -254,6 +255,11 @@ dt:target, .highlight {
 
 div.note {
     background-color: {{ theme_note_bg }};
+    border: 1px solid {{ theme_note_border }};
+}
+
+div.warning {
+    background-color: {{ theme_warning_bg }};
     border: 1px solid {{ theme_note_border }};
 }
 

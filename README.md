@@ -151,6 +151,7 @@ To use:
    when moused over. Defaults to `gray_1.
    * `anchor_hover_bg`: Background color of above.
    * `note_bg`: Background of `.. note::` blocks. Defaults to `gray_2`.
+   * `warning_bg`: Background of `.. warning::` blocks. Defaults to `#FFEDCC`.
    * `note_border`: Border of same.
    * `footnote_bg`: Background of footnote blocks.
    * `footnote_border`: Border of same. Defaults to `gray_2`.
