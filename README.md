@@ -13,7 +13,7 @@ Features (compared to Kenneth's original theme):
 * Easy ability to install/use as a Python package (tip o' the hat to [Dave &
   Eric's sphinx_rtd_theme](https://github.com/snide/sphinx_rtd_theme) for
   showing the way);
-* Style tweaks, such as better code-block alignment, Gittip and Github button
+* Style tweaks, such as better code-block alignment, Gratipay and Github button
   placement, page source link moved to footer, etc;
 * Additional customization hooks, such as header/link/etc colors;
 * Improved documentation for all customizations (pre-existing & new).
@@ -45,7 +45,7 @@ To use:
         docs](http://sphinx-doc.org/config.html#confval-html_sidebars) for
         details on how this setting behaves.
         * Alabaster provides `about.html` (logo, github buttom + blurb),
-        `donate.html` (Gittip blurb/button) and `navigation.html` (a more
+        `donate.html` (Gratipay blurb/button) and `navigation.html` (a more
         flexible version of the builtin `localtoc`/`globaltoc` templates); the
         others listed come from Sphinx itself.
 
@@ -100,8 +100,8 @@ To use:
    * `travis_button`: `true`, `false` or a Github-style `"account/repo"`
    string - used to display a Travis-CI build status button in the sidebar. If
    `true`, uses your `github_(user|repo)` settings; defaults to `false.`
-   * `gittip_user`: Set to your [Gittip](https://gittip.com) username if you
-   want a Gittip 'Donate' section in your sidebar.
+   * `gratipay_user`: Set to your [Gratipay](https://gratipay.com) username if
+   you want a Gratipay 'Donate' section in your sidebar.
    * `analytics_id`: Set to your [Google
    Analytics](http://www.google.com/analytics/) ID (e.g. `UA-#######-##`) to
    enable tracking.
