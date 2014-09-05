@@ -102,6 +102,10 @@ To use:
    `true`, uses your `github_(user|repo)` settings; defaults to `false.`
    * `gratipay_user`: Set to your [Gratipay](https://gratipay.com) username if
    you want a Gratipay 'Donate' section in your sidebar.
+      * This used to be `gittip_user` before that service changed its name to
+      Gratipay; we've left the old setting in place as an alias for backwards
+      compatibility reasons. It may be removed in the future.
+      * If both options are given, `gratipay_user` wins.
    * `analytics_id`: Set to your [Google
    Analytics](http://www.google.com/analytics/) ID (e.g. `UA-#######-##`) to
    enable tracking.
