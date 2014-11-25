@@ -134,6 +134,8 @@ To use:
    * `gray_1`: Dark gray.
    * `gray_2`: Light gray.
    * `gray_3`: Medium gray.
+   * `pink_1`: Light pink.
+   * `pink_2`: Medium pink.
    * `body_text`: Main content text.
    * `footer_text`: Footer text (includes links.)
    * `link`: Non-hovered body links.
@@ -156,6 +158,8 @@ To use:
    * `anchor_hover_bg`: Background color of above.
    * `note_bg`: Background of `.. note::` blocks. Defaults to `gray_2`.
    * `note_border`: Border of same.
+   * `warn_bg`: Background of `.. warn::` blocks. Defaults to `pink_1`.
+   * `warn_border`: Border of same. Defaults to `pink_2`.
    * `footnote_bg`: Background of footnote blocks.
    * `footnote_border`: Border of same. Defaults to `gray_2`.
    * `pre_bg`: Background of preformatted text blocks (including code
