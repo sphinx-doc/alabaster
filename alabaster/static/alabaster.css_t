@@ -111,6 +111,7 @@ div.sphinxsidebarwrapper h1.logo-name {
 
 div.sphinxsidebarwrapper p.blurb {
     margin-top: 0;
+    font-style: {{ theme_description_font_style }};
 }
 
 div.sphinxsidebar h3,

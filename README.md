@@ -85,6 +85,7 @@ To use:
    * `logo_text_align`: Which CSS `text-align` value to use for logo text (if
    there is any.)
    * `description`: Text blurb about your project, to appear under the logo.
+   * `description_font_style`: Which CSS `font-style` to use for description text. Defaults to `normal`.
    * `github_user`, `github_repo`: Used by `github_button` and `github_banner`
    (see below); does nothing if both of those are set to `false`.
    * `github_button`: `true` or `false` (default: `true`) - whether to link to
