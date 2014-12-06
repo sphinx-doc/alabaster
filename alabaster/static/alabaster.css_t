@@ -263,8 +263,8 @@ div.note {
 }
 
 div.seealso {
-    background-color: #ffc;
-    border: 1px solid #ff6;
+    background-color: {{ theme_seealso_bg }};
+    border: 1px solid {{ theme_seealso_border }};
 }
 
 div.topic {
