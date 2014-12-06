@@ -158,6 +158,8 @@ To use:
    * `anchor_hover_bg`: Background color of above.
    * `note_bg`: Background of `.. note::` blocks. Defaults to `gray_2`.
    * `note_border`: Border of same.
+   * `seealso_bg`: Background of `.. seealso::` blocks. Defaults to `gray_2`.
+   * `seealso_border`: Border of same.
    * `warn_bg`: Background of `.. warn::` blocks. Defaults to `pink_1`.
    * `warn_border`: Border of same. Defaults to `pink_2`.
    * `footnote_bg`: Background of footnote blocks.
