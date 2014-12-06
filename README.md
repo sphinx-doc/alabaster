@@ -123,6 +123,7 @@ To use:
    * `show_powered_by`: Boolean controlling display of the `Powered by Sphinx
    N.N.N. & Alabaster M.M.M` section of the footer. When True, is displayed
    next to the copyright information; when False, is hidden.
+   * `show_source`: Boolean controlling display of the `Page source` link of the footer; when False, is hidden.
 
    **Style colors**
 
