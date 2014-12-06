@@ -169,6 +169,13 @@ To use:
    * `narrow_sidebar_fg`: Text color of same.
    * `narrow_sidebar_link`: Link color of same. Defaults to `gray_3`.
 
+   **Fonts**
+
+   * `code_font_size`: Font size of code block text. Defaults to `0.9em`.
+   * `code_font_family`: Font family of code block test. Defaults to
+   `'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace`
+    
+
 ## Additional info / background
 
 * [Fabric #419](https://github.com/fabric/fabric/issues/419) contains a lot of
