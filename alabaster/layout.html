@@ -15,7 +15,7 @@
       Powered by <a href="http://sphinx-doc.org/">Sphinx {{ sphinx_version }}</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster {{ alabaster_version }}</a>
       {% endif %}
-      {%- if show_source and has_source and sourcename %}
+      {%- if theme_show_source and show_source and has_source and sourcename %}
       |
       <a href="{{ pathto('_sources/' + sourcename, true)|e }}"
           rel="nofollow">{{ _('Page source') }}</a></li>
