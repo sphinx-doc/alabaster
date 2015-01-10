@@ -9,6 +9,9 @@
 {% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
 {% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
 
+{% set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
+{% set theme_warn_border = theme_warn_border or theme_pink_2 %}
+
 {% set theme_narrow_sidebar_link = theme_narrow_sidebar_link or theme_gray_3 %}
 {% set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
 
@@ -220,6 +223,8 @@ div.body p, div.body dd, div.body li {
 div.admonition {
     margin: 20px 0px;
     padding: 10px 30px;
+    background-color: {{ theme_warn_bg }};
+    border: 1px solid {{ theme_warn_border }};
 }
 
 div.admonition tt.xref, div.admonition a tt {
