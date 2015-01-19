@@ -36,8 +36,9 @@ To use:
    }
    ```
 
-    * Modify the call to `abspath` if your `_themes` folder doesn't live right
-    next to your `conf.py`.
+    * If your `_themes` folder doesn't live right next to your `conf.py`,
+    replace the call to `alabaster.get_path` with an explicit file path
+    string .
     * Feel free to adjust `html_sidebars` as desired - the theme is designed
     assuming you'll have `about.html` activated, but otherwise it doesn't care
     much.
