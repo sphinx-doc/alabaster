@@ -10,7 +10,7 @@ itself originally based on @mitsuhiko's theme used for `Flask
 A live example of what this theme looks like can be seen on e.g. `paramiko.org
 <http://paramiko.org>`_.
 
-Features (compared to Kenneth's original theme):
+Features (compared to Kenneth's theme):
 
 * Easy ability to install/use as a Python package (tip o' the hat to `Dave &
   Eric's sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ for
