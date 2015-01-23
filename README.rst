@@ -251,6 +251,7 @@ Next release (2015-XX-YY)
   isn't worthwhile just yet.
 * Allow configuring a custom Github banner image (instead of simply toggling a
   default on or off). Thanks to Nicola Iarocci for the original patch.
+* Explicitly note Python version support in the README and ``setup.py``.
 
 
 0.6.3 (2015-01-19)
