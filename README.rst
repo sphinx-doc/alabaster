@@ -137,16 +137,13 @@ Variables and feature toggles
       * ``github_button_type``: Defaults to ``watch``.
       * ``github_button_count``: Defaults to ``true``.
 
-* ``github_banner``: ``true`` or ``false`` (default: ``false``) - whether to apply a
-  'Fork me on Github' banner in the top right corner of the page.
+* ``github_banner``: ``true`` or ``false`` (default: ``false``) - whether to
+  apply a 'Fork me on Github' banner in the top right corner of the page.
 
    * If ``true``, requires that you set ``github_user`` and ``github_repo``.
-
-* ``github_banner_image``: Path to an image (as with ``logo``, relative to
-  ``$PROJECT/_static/``) to be used as a custom 'Fork me on Github' banner. 
-
-   * If unset (the default), a standard 'Fork me on Github' banner will be
-     used.
+   * May also submit a string file path (as with ``logo``, relative to
+     ``$PROJECT/_static/``) to be used as the banner image instead of the
+     default.
 
 * ``travis_button``: ``true``, ``false`` or a Github-style
   ``"account/repo"`` string - used to display a Travis-CI build status
