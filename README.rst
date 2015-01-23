@@ -263,6 +263,8 @@ Next release (2015-XX-YY)
 * Update Github button image link to use the newly-available HTTPS version of
   the URL; this helps prevent errors on doc pages served via HTTPS. Thanks to
   Gustavo Narea for the report.
+* Add control over the font size & family of code blocks. Credit to Steven
+  Loria.
 
 
 0.6.3 (2015-01-19)
