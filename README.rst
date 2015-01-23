@@ -252,6 +252,9 @@ Next release (2015-XX-YY)
 * Allow configuring a custom Github banner image (instead of simply toggling a
   default on or off). Thanks to Nicola Iarocci for the original patch.
 * Explicitly note Python version support in the README and ``setup.py``.
+* Update Github button image link to use the newly-available HTTPS version of
+  the URL; this helps prevent errors on doc pages served via HTTPS. Thanks to
+  Gustavo Narea for the report.
 
 
 0.6.3 (2015-01-19)
