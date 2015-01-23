@@ -13,6 +13,8 @@ Live examples of this theme can be seen on `paramiko.org
 
 A changelog_ can be found at the bottom of this page.
 
+Alabaster is Python 2+3 compatible.
+
 
 Features
 ========
