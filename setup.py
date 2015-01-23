@@ -18,10 +18,10 @@ setup(
     packages=['alabaster'],
     include_package_data=True,
     classifiers=[
-          'Intended Audience :: Developers',
-          'License :: OSI Approved :: BSD License',
-          'Operating System :: OS Independent',
-          'Topic :: Documentation',
-          'Topic :: Software Development :: Documentation',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: OS Independent',
+        'Topic :: Documentation',
+        'Topic :: Software Development :: Documentation',
     ],
 )
