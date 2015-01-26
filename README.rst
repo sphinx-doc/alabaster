@@ -268,6 +268,10 @@ Next release (2015-XX-YY)
   Gustavo Narea for the report.
 * Add control over the font size & family of code blocks. Credit to Steven
   Loria.
+* Stylize ``.. seealso::`` blocks same as ``.. note::`` blocks for
+  consistency's sake (previously, ``.. seealso::`` used the Sphinx default
+  styling, which clashed). We may update these again later but for now, this is
+  an improvement! Thanks again to Steven Loria.
 
 
 0.6.3 (2015-01-19)
