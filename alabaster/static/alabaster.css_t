@@ -12,6 +12,8 @@
 {% set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
 {% set theme_warn_border = theme_warn_border or theme_pink_2 %}
 
+{% set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
+
 {% set theme_narrow_sidebar_link = theme_narrow_sidebar_link or theme_gray_3 %}
 {% set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
 
@@ -264,8 +266,8 @@ div.note {
 }
 
 div.seealso {
-    background-color: #ffc;
-    border: 1px solid #ff6;
+    background-color: {{ theme_seealso_bg }};
+    border: 1px solid {{ theme_seealso_border }};
 }
 
 div.topic {
@@ -281,8 +283,8 @@ p.admonition-title:after {
 }
 
 pre, tt {
-    font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
-    font-size: 0.9em;
+    font-family: {{theme_code_font_family}};
+    font-size: {{ theme_code_font_size }};
 }
 
 img.screenshot {
