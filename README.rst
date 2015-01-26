@@ -274,6 +274,8 @@ Next release (2015-XX-YY)
   consistency's sake (previously, ``.. seealso::`` used the Sphinx default
   styling, which clashed). We may update these again later but for now, this is
   an improvement! Thanks again to Steven Loria.
+* Allow control over CSS ``font-style`` for the site description/tagline
+  element. Credit: Steven Loria.
 
 
 0.6.3 (2015-01-19)
