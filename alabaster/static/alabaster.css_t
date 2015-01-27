@@ -580,3 +580,8 @@ a:hover tt {
 div#changelog > div.section > ul > li > p:only-child {
     margin-bottom: 0;
 }
+
+/* Hide fugly table cell borders in ..bibliography:: directive output */
+table.docutils.citation, table.docutils.citation td, table.docutils.citation th {
+  border:none;
+}

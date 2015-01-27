@@ -276,6 +276,8 @@ Next release (2015-XX-YY)
   an improvement! Thanks again to Steven Loria.
 * Allow control over CSS ``font-style`` for the site description/tagline
   element. Credit: Steven Loria.
+* Add styling to disable default cell borders on ``.. bibliography::``
+  directives' output. Thanks to Philippe Dessus for the report.
 
 
 0.6.3 (2015-01-19)
