@@ -23,7 +23,7 @@
 /* -- page layout ----------------------------------------------------------- */
 
 body {
-    font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro';
+    font-family: {{ theme_font_family }};
     font-size: 17px;
     background-color: white;
     color: #000;
@@ -118,7 +118,7 @@ div.sphinxsidebarwrapper p.blurb {
 
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: {{ theme_head_font_family }};
     color: {{ theme_sidebar_header }};
     font-size: 24px;
     font-weight: normal;
@@ -162,7 +162,7 @@ div.sphinxsidebar ul li.toctree-l2 > a {
 
 div.sphinxsidebar input {
     border: 1px solid {{ theme_sidebar_search_button }};
-    font-family: 'Georgia', serif;
+    font-family: {{ theme_font_family }};
     font-size: 1em;
 }
 
@@ -195,7 +195,7 @@ div.body h3,
 div.body h4,
 div.body h5,
 div.body h6 {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: {{ theme_head_font_family }};
     font-weight: normal;
     margin: 30px 0px 10px 0px;
     padding: 0;
@@ -240,7 +240,7 @@ dd div.admonition {
 }
 
 div.admonition p.admonition-title {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: {{ theme_head_font_family }};
     font-weight: normal;
     font-size: 24px;
     margin: 0 0 10px 0;

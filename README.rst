@@ -233,8 +233,12 @@ colorscheme. The more granular settings can be used to override as needed.
 Fonts
 -----
 
+* ``font_family``: Font family of body text.  Defaults to ``'goudy old style',
+  'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif``.
+* ``head_font_family``: Font family of headings.  Defaults to ``'Garamond',
+  'Georgia', serif``.
 * ``code_font_size``: Font size of code block text. Defaults to ``0.9em``.
-* ``code_font_family``: Font family of code block test. Defaults to
+* ``code_font_family``: Font family of code block text. Defaults to
   ``'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
   monospace``.
 
@@ -270,6 +274,7 @@ Next release (2015-XX-YY)
   Gustavo Narea for the report.
 * Add control over the font size & family of code blocks. Credit to Steven
   Loria.
+* Allow control over font family of body text and headings.
 * Stylize ``.. seealso::`` blocks same as ``.. note::`` blocks for
   consistency's sake (previously, ``.. seealso::`` used the Sphinx default
   styling, which clashed). We may update these again later but for now, this is
