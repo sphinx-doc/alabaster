@@ -357,6 +357,6 @@ Changelog
 * Add a 3rd level of medium-gray to the stylesheet & apply in a few places.
 
 0.1.0 (2013-12-31)
-----------
+------------------
 
 * First tagged/PyPI'd version.
