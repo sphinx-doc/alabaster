@@ -261,8 +261,12 @@ Additional info / background
 Changelog
 =========
 
-0.7.0 (2015-02-27)
+0.7.1 (2015-02-27)
 ------------------
+
+.. note::
+    There is no 0.7.0, there was some PyPI fun and replacing sdists isn't
+    permitted :)
 
 * Finally add a changelog. To the README, for now, because a full doc site
   isn't worthwhile just yet.
@@ -284,7 +288,6 @@ Changelog
   element. Credit: Steven Loria.
 * Add styling to disable default cell borders on ``.. bibliography::``
   directives' output. Thanks to Philippe Dessus for the report.
-
 
 0.6.3 (2015-01-19)
 ------------------
