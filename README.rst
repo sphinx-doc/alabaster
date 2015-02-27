@@ -274,7 +274,8 @@ Next release (2015-XX-YY)
   Gustavo Narea for the report.
 * Add control over the font size & family of code blocks. Credit to Steven
   Loria.
-* Allow control over font family of body text and headings.
+* Allow control over font family of body text and headings. Thanks to Georg
+  Brandl.
 * Stylize ``.. seealso::`` blocks same as ``.. note::`` blocks for
   consistency's sake (previously, ``.. seealso::`` used the Sphinx default
   styling, which clashed). We may update these again later but for now, this is
