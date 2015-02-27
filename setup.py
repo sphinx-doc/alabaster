@@ -8,10 +8,15 @@ with open('alabaster/_version.py') as fp:
     exec(fp.read(), None, _locals)
 version = _locals['__version__']
 
+# README into long description
+with open('README.rst') as f:
+    readme = f.read()
+
 setup(
     name='alabaster',
     version=version,
     description='A configurable sidebar-enabled Sphinx theme',
+    long_description=readme,
     author='Jeff Forcier',
     author_email='jeff@bitprophet.org',
     url='https://github.com/bitprophet/alabaster',
