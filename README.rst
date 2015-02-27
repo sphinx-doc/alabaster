@@ -261,8 +261,8 @@ Additional info / background
 Changelog
 =========
 
-Next release (2015-XX-YY)
--------------------------
+0.7.0 (2015-02-27)
+------------------
 
 * Finally add a changelog. To the README, for now, because a full doc site
   isn't worthwhile just yet.
