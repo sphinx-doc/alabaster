@@ -282,7 +282,7 @@ p.admonition-title:after {
     content: ":";
 }
 
-pre, tt {
+pre, tt, code {
     font-family: {{theme_code_font_family}};
     font-size: {{ theme_code_font_size }};
 }
@@ -290,11 +290,11 @@ pre, tt {
 img.screenshot {
 }
 
-tt.descname, tt.descclassname {
+tt.descname, tt.descclassname, code.descname, code.descclassname {
     font-size: 0.95em;
 }
 
-tt.descname {
+tt.descname, code.descname {
     padding-right: 0.08em;
 }
 
@@ -389,13 +389,13 @@ dl dl pre {
     padding-left: 90px;
 }
 
-tt {
+tt, code {
     background-color: #ecf0f3;
     color: #222;
     /* padding: 1px 2px; */
 }
 
-tt.xref, a tt {
+tt.xref, code.xref, a tt {
     background-color: #FBFBFB;
     border-bottom: 1px solid white;
 }
@@ -420,7 +420,7 @@ a.footnote-reference:hover {
     border-bottom: 1px solid {{ theme_link_hover }};
 }
 
-a:hover tt {
+a:hover tt, a:hover code {
     background: #EEE;
 }
 
