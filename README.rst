@@ -261,6 +261,14 @@ Additional info / background
 Changelog
 =========
 
+0.7.2 (2015-03-10)
+------------------
+
+* Updated CSS stylesheets to apply monospace styling to both ``tt`` and
+  ``code`` elements, instead of just to ``tt``. This addresses a change in HTML
+  generation in Sphinx 1.3 while retaining support for Sphinx 1.2. Thanks to
+  Eric Holscher for the heads up.
+
 0.7.1 (2015-02-27)
 ------------------
 
