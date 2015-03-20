@@ -261,6 +261,13 @@ Additional info / background
 Changelog
 =========
 
+0.7.3 (2015-03-20)
+------------------
+
+* Hide ``shadow`` related styles on bibliography elements, in addition to the
+  earlier change re: ``border``. Thanks again to Philippe Dessus.
+
+
 0.7.2 (2015-03-10)
 ------------------
 
