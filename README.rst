@@ -369,3 +369,9 @@ Changelog
 
 * Hide ``shadow`` related styles on bibliography elements, in addition to the
   earlier change re: ``border``. Thanks again to Philippe Dessus.
+
+0.7.4 (2015-05-03)
+------------------
+
+* Add ``code_highlight`` option (which includes general fixes to styling of
+  code blocks containing highlighted lines). Thanks to Steven Loria.
