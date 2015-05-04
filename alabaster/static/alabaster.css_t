@@ -287,6 +287,13 @@ pre, tt, code {
     font-size: {{ theme_code_font_size }};
 }
 
+.hll {
+    background-color: {{theme_code_highlight}};
+    margin: 0 -12px;
+    padding: 0 12px;
+    display: block;
+}
+
 img.screenshot {
 }
 

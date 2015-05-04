@@ -229,6 +229,7 @@ colorscheme. The more granular settings can be used to override as needed.
   it to the bottom of the page.
 * ``narrow_sidebar_fg``: Text color of same.
 * ``narrow_sidebar_link``: Link color of same. Defaults to ``gray_3``.
+* ``code_highlight``: Color of highlight when using ``:emphasize-lines:`` in a code block.
 
 Fonts
 -----
