@@ -389,3 +389,12 @@ Changelog
 
 * Honor Sphinx's core ``html_show_copyright`` option when rendering page
   footer. Thanks to Marcin Wojdyr for the report.
+* Pre-history versions of Alabaster attempted to remove the "related"
+  sub-navigation (typically found as next/previous links in other themes) but
+  this didn't work right for mobile-oriented styling.
+
+  This has been fixed by (re-)adding an improved sidebar nav element for these
+  links and making its display controllable via the new ``show_related`` theme
+  option (which defaults to 'false' for backwards compatibility).
+
+  Thanks to Tomi Pieviläinen for the bug report.
