@@ -25,7 +25,8 @@ Specifically, as compared to Kenneth's theme:
   Eric's sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ for
   showing the way);
 * Style tweaks, such as better code-block alignment, Gratipay and Github button
-  placement, page source link moved to footer, etc;
+  placement, page source link moved to footer, improved (optional)
+  related-items sidebar item, etc;
 * Many customization hooks, including toggle of various sidebar & footer
   components; header/link/etc color control; etc;
 * Improved documentation for all customizations (pre-existing & new).
@@ -51,6 +52,7 @@ The bare minimum required to install is as follows:
             '**': [
                 'about.html',
                 'navigation.html',
+                'relations.html',
                 'searchbox.html',
                 'donate.html',
             ]
