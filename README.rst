@@ -395,6 +395,11 @@ Changelog
 
   This has been fixed by (re-)adding an improved sidebar nav element for these
   links and making its display controllable via the new ``show_related`` theme
-  option (which defaults to 'false' for backwards compatibility).
+  option (which defaults to ``False`` for backwards compatibility).
+
+  **NOTE**: to enable the related-links nav, you'll need to set
+  ``show_related`` to ``True`` **and** add ``relations.html`` to your
+  ``html_sidebars`` (we've updated the example config in this README to
+  indicate this for new installs).
 
   Thanks to Tomi Pieviläinen for the bug report.
