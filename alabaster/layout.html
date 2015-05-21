@@ -1,4 +1,5 @@
 {%- extends "basic/layout.html" %}
+
 {%- block extrahead %}
   {{ super() }}
   {% if theme_touch_icon %}
@@ -6,7 +7,11 @@
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
 {% endblock %}
+
+{# Disable base theme's top+bottom related navs; we have our own in sidebar #}
+{%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% endblock %}
+
 {%- block footer %}
     <div class="footer">
       {% if show_copyright %}&copy;{{ copyright }}.{% endif %}
