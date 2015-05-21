@@ -72,7 +72,7 @@ div.footer a {
 }
 
 {% if theme_show_related|lower == 'false' %}
-div.related {
+div.relations {
     display: none;
 }
 {% endif %}
@@ -528,20 +528,6 @@ a:hover tt, a:hover code {
         width: 100%;
         margin: 0;
     }
-
-    {% if theme_show_related|lower == 'true' %}
-    div.related {
-        display: block;
-        margin: 0;
-        padding: 10px 0 20px 0;
-    }
-
-    div.related ul,
-    div.related ul li {
-        margin: 0;
-        padding: 0;
-    }
-    {% endif %}
 
     div.footer {
         display: none;
