@@ -180,6 +180,9 @@ Variables and feature toggles
 * ``show_powered_by``: Boolean controlling display of the ``Powered by
   Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When True, is
   displayed next to the copyright information; when False, is hidden.
+* ``show_related``: Boolean controlling whether the 'next/previous/related'
+  secondary navigation elements are hidden or displayed. Defaults to ``False``
+  since on many sites these elements are superfluous.
 
 Style colors
 ------------

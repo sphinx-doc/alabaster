@@ -71,9 +71,11 @@ div.footer a {
     color: {{ theme_footer_text }};
 }
 
+{% if theme_show_related|lower == 'false' %}
 div.related {
     display: none;
 }
+{% endif %}
 
 div.sphinxsidebar a {
     color: {{ theme_sidebar_link }};
@@ -527,6 +529,7 @@ a:hover tt, a:hover code {
         margin: 0;
     }
 
+    {% if theme_show_related|lower == 'true' %}
     div.related {
         display: block;
         margin: 0;
@@ -538,6 +541,7 @@ a:hover tt, a:hover code {
         margin: 0;
         padding: 0;
     }
+    {% endif %}
 
     div.footer {
         display: none;
