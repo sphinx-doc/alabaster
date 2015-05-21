@@ -49,7 +49,10 @@ The bare minimum required to install is as follows:
         html_theme = 'alabaster'
         html_sidebars = {
             '**': [
-                'about.html', 'navigation.html', 'searchbox.html', 'donate.html',
+                'about.html',
+                'navigation.html',
+                'searchbox.html',
+                'donate.html',
             ]
         }
 
