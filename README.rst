@@ -403,3 +403,6 @@ Changelog
   indicate this for new installs).
 
   Thanks to Tomi Pieviläinen for the bug report.
+* Update the "Fork me on Github" banner image to use an ``https://`` URI so
+  sites hosted over HTTPS don't encounter mixed-content errors. Thanks to
+  ``@nikolas`` for the patch.
