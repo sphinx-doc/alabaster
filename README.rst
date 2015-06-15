@@ -406,3 +406,5 @@ Changelog
 * Update the "Fork me on Github" banner image to use an ``https://`` URI so
   sites hosted over HTTPS don't encounter mixed-content errors. Thanks to
   ``@nikolas`` for the patch.
+* Remove an orphaned ``</li>`` from the footer 'show source' section. Credit to
+  Marcin Wojdyr.
