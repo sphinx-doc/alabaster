@@ -384,7 +384,7 @@ Changelog
 * Add ``code_highlight`` option (which includes general fixes to styling of
   code blocks containing highlighted lines). Thanks to Steven Loria.
 
-0.7.5 (2015-MM-DD)
+0.7.5 (2015-06-15)
 ------------------
 
 * Honor Sphinx's core ``html_show_copyright`` option when rendering page
