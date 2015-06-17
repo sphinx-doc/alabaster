@@ -409,10 +409,10 @@ Changelog
 * Remove an orphaned ``</li>`` from the footer 'show source' section. Credit to
   Marcin Wojdyr.
 
-1.0.6 (2015-MM-DD)
+1.0.0 (2015-MM-DD)
 ------------------
 
 .. note::
     The 0.7 line should really have been considered 1.0, so we're 'rebranding'
-    it from now on. 1.0.6 picks up where 0.7.5 left off and does not involve
+    it from now on. 1.0.0 picks up where 0.7.5 left off and does not involve
     any backwards incompatible changes.
