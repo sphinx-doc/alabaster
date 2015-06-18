@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import codecs
 from setuptools import setup
 
 # Version info -- read without importing
@@ -9,7 +10,7 @@ with open('alabaster/_version.py') as fp:
 version = _locals['__version__']
 
 # README into long description
-with open('README.rst') as f:
+with codecs.open('README.rst', encoding='utf-8') as f:
     readme = f.read()
 
 setup(
