@@ -188,6 +188,10 @@ Variables and feature toggles
 * ``show_related``: Boolean controlling whether the 'next/previous/related'
   secondary navigation elements are hidden or displayed. Defaults to ``False``
   since on many sites these elements are superfluous.
+* ``page_width``: CSS width specifier controlling default content/page width.
+  Defaults to ``940px``.
+* ``sidebar_width``: CSS width specifier controlling default sidebar width.
+  Defaults to ``220px``.
 
 Style colors
 ------------
@@ -419,3 +423,6 @@ Changelog
   report and Max Tepkeev for the suggested fix.
 * Fix left-margin & padding styling for code blocks within list-item elements,
   making them consistent with earlier changes applied to top-level code blocks.
+* Expose page & sidebar widths as theme options ``page_width`` and
+  ``sidebar_width``. Their defaults are the same as the previously static
+  values.
