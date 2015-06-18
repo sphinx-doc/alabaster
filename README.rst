@@ -183,10 +183,10 @@ Variables and feature toggles
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
   copies of your navigation on your landing page.
 * ``show_powered_by``: Boolean controlling display of the ``Powered by
-  Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When True, is
-  displayed next to the copyright information; when False, is hidden.
+  Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When ``true``, is
+  displayed next to the copyright information; when ``false``, is hidden.
 * ``show_related``: Boolean controlling whether the 'next/previous/related'
-  secondary navigation elements are hidden or displayed. Defaults to ``False``
+  secondary navigation elements are hidden or displayed. Defaults to ``false``
   since on many sites these elements are superfluous.
 * ``page_width``: CSS width specifier controlling default content/page width.
   Defaults to ``940px``.
@@ -399,10 +399,10 @@ Changelog
 
   This has been fixed by (re-)adding an improved sidebar nav element for these
   links and making its display controllable via the new ``show_related`` theme
-  option (which defaults to ``False`` for backwards compatibility).
+  option (which defaults to ``false`` for backwards compatibility).
 
   **NOTE**: to enable the related-links nav, you'll need to set
-  ``show_related`` to ``True`` **and** add ``relations.html`` to your
+  ``show_related`` to ``true`` **and** add ``relations.html`` to your
   ``html_sidebars`` (we've updated the example config in this README to
   indicate this for new installs).
 
