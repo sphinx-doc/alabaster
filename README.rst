@@ -416,3 +416,9 @@ Changelog
     The 0.7 line should really have been considered 1.0, so we're 'rebranding'
     it from now on. 1.0.0 picks up where 0.7.5 left off and does not involve
     any backwards incompatible changes.
+
+* Update how ``setup.py`` handles the ``README.rst`` file - load it explicitly
+  as UTF-8 so the changelog containing non-ASCII characters doesn't generate
+  ``UnicodeDecodeError`` in terminal environments whose default encoding is not
+  UTF-8 or other Unicode-compatible encodings. Thanks to Arun Persaud for the
+  report and Max Tepkeev for the suggested fix.
