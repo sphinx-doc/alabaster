@@ -417,3 +417,5 @@ Changelog
   ``UnicodeDecodeError`` in terminal environments whose default encoding is not
   UTF-8 or other Unicode-compatible encodings. Thanks to Arun Persaud for the
   report and Max Tepkeev for the suggested fix.
+* Fix left-margin & padding styling for code blocks within list-item elements,
+  making them consistent with earlier changes applied to top-level code blocks.

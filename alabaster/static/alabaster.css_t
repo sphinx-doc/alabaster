@@ -389,8 +389,8 @@ pre {
 }
 
 dl pre, blockquote pre, li pre {
-    margin-left: -60px;
-    padding-left: 60px;
+    margin-left: 0;
+    padding-left: 30px;
 }
 
 dl dl pre {
