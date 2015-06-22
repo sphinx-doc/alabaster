@@ -142,8 +142,8 @@ Variables and feature toggles
 
    * If ``true``, requires that you set ``github_user`` and ``github_repo``.
    * See also these other related options, which behave as described in
-     `Github Buttons' README
-     <https://github.com/mdo/github-buttons#usage>`_:
+     `Github Buttons' documentation
+     <https://ghbtns.com>`_:
 
       * ``github_button_type``: Defaults to ``watch``.
       * ``github_button_count``: Defaults to ``true``.
