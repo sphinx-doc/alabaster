@@ -413,7 +413,7 @@ Changelog
 * Remove an orphaned ``</li>`` from the footer 'show source' section. Credit to
   Marcin Wojdyr.
 
-0.7.6 (2015-MM-DD)
+0.7.6 (2015-06-22)
 ------------------
 
 * Update how ``setup.py`` handles the ``README.rst`` file - load it explicitly
