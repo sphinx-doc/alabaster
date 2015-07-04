@@ -3,7 +3,7 @@ Alabaster: a Sphinx theme
 =========================
 
 This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially as
-used in his `Requests <https://python-requests.org>`_ project), which was
+used in his `Requests <http://python-requests.org>`_ project), which was
 itself originally based on @mitsuhiko's theme used for `Flask
 <http://flask.pocoo.org/>`_ & related projects.
 
