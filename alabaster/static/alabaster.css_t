@@ -374,6 +374,7 @@ blockquote {
 }
 
 ul, ol {
+    /* Matches the 30px from the narrow-screen "li > ul" selector below */
     margin: 10px 0 10px 30px;
     padding: 0;
 }
@@ -459,6 +460,11 @@ a:hover tt, a:hover code {
     ul {
     	margin-left: 0;
     }
+
+	li > ul {
+        /* Matches the 30px from the "ul, ol" selector above */
+		margin-left: 30px;
+	}
 
     .document {
     	width: auto;
