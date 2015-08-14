@@ -145,8 +145,8 @@ Variables and feature toggles
      `Github Buttons' README
      <https://github.com/mdo/github-buttons#usage>`_:
 
-      * ``github_button_type``: Defaults to ``watch``.
-      * ``github_button_count``: Defaults to ``true``.
+      * ``github_type``: Defaults to ``watch``.
+      * ``github_count``: Defaults to ``true``.
 
 * ``github_banner``: ``true`` or ``false`` (default: ``false``) - whether to
   apply a 'Fork me on Github' banner in the top right corner of the page.
