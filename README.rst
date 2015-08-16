@@ -426,3 +426,10 @@ Changelog
 * Expose page & sidebar widths as theme options ``page_width`` and
   ``sidebar_width``. Their defaults are the same as the previously static
   values.
+
+0.7.7 (2015-MM-DD)
+------------------
+
+* Add some ``margin-bottom`` to ``table.field-list p`` so field lists (e.g.
+  Python function parameter lists in docstrings) written as multiple
+  paragraphs, look like actual paragraphs instead of all globbing together.
