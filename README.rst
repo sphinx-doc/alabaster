@@ -433,3 +433,5 @@ Changelog
 * Add some ``margin-bottom`` to ``table.field-list p`` so field lists (e.g.
   Python function parameter lists in docstrings) written as multiple
   paragraphs, look like actual paragraphs instead of all globbing together.
+* Fix incorrect notes in README re: renamed ``github_button_*`` options - the
+  ``button_`` was dropped but docs did not reflect this. Thanks to Nik Nyby.
