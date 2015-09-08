@@ -120,6 +120,8 @@ include all possible options, see following list!):
 Variables and feature toggles
 -----------------------------
 
+* ``navigation_text``: Text of the ``navigation.html`` layout heading. Defauts to ``Navigation``.
+
 * ``logo``: Relative path (from ``$PROJECT/_static/``) to a logo image, which
   will appear in the upper left corner above the name of the project.
 
