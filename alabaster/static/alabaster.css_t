@@ -44,6 +44,8 @@ div.bodywrapper {
 
 div.sphinxsidebar {
     width: {{ theme_sidebar_width }};
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 hr {
@@ -82,11 +84,6 @@ div.sphinxsidebar a {
 
 div.sphinxsidebar a:hover {
     border-bottom: 1px solid {{ theme_sidebar_link_underscore }};
-}
-
-div.sphinxsidebar {
-    font-size: 14px;
-    line-height: 1.5;
 }
 
 div.sphinxsidebarwrapper {
