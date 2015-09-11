@@ -12,6 +12,10 @@
 {%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% endblock %}
 
+{# Nav should appear before content, not after #}
+{%- block sidebar1 %}{{ sidebar() }}{% endblock %}
+{%- block sidebar2 %}{% endblock %}
+
 {%- block footer %}
     <div class="footer">
       {% if show_copyright %}&copy;{{ copyright }}.{% endif %}
