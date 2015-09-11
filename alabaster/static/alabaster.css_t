@@ -561,6 +561,13 @@ a:hover tt, a:hover code {
     }
 }
 
+@media screen and (min-width: 876px) {
+    div.sphinxsidebar {
+        position: fixed;
+        margin-left: 0;
+    }
+}
+
 
 /* misc. */
 
