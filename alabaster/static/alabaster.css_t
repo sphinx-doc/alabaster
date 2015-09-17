@@ -503,7 +503,7 @@ a:hover tt, a:hover code {
         display: block;
         float: none;
         width: 102.5%;
-        margin: 50px -30px 20px -30px;
+        margin: 0px -30px 20px -30px;
         padding: 10px 20px;
         background: {{ theme_narrow_sidebar_bg }};
         color: {{ theme_narrow_sidebar_fg }};
