@@ -31,7 +31,7 @@ html_theme_options = {
     'show_powered_by': True
 }
 html_theme_path = [alabaster.get_path()]
-html_static_path = ['_static']
+html_static_path = []
 html_sidebars = {
     '**': [
         'about.html',
