@@ -168,8 +168,8 @@ div.sphinxsidebar input {
 div.sphinxsidebar hr {
     border: none;
     height: 1px;
-    color: {{ theme_sidebar_link_underscore }};
-    background: {{ theme_sidebar_link_underscore }};
+    color: {{ theme_sidebar_hr }};
+    background: {{ theme_sidebar_hr }};
 
     text-align: left;
     margin-left: 0;
