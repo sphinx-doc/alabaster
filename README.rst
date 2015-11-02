@@ -435,3 +435,5 @@ Changelog
   paragraphs, look like actual paragraphs instead of all globbing together.
 * Fix incorrect notes in README re: renamed ``github_button_*`` options - the
   ``button_`` was dropped but docs did not reflect this. Thanks to Nik Nyby.
+* Fix ``sidebar_hr`` setting - stylesheet wasn't correctly referencing the
+  right variable name. Thanks to Jannis Leidel.
