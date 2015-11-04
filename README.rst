@@ -2,18 +2,21 @@
 Alabaster: a Sphinx theme
 =========================
 
-This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially as
-used in his `Requests <http://python-requests.org>`_ project), which was itself
-originally based on @mitsuhiko's theme used for `Flask
-<http://flask.pocoo.org/>`_ & related projects.
+What is Alabaster?
+==================
+
+Alabaster is a visually (c)lean, responsive, configurable theme for the `Sphinx
+<http://sphinx-doc.org>`_ documentation system. It is Python 2+3 compatible.
+
+It began as a third-party theme, and is still maintained separately, but as of
+Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
+as the default theme.
 
 Live examples of this theme can be seen on `paramiko.org
 <http://paramiko.org>`_, `fabfile.org <http://fabfile.org>`_ and `pyinvoke.org
 <http://pyinvoke.org>`_.
 
 A changelog_ can be found at the bottom of this page.
-
-Alabaster is Python 2+3 compatible.
 
 
 Features
@@ -256,8 +259,19 @@ Fonts
   monospace``.
 
 
-Additional info / background
-============================
+Project background
+==================
+
+Alabaster is a modified (with permission) version of `Kenneth Reitz's
+<http://kennethreitz.org>`_ "Kr" `Sphinx <http://sphinx-doc.org/>`_ theme (no
+official repo, but it's the one used in his `Requests
+<http://python-requests.org>`_ project). Kenneth's theme was itself originally
+based on Armin Ronacher's `Flask <http://flask.pocoo.org/>`_ theme. Many thanks
+to both for their hard work.
+
+
+Implementation notes
+====================
 
 * `Fabric #419 <https://github.com/fabric/fabric/issues/419>`_ contains a lot of
   general exposition & thoughts as I developed Alabaster, specifically with a
