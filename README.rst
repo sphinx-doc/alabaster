@@ -3,8 +3,8 @@ Alabaster: a Sphinx theme
 =========================
 
 This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially as
-used in his `Requests <http://python-requests.org>`_ project), which was
-itself originally based on @mitsuhiko's theme used for `Flask
+used in his `Requests <http://python-requests.org>`_ project), which was itself
+originally based on @mitsuhiko's theme used for `Flask
 <http://flask.pocoo.org/>`_ & related projects.
 
 Live examples of this theme can be seen on `paramiko.org
@@ -24,9 +24,9 @@ Specifically, as compared to Kenneth's theme:
 * Easy ability to install/use as a Python package (tip o' the hat to `Dave &
   Eric's sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ for
   showing the way);
-* Style tweaks, such as better code-block alignment, Gratipay and Github button
-  placement, page source link moved to footer, improved (optional)
-  related-items sidebar item, etc;
+* Style tweaks, such as better code-block alignment, Github button placement,
+  page source link moved to footer, improved (optional) related-items sidebar
+  item, etc;
 * Many customization hooks, including toggle of various sidebar & footer
   components; header/link/etc color control; etc;
 * Improved documentation for all customizations (pre-existing & new).
