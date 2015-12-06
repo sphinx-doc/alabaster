@@ -453,3 +453,5 @@ Changelog
   ``button_`` was dropped but docs did not reflect this. Thanks to Nik Nyby.
 * Fix ``sidebar_hr`` setting - stylesheet wasn't correctly referencing the
   right variable name. Thanks to Jannis Leidel.
+* Allow configuring body text-align via ``body_text_align``. Credit to Marçal
+  Solà.
