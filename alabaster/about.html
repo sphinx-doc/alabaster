@@ -3,7 +3,7 @@
   <a href="{{ pathto(master_doc) }}">
     <img class="logo" src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="Logo"/>
     {% if theme_logo_name|lower == 'true' %}
-    <h1 class="logo logo-name">{{ project }}</h2>
+    <h1 class="logo logo-name">{{ project }}</h1>
     {% endif %}
   </a>
 </p>
@@ -33,7 +33,7 @@
     <img
         alt="https://secure.travis-ci.org/{{ path }}.png?branch=master"
         src="https://secure.travis-ci.org/{{ path }}.png?branch=master"
-    >
+    />
 </a>
 </p>
 {% endif %}
