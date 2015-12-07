@@ -455,3 +455,5 @@ Changelog
   right variable name. Thanks to Jannis Leidel.
 * Allow configuring body text-align via ``body_text_align``. Credit to Marçal
   Solà.
+* Fix a handful of mismatched/unclosed HTML tags in the templates. Thanks to
+  Marvin Pinto for catch & patch.
