@@ -253,13 +253,15 @@ Fonts
 
 * ``font_family``: Font family of body text.  Defaults to ``'goudy old style',
   'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif``.
+* ``font_size``: Font size of body text. Defaults to ``17px`` (``1.0625em``).
 * ``head_font_family``: Font family of headings.  Defaults to ``'Garamond',
   'Georgia', serif``.
 * ``code_font_size``: Font size of code block text. Defaults to ``0.9em``.
 * ``code_font_family``: Font family of code block text. Defaults to
   ``'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
   monospace``.
-
+* ``caption_font_size``: Font size of caption block text. Defaults to ``font-size``.
+* ``caption_font_family``: Font family of caption block text. Defaults to ``font-family``.
 
 Project background
 ==================

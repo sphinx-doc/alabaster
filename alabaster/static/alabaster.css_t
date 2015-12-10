@@ -21,12 +21,13 @@
 
 body {
     font-family: {{ theme_font_family }};
-    font-size: 17px;
+    font-size: {{ theme_font_size }};
     background-color: white;
     color: #000;
     margin: 0;
     padding: 0;
 }
+
 
 div.document {
     width: {{ theme_page_width }};
@@ -70,6 +71,11 @@ div.footer {
 
 div.footer a {
     color: {{ theme_footer_text }};
+}
+
+p.caption {
+    font-family: {{ theme_cation_font_family }};
+    font-size: {{ theme_caption_font_size }};
 }
 
 {% if theme_show_related|lower == 'false' %}
