@@ -447,7 +447,7 @@ Changelog
   ``sidebar_width``. Their defaults are the same as the previously static
   values.
 
-0.7.7 (2015-MM-DD)
+0.7.7 (2015-12-21)
 ------------------
 
 * Add some ``margin-bottom`` to ``table.field-list p`` so field lists (e.g.
