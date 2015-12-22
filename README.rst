@@ -5,8 +5,8 @@ Alabaster: a Sphinx theme
 What is Alabaster?
 ==================
 
-Alabaster is a visually (c)lean, responsive, configurable theme for the `Sphinx
-<http://sphinx-doc.org>`_ documentation system. It is Python 2+3 compatible.
+Alabaster is a visually (c)lean, responsive, configurable theme for the
+`Sphinx`_ documentation system. It is Python 2+3 compatible.
 
 It began as a third-party theme, and is still maintained separately, but as of
 Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
@@ -269,11 +269,10 @@ Project background
 ==================
 
 Alabaster is a modified (with permission) version of `Kenneth Reitz's
-<http://kennethreitz.org>`_ "Kr" `Sphinx <http://sphinx-doc.org/>`_ theme (no
-official repo, but it's the one used in his `Requests
-<http://python-requests.org>`_ project). Kenneth's theme was itself originally
-based on Armin Ronacher's `Flask <http://flask.pocoo.org/>`_ theme. Many thanks
-to both for their hard work.
+<http://kennethreitz.org>`_ "Kr" `Sphinx`_ theme (no official repo, but it's
+the one used in his `Requests <http://python-requests.org>`_ project).
+Kenneth's theme was itself originally based on Armin Ronacher's `Flask
+<http://flask.pocoo.org/>`_ theme. Many thanks to both for their hard work.
 
 
 Implementation notes
@@ -465,3 +464,4 @@ Changelog
 
 
 .. _Codecov: https://codecov.io
+.. _Sphinx: http://sphinx-doc.org
