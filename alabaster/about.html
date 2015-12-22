@@ -37,3 +37,19 @@
 </a>
 </p>
 {% endif %}
+
+{% if theme_codecov_button|lower != 'false' %}
+{% if theme_codecov_button|lower == 'true' %}
+    {% set path = theme_github_user + '/' + theme_github_repo %}
+{% else %}
+    {% set path = theme_codecov_button %}
+{% endif %}
+<p>
+<a href="https://codecov.io/github/{{ path }}">
+    <img
+    alt="https://codecov.io/github/{{ path }}/coverage.svg?branch=master"
+    src="https://codecov.io/github/{{ path }}/coverage.svg?branch=master"
+    />
+</a>
+</p>
+{% endif %}

@@ -161,10 +161,14 @@ Variables and feature toggles
      ``$PROJECT/_static/``) to be used as the banner image instead of the
      default.
 
-* ``travis_button``: ``true``, ``false`` or a Github-style
-  ``"account/repo"`` string - used to display a Travis-CI build status
+* ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
+  string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+* ``codecov_button``: ``true``, ``false`` or a Github-style
+  ``"account/repo"`` string - used to display a `Codecov`_
+  build status button in the sidebar. If ``true``, uses your
+  ``github_(user|repo)`` settings; defaults to ``false.``
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
@@ -457,3 +461,7 @@ Changelog
   Solà.
 * Fix a handful of mismatched/unclosed HTML tags in the templates. Thanks to
   Marvin Pinto for catch & patch.
+* Add `Codecov`_ badge support to sidebar.
+
+
+.. _Codecov: https://codecov.io
