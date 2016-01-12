@@ -462,6 +462,13 @@ Changelog
   Marvin Pinto for catch & patch.
 * Add `Codecov`_ badge support to sidebar.
 
+0.7.8 (2016-MM-DD)
+------------------
+
+* Hide Github button if ``github_user`` and ``github_repo`` aren't set. This is
+  necessary since ``github_button`` defaults to True. Thanks to Sam Whited for
+  the report & Dmitry Shachnev for the patch.
+
 
 .. _Codecov: https://codecov.io
 .. _Sphinx: http://sphinx-doc.org
