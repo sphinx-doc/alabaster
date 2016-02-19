@@ -269,9 +269,10 @@ Project background
 ==================
 
 Alabaster is a modified (with permission) version of `Kenneth Reitz's
-<http://kennethreitz.org>`_ "Kr" `Sphinx`_ theme (no official repo, but it's
-the one used in his `Requests <http://python-requests.org>`_ project).
-Kenneth's theme was itself originally based on Armin Ronacher's `Flask
+<http://kennethreitz.org>`_ `"krTheme" Sphinx theme 
+<https://github.com/kennethreitz/kr-sphinx-themes>`_ (it's the one used 
+in his `Requests <http://python-requests.org>`_ project). Kenneth's 
+theme was itself originally based on Armin Ronacher's `Flask
 <http://flask.pocoo.org/>`_ theme. Many thanks to both for their hard work.
 
 
