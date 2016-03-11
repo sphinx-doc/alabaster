@@ -55,3 +55,35 @@
 </a>
 </p>
 {% endif %}
+
+{% if theme_rtd_button|lower != 'false' %}
+{% if theme_rtd_button|lower == 'true' %}
+    {% set path = theme_github_repo %}
+{% else %}
+    {% set path = theme_rtd_button %}
+{% endif %}
+<p>
+<a href="https://readthedocs.org/projects/{{ path }}/?badge=latest">
+    <img
+    alt="https://readthedocs.org/projects/{{ path }}/badge/?version=lastest"
+    src="https://readthedocs.org/projects/{{ path }}/badge/?version=lastest"
+    />
+</a>
+</p>
+{% endif %}
+
+{% if theme_pypi_button|lower != 'false' %}
+{% if theme_pypi_button|lower == 'true' %}
+    {% set path = theme_github_repo %}
+{% else %}
+    {% set path = theme_pypi_button %}
+{% endif %}
+<p>
+<a href="https://pypi.python.org/pypi/{{ path }}">
+    <img
+    alt="https://img.shields.io/pypi/v/{{ path }}.svg"
+    src="https://img.shields.io/pypi/v/{{ path }}.svg"
+    />
+</a>
+</p>
+{% endif %}
