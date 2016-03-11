@@ -169,6 +169,12 @@ Variables and feature toggles
   ``"account/repo"`` string - used to display a `Codecov`_
   build status button in the sidebar. If ``true``, uses your
   ``github_(user|repo)`` settings; defaults to ``false.``
+* ``rtd_button``: ``true``, ``false`` or ``github_repo`` string -- used to display a `ReadTheDocs`_
+  status button in the sidebar. If ``true``, uses your
+  ``github_repo`` settings; defaults to ``false.``
+* ``pypi_button``: ``true``, ``false`` or ``github_repo`` string -- used to display a `PyPi`_
+  status button in the sidebar. If ``true``, uses your
+  ``github_repo`` settings; defaults to ``false.``
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
@@ -473,3 +479,5 @@ Changelog
 
 .. _Codecov: https://codecov.io
 .. _Sphinx: http://sphinx-doc.org
+.. _ReadTheDocs: https://readthedocs.org/
+.. _PyPi: https://pypi.python.org/pypi
