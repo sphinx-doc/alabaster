@@ -469,6 +469,8 @@ Changelog
 * Hide Github button if ``github_user`` and ``github_repo`` aren't set. This is
   necessary since ``github_button`` defaults to True. Thanks to Sam Whited for
   the report & Dmitry Shachnev for the patch.
+* Use SVG version of the Travis-CI button. Thanks to Sebastian Wiesner for the
+  patch.
 
 
 .. _Codecov: https://codecov.io
