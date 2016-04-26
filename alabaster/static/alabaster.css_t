@@ -419,6 +419,11 @@ a.reference {
     border-bottom: 1px dotted {{ theme_link }};
 }
 
+/* Don't put an underline on images */
+a.image-reference {
+    border-bottom: none;
+}
+
 a.reference:hover {
     border-bottom: 1px solid {{ theme_link_hover }};
 }
