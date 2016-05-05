@@ -473,6 +473,10 @@ Changelog
   the patch.
 * #41: Update the Github buttons to use a newer linked image & change the link
   to their docs. Thanks to Tomi Hukkalainen.
+* #45 (via #46) Tweak styling of nested bullet lists to prevent an issue where
+  they all collapse to the same indent level when viewed on smaller display
+  sizes. Thanks to Bram Geron for catch & patch, and to Jochen Kupperschmidt
+  for review/discussion.
 
 
 .. _Codecov: https://codecov.io
