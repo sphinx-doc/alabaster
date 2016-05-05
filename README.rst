@@ -201,6 +201,10 @@ Variables and feature toggles
   Defaults to ``940px``.
 * ``sidebar_width``: CSS width specifier controlling default sidebar width.
   Defaults to ``220px``.
+* ``fixed_sidebar``: Makes the sidebar 'fixed' or pinned in place, so that the
+  main body of the page scrolls but the sidebar remains visible. (Applies only
+  to desktop window sizes; the mobile view is unaffected.) Defaults to
+  ``false``.
 
 Style colors
 ------------

@@ -513,7 +513,11 @@ a:hover tt, a:hover code {
         display: block;
         float: none;
         width: 102.5%;
+        {%- if theme_fixed_sidebar|lower == 'true' %}
         margin: -20px -30px 20px -30px;
+        {%- else %}
+        margin: 50px -30px -20px -30px;
+        {%- endif %}
         padding: 10px 20px;
         background: {{ theme_narrow_sidebar_bg }};
         color: {{ theme_narrow_sidebar_fg }};
@@ -571,12 +575,14 @@ a:hover tt, a:hover code {
     }
 }
 
+{%- if theme_fixed_sidebar|lower == 'true' %}
 @media screen and (min-width: 876px) {
     div.sphinxsidebar {
         position: fixed;
         margin-left: 0;
     }
 }
+{%- endif %}
 
 
 /* misc. */

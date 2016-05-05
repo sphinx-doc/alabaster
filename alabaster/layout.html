@@ -14,6 +14,7 @@
 
 {# Nav should appear before content, not after #}
 {%- block content %}
+{%- if theme_fixed_sidebar|lower == 'true' %}
   <div class="document">
     {{ sidebar() }}
     {%- block document %}
@@ -31,6 +32,9 @@
     {%- endblock %}
     <div class="clearer"></div>
   </div>
+{%- else %}
+{{ super() }}
+{%- endif %}
 {%- endblock %}
 
 {%- block footer %}
