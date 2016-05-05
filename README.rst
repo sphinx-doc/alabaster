@@ -471,6 +471,8 @@ Changelog
   Thanks to Sam Whited for the report & Dmitry Shachnev for the patch.
 * #75: Use SVG version of the Travis-CI button. Thanks to Sebastian Wiesner for
   the patch.
+* #41: Update the Github buttons to use a newer linked image & change the link
+  to their docs. Thanks to Tomi Hukkalainen.
 
 
 .. _Codecov: https://codecov.io
