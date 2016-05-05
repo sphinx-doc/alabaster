@@ -509,6 +509,8 @@ Changelog
 * #78: Add custom stylesheet support. (This release will thus be the last to
   merge simplistic style tweaks as feature toggles - only thorny CSS issues or
   actual template-related changes will be merged afterwards.)
+* #65: Wrap the sidebar's "Navigation" header in Sphinx's translation helper so
+  it gets translated if possible. Thanks to ``@uralbash``.
 
 
 .. _Codecov: https://codecov.io
