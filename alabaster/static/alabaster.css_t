@@ -45,6 +45,8 @@ div.bodywrapper {
 
 div.sphinxsidebar {
     width: {{ theme_sidebar_width }};
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 hr {
@@ -92,11 +94,6 @@ div.sphinxsidebar a {
 
 div.sphinxsidebar a:hover {
     border-bottom: 1px solid {{ theme_sidebar_link_underscore }};
-}
-
-div.sphinxsidebar {
-    font-size: 14px;
-    line-height: 1.5;
 }
 
 div.sphinxsidebarwrapper {
@@ -365,7 +362,7 @@ table.field-list p {
 }
 
 table.footnote td.label {
-    width: 0px;
+    width: .1px;
     padding: 0.3em 0 0.3em 0.5em;
 }
 
@@ -388,6 +385,7 @@ blockquote {
 }
 
 ul, ol {
+    /* Matches the 30px from the narrow-screen "li > ul" selector below */
     margin: 10px 0 10px 30px;
     padding: 0;
 }
@@ -474,6 +472,11 @@ a:hover tt, a:hover code {
     	margin-left: 0;
     }
 
+	li > ul {
+        /* Matches the 30px from the "ul, ol" selector above */
+		margin-left: 30px;
+	}
+
     .document {
     	width: auto;
     }
@@ -516,7 +519,11 @@ a:hover tt, a:hover code {
         display: block;
         float: none;
         width: 102.5%;
+        {%- if theme_fixed_sidebar|lower == 'true' %}
+        margin: -20px -30px 20px -30px;
+        {%- else %}
         margin: 50px -30px -20px -30px;
+        {%- endif %}
         padding: 10px 20px;
         background: {{ theme_narrow_sidebar_bg }};
         color: {{ theme_narrow_sidebar_fg }};
@@ -573,6 +580,15 @@ a:hover tt, a:hover code {
         display: none;
     }
 }
+
+{%- if theme_fixed_sidebar|lower == 'true' %}
+@media screen and (min-width: 876px) {
+    div.sphinxsidebar {
+        position: fixed;
+        margin-left: 0;
+    }
+}
+{%- endif %}
 
 
 /* misc. */
