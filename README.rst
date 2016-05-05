@@ -5,8 +5,8 @@ Alabaster: a Sphinx theme
 What is Alabaster?
 ==================
 
-Alabaster is a visually (c)lean, responsive, configurable theme for the `Sphinx
-<http://sphinx-doc.org>`_ documentation system. It is Python 2+3 compatible.
+Alabaster is a visually (c)lean, responsive, configurable theme for the
+`Sphinx`_ documentation system. It is Python 2+3 compatible.
 
 It began as a third-party theme, and is still maintained separately, but as of
 Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
@@ -22,14 +22,12 @@ A changelog_ can be found at the bottom of this page.
 Features
 ========
 
-Specifically, as compared to Kenneth's theme:
-
 * Easy ability to install/use as a Python package (tip o' the hat to `Dave &
   Eric's sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ for
   showing the way);
-* Style tweaks, such as better code-block alignment, Github button placement,
-  page source link moved to footer, improved (optional) related-items sidebar
-  item, etc;
+* Style tweaks compared to the source themes, such as better code-block
+  alignment, Github button placement, page source link moved to footer,
+  improved (optional) related-items sidebar item, and many more;
 * Many customization hooks, including toggle of various sidebar & footer
   components; header/link/etc color control; etc;
 * Improved documentation for all customizations (pre-existing & new).
@@ -105,6 +103,25 @@ docs for 'html_static_path'
     html_static_path = ['_static']
 
 
+Custom stylesheet
+=================
+
+If you need to modify Alabaster's default CSS styles in a way not covered by
+the theme options from the next section, you may provide a custom CSS
+stylesheet as follows:
+
+* Create a file named ``custom.css`` anywhere you prefer (typically
+  ``_static/``, but this is solely convention) containing your desired
+  overrides to the CSS found in Alabaster's ``static/alabaster_css_t``.
+* Set the core Sphinx option `html_static_path
+  <http://www.sphinx-doc.org/en/stable/config.html#confval-html_static_path>`_
+  to either that file's path, or the directory it lives within.
+
+.. note::
+    As of Alabaster 0.7.8, we will stop accepting feature requests which are
+    more appropriately solved by using this functionality instead.
+
+
 Theme options
 =============
 
@@ -147,8 +164,8 @@ Variables and feature toggles
 
    * If ``true``, requires that you set ``github_user`` and ``github_repo``.
    * See also these other related options, which behave as described in
-     `Github Buttons' README
-     <https://github.com/mdo/github-buttons#usage>`_:
+     `Github Buttons' documentation
+     <https://ghbtns.com>`_:
 
       * ``github_type``: Defaults to ``watch``.
       * ``github_count``: Defaults to ``true``.
@@ -161,10 +178,14 @@ Variables and feature toggles
      ``$PROJECT/_static/``) to be used as the banner image instead of the
      default.
 
-* ``travis_button``: ``true``, ``false`` or a Github-style
-  ``"account/repo"`` string - used to display a Travis-CI build status
+* ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
+  string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+* ``codecov_button``: ``true``, ``false`` or a Github-style
+  ``"account/repo"`` string - used to display a `Codecov`_
+  build status button in the sidebar. If ``true``, uses your
+  ``github_(user|repo)`` settings; defaults to ``false.``
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
@@ -197,6 +218,10 @@ Variables and feature toggles
   Defaults to ``940px``.
 * ``sidebar_width``: CSS width specifier controlling default sidebar width.
   Defaults to ``220px``.
+* ``fixed_sidebar``: Makes the sidebar 'fixed' or pinned in place, so that the
+  main body of the page scrolls but the sidebar remains visible. (Applies only
+  to desktop window sizes; the mobile view is unaffected.) Defaults to
+  ``false``.
 
 Style colors
 ------------
@@ -253,23 +278,25 @@ Fonts
 
 * ``font_family``: Font family of body text.  Defaults to ``'goudy old style',
   'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif``.
+* ``font_size``: Font size of body text. Defaults to ``17px`` (``1.0625em``).
 * ``head_font_family``: Font family of headings.  Defaults to ``'Garamond',
   'Georgia', serif``.
 * ``code_font_size``: Font size of code block text. Defaults to ``0.9em``.
 * ``code_font_family``: Font family of code block text. Defaults to
   ``'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
   monospace``.
-
+* ``caption_font_size``: Font size of caption block text. Defaults to ``font-size``.
+* ``caption_font_family``: Font family of caption block text. Defaults to ``font-family``.
 
 Project background
 ==================
 
 Alabaster is a modified (with permission) version of `Kenneth Reitz's
-<http://kennethreitz.org>`_ "Kr" `Sphinx <http://sphinx-doc.org/>`_ theme (no
-official repo, but it's the one used in his `Requests
-<http://python-requests.org>`_ project). Kenneth's theme was itself originally
-based on Armin Ronacher's `Flask <http://flask.pocoo.org/>`_ theme. Many thanks
-to both for their hard work.
+<http://kennethreitz.org>`_ `"krTheme" Sphinx theme 
+<https://github.com/kennethreitz/kr-sphinx-themes>`_ (it's the one used 
+in his `Requests <http://python-requests.org>`_ project). Kenneth's 
+theme was itself originally based on Armin Ronacher's `Flask
+<http://flask.pocoo.org/>`_ theme. Many thanks to both for their hard work.
 
 
 Implementation notes
@@ -443,7 +470,7 @@ Changelog
   ``sidebar_width``. Their defaults are the same as the previously static
   values.
 
-0.7.7 (2015-MM-DD)
+0.7.7 (2015-12-21)
 ------------------
 
 * Add some ``margin-bottom`` to ``table.field-list p`` so field lists (e.g.
@@ -457,3 +484,29 @@ Changelog
   Solà.
 * Fix a handful of mismatched/unclosed HTML tags in the templates. Thanks to
   Marvin Pinto for catch & patch.
+* Add `Codecov`_ badge support to sidebar.
+
+0.7.8 (2016-MM-DD)
+------------------
+
+* #51 (via #67): Hide Github button if ``github_user`` and ``github_repo``
+  aren't set. This is necessary since ``github_button`` defaults to True.
+  Thanks to Sam Whited for the report & Dmitry Shachnev for the patch.
+* #75: Use SVG version of the Travis-CI button. Thanks to Sebastian Wiesner for
+  the patch.
+* #41: Update the Github buttons to use a newer linked image & change the link
+  to their docs. Thanks to Tomi Hukkalainen.
+* #45 (via #46) Tweak styling of nested bullet lists to prevent an issue where
+  they all collapse to the same indent level when viewed on smaller display
+  sizes. Thanks to Bram Geron for catch & patch, and to Jochen Kupperschmidt
+  for review/discussion.
+* #44 (partial; via #57) Add an opt-in fixed sidebar behavior for users who
+  prefer a sidebar that never scrolls out of view. Credit: Joe Cross.
+* #61: Set a small-but-nonzero footnote width to work around a common browser
+  display bug. Thanks to Konstantin Molchanov for catch & patch.
+* #64: Add config options for font size and caption font size/family. Credit:
+  Marçal Solà.
+
+
+.. _Codecov: https://codecov.io
+.. _Sphinx: http://sphinx-doc.org
