@@ -483,6 +483,8 @@ Changelog
   for review/discussion.
 * #44 (partial; via #57) Add an opt-in fixed sidebar behavior for users who
   prefer a sidebar that never scrolls out of view. Credit: Joe Cross.
+* #61: Set a small-but-nonzero footnote width to work around a common browser
+  display bug. Thanks to Konstantin Molchanov for catch & patch.
 
 
 .. _Codecov: https://codecov.io
