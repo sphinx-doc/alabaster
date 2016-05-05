@@ -2,18 +2,21 @@
 Alabaster: a Sphinx theme
 =========================
 
-This theme is a modified "Kr" Sphinx theme from @kennethreitz (especially as
-used in his `Requests <https://python-requests.org>`_ project), which was
-itself originally based on @mitsuhiko's theme used for `Flask
-<http://flask.pocoo.org/>`_ & related projects.
+What is Alabaster?
+==================
+
+Alabaster is a visually (c)lean, responsive, configurable theme for the
+`Sphinx`_ documentation system. It is Python 2+3 compatible.
+
+It began as a third-party theme, and is still maintained separately, but as of
+Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
+as the default theme.
 
 Live examples of this theme can be seen on `paramiko.org
 <http://paramiko.org>`_, `fabfile.org <http://fabfile.org>`_ and `pyinvoke.org
 <http://pyinvoke.org>`_.
 
 A changelog_ can be found at the bottom of this page.
-
-Alabaster is Python 2+3 compatible.
 
 
 Features
@@ -24,9 +27,9 @@ Specifically, as compared to Kenneth's theme:
 * Easy ability to install/use as a Python package (tip o' the hat to `Dave &
   Eric's sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ for
   showing the way);
-* Style tweaks, such as better code-block alignment, Gratipay and Github button
-  placement, page source link moved to footer, improved (optional)
-  related-items sidebar item, etc;
+* Style tweaks, such as better code-block alignment, Github button placement,
+  page source link moved to footer, improved (optional) related-items sidebar
+  item, etc;
 * Many customization hooks, including toggle of various sidebar & footer
   components; header/link/etc color control; etc;
 * Improved documentation for all customizations (pre-existing & new).
@@ -132,6 +135,8 @@ Variables and feature toggles
   project name itself. Defaults to ``false``.
 * ``logo_text_align``: Which CSS ``text-align`` value to use for logo text
   (if there is any.)
+* ``body_text_align``: Which CSS ``text-align`` value to use for body text
+  (if there is any.)
 * ``description``: Text blurb about your project, to appear under the logo.
 * ``description_font_style``: Which CSS ``font-style`` to use for description
   text. Defaults to ``normal``.
@@ -145,8 +150,8 @@ Variables and feature toggles
      `Github Buttons' documentation
      <https://ghbtns.com>`_:
 
-      * ``github_button_type``: Defaults to ``watch``.
-      * ``github_button_count``: Defaults to ``true``.
+      * ``github_type``: Defaults to ``watch``.
+      * ``github_count``: Defaults to ``true``.
 
 * ``github_banner``: ``true`` or ``false`` (default: ``false``) - whether to
   apply a 'Fork me on Github' banner in the top right corner of the page.
@@ -156,10 +161,14 @@ Variables and feature toggles
      ``$PROJECT/_static/``) to be used as the banner image instead of the
      default.
 
-* ``travis_button``: ``true``, ``false`` or a Github-style
-  ``"account/repo"`` string - used to display a Travis-CI build status
+* ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
+  string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+* ``codecov_button``: ``true``, ``false`` or a Github-style
+  ``"account/repo"`` string - used to display a `Codecov`_
+  build status button in the sidebar. If ``true``, uses your
+  ``github_(user|repo)`` settings; defaults to ``false.``
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
@@ -256,8 +265,19 @@ Fonts
   monospace``.
 
 
-Additional info / background
-============================
+Project background
+==================
+
+Alabaster is a modified (with permission) version of `Kenneth Reitz's
+<http://kennethreitz.org>`_ `"krTheme" Sphinx theme 
+<https://github.com/kennethreitz/kr-sphinx-themes>`_ (it's the one used 
+in his `Requests <http://python-requests.org>`_ project). Kenneth's 
+theme was itself originally based on Armin Ronacher's `Flask
+<http://flask.pocoo.org/>`_ theme. Many thanks to both for their hard work.
+
+
+Implementation notes
+====================
 
 * `Fabric #419 <https://github.com/fabric/fabric/issues/419>`_ contains a lot of
   general exposition & thoughts as I developed Alabaster, specifically with a
@@ -413,7 +433,7 @@ Changelog
 * Remove an orphaned ``</li>`` from the footer 'show source' section. Credit to
   Marcin Wojdyr.
 
-0.7.6 (2015-MM-DD)
+0.7.6 (2015-06-22)
 ------------------
 
 * Update how ``setup.py`` handles the ``README.rst`` file - load it explicitly
@@ -426,3 +446,32 @@ Changelog
 * Expose page & sidebar widths as theme options ``page_width`` and
   ``sidebar_width``. Their defaults are the same as the previously static
   values.
+
+0.7.7 (2015-12-21)
+------------------
+
+* Add some ``margin-bottom`` to ``table.field-list p`` so field lists (e.g.
+  Python function parameter lists in docstrings) written as multiple
+  paragraphs, look like actual paragraphs instead of all globbing together.
+* Fix incorrect notes in README re: renamed ``github_button_*`` options - the
+  ``button_`` was dropped but docs did not reflect this. Thanks to Nik Nyby.
+* Fix ``sidebar_hr`` setting - stylesheet wasn't correctly referencing the
+  right variable name. Thanks to Jannis Leidel.
+* Allow configuring body text-align via ``body_text_align``. Credit to Marçal
+  Solà.
+* Fix a handful of mismatched/unclosed HTML tags in the templates. Thanks to
+  Marvin Pinto for catch & patch.
+* Add `Codecov`_ badge support to sidebar.
+
+0.7.8 (2016-MM-DD)
+------------------
+
+* Hide Github button if ``github_user`` and ``github_repo`` aren't set. This is
+  necessary since ``github_button`` defaults to True. Thanks to Sam Whited for
+  the report & Dmitry Shachnev for the patch.
+* Use SVG version of the Travis-CI button. Thanks to Sebastian Wiesner for the
+  patch.
+
+
+.. _Codecov: https://codecov.io
+.. _Sphinx: http://sphinx-doc.org
