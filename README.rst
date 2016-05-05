@@ -511,6 +511,9 @@ Changelog
   actual template-related changes will be merged afterwards.)
 * #65: Wrap the sidebar's "Navigation" header in Sphinx's translation helper so
   it gets translated if possible. Thanks to ``@uralbash``.
+* #77: Fix image link styling to remove a bottom border which appears in some
+  situations. Thanks to Eric Holscher for the patch & ``@barbara-sfx`` for the
+  report.
 
 
 .. _Codecov: https://codecov.io
