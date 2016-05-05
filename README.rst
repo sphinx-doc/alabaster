@@ -5,8 +5,8 @@ Alabaster: a Sphinx theme
 What is Alabaster?
 ==================
 
-Alabaster is a visually (c)lean, responsive, configurable theme for the `Sphinx
-<http://sphinx-doc.org>`_ documentation system. It is Python 2+3 compatible.
+Alabaster is a visually (c)lean, responsive, configurable theme for the
+`Sphinx`_ documentation system. It is Python 2+3 compatible.
 
 It began as a third-party theme, and is still maintained separately, but as of
 Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
@@ -135,6 +135,8 @@ Variables and feature toggles
   project name itself. Defaults to ``false``.
 * ``logo_text_align``: Which CSS ``text-align`` value to use for logo text
   (if there is any.)
+* ``body_text_align``: Which CSS ``text-align`` value to use for body text
+  (if there is any.)
 * ``description``: Text blurb about your project, to appear under the logo.
 * ``description_font_style``: Which CSS ``font-style`` to use for description
   text. Defaults to ``normal``.
@@ -145,8 +147,8 @@ Variables and feature toggles
 
    * If ``true``, requires that you set ``github_user`` and ``github_repo``.
    * See also these other related options, which behave as described in
-     `Github Buttons' README
-     <https://github.com/mdo/github-buttons#usage>`_:
+     `Github Buttons' documentation
+     <https://ghbtns.com>`_:
 
       * ``github_type``: Defaults to ``watch``.
       * ``github_count``: Defaults to ``true``.
@@ -159,10 +161,14 @@ Variables and feature toggles
      ``$PROJECT/_static/``) to be used as the banner image instead of the
      default.
 
-* ``travis_button``: ``true``, ``false`` or a Github-style
-  ``"account/repo"`` string - used to display a Travis-CI build status
+* ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
+  string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+* ``codecov_button``: ``true``, ``false`` or a Github-style
+  ``"account/repo"`` string - used to display a `Codecov`_
+  build status button in the sidebar. If ``true``, uses your
+  ``github_(user|repo)`` settings; defaults to ``false.``
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
@@ -195,6 +201,10 @@ Variables and feature toggles
   Defaults to ``940px``.
 * ``sidebar_width``: CSS width specifier controlling default sidebar width.
   Defaults to ``220px``.
+* ``fixed_sidebar``: Makes the sidebar 'fixed' or pinned in place, so that the
+  main body of the page scrolls but the sidebar remains visible. (Applies only
+  to desktop window sizes; the mobile view is unaffected.) Defaults to
+  ``false``.
 
 Style colors
 ------------
@@ -263,11 +273,11 @@ Project background
 ==================
 
 Alabaster is a modified (with permission) version of `Kenneth Reitz's
-<http://kennethreitz.org>`_ "Kr" `Sphinx <http://sphinx-doc.org/>`_ theme (no
-official repo, but it's the one used in his `Requests
-<http://python-requests.org>`_ project). Kenneth's theme was itself originally
-based on Armin Ronacher's `Flask <http://flask.pocoo.org/>`_ theme. Many thanks
-to both for their hard work.
+<http://kennethreitz.org>`_ `"krTheme" Sphinx theme 
+<https://github.com/kennethreitz/kr-sphinx-themes>`_ (it's the one used 
+in his `Requests <http://python-requests.org>`_ project). Kenneth's 
+theme was itself originally based on Armin Ronacher's `Flask
+<http://flask.pocoo.org/>`_ theme. Many thanks to both for their hard work.
 
 
 Implementation notes
@@ -441,7 +451,7 @@ Changelog
   ``sidebar_width``. Their defaults are the same as the previously static
   values.
 
-0.7.7 (2015-MM-DD)
+0.7.7 (2015-12-21)
 ------------------
 
 * Add some ``margin-bottom`` to ``table.field-list p`` so field lists (e.g.
@@ -451,3 +461,29 @@ Changelog
   ``button_`` was dropped but docs did not reflect this. Thanks to Nik Nyby.
 * Fix ``sidebar_hr`` setting - stylesheet wasn't correctly referencing the
   right variable name. Thanks to Jannis Leidel.
+* Allow configuring body text-align via ``body_text_align``. Credit to Marçal
+  Solà.
+* Fix a handful of mismatched/unclosed HTML tags in the templates. Thanks to
+  Marvin Pinto for catch & patch.
+* Add `Codecov`_ badge support to sidebar.
+
+0.7.8 (2016-MM-DD)
+------------------
+
+* #51 (via #67): Hide Github button if ``github_user`` and ``github_repo``
+  aren't set. This is necessary since ``github_button`` defaults to True.
+  Thanks to Sam Whited for the report & Dmitry Shachnev for the patch.
+* #75: Use SVG version of the Travis-CI button. Thanks to Sebastian Wiesner for
+  the patch.
+* #41: Update the Github buttons to use a newer linked image & change the link
+  to their docs. Thanks to Tomi Hukkalainen.
+* #45 (via #46) Tweak styling of nested bullet lists to prevent an issue where
+  they all collapse to the same indent level when viewed on smaller display
+  sizes. Thanks to Bram Geron for catch & patch, and to Jochen Kupperschmidt
+  for review/discussion.
+* #44 (partial; via #57) Add an opt-in fixed sidebar behavior for users who
+  prefer a sidebar that never scrolls out of view. Credit: Joe Cross.
+
+
+.. _Codecov: https://codecov.io
+.. _Sphinx: http://sphinx-doc.org
