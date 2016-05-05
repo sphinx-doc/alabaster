@@ -424,7 +424,7 @@ a.reference {
 }
 
 /* Don't put an underline on images */
-a.image-reference {
+a.image-reference, a.image-reference:hover {
     border-bottom: none;
 }
 
