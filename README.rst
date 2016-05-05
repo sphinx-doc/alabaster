@@ -487,6 +487,8 @@ Changelog
   prefer a sidebar that never scrolls out of view. Credit: Joe Cross.
 * #61: Set a small-but-nonzero footnote width to work around a common browser
   display bug. Thanks to Konstantin Molchanov for catch & patch.
+* #64: Add config options for font size and caption font size/family. Credit:
+  Marçal Solà.
 
 
 .. _Codecov: https://codecov.io
