@@ -481,6 +481,8 @@ Changelog
   they all collapse to the same indent level when viewed on smaller display
   sizes. Thanks to Bram Geron for catch & patch, and to Jochen Kupperschmidt
   for review/discussion.
+* #44 (partial; via #57) Add an opt-in fixed sidebar behavior for users who
+  prefer a sidebar that never scrolls out of view. Credit: Joe Cross.
 
 
 .. _Codecov: https://codecov.io
