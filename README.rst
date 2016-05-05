@@ -486,7 +486,7 @@ Changelog
   Marvin Pinto for catch & patch.
 * Add `Codecov`_ badge support to sidebar.
 
-0.7.8 (2016-MM-DD)
+0.7.8 (2016-05-05)
 ------------------
 
 * #51 (via #67): Hide Github button if ``github_user`` and ``github_repo``
