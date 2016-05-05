@@ -22,14 +22,12 @@ A changelog_ can be found at the bottom of this page.
 Features
 ========
 
-Specifically, as compared to Kenneth's theme:
-
 * Easy ability to install/use as a Python package (tip o' the hat to `Dave &
   Eric's sphinx_rtd_theme <https://github.com/snide/sphinx_rtd_theme>`_ for
   showing the way);
-* Style tweaks, such as better code-block alignment, Github button placement,
-  page source link moved to footer, improved (optional) related-items sidebar
-  item, etc;
+* Style tweaks compared to the source themes, such as better code-block
+  alignment, Github button placement, page source link moved to footer,
+  improved (optional) related-items sidebar item, and many more;
 * Many customization hooks, including toggle of various sidebar & footer
   components; header/link/etc color control; etc;
 * Improved documentation for all customizations (pre-existing & new).
@@ -103,6 +101,25 @@ docs for 'html_static_path'
 .. code-block:: python
 
     html_static_path = ['_static']
+
+
+Custom stylesheet
+=================
+
+If you need to modify Alabaster's default CSS styles in a way not covered by
+the theme options from the next section, you may provide a custom CSS
+stylesheet as follows:
+
+* Create a file named ``custom.css`` anywhere you prefer (typically
+  ``_static/``, but this is solely convention) containing your desired
+  overrides to the CSS found in Alabaster's ``static/alabaster_css_t``.
+* Set the core Sphinx option `html_static_path
+  <http://www.sphinx-doc.org/en/stable/config.html#confval-html_static_path>`_
+  to either that file's path, or the directory it lives within.
+
+.. note::
+    As of Alabaster 0.7.8, we will stop accepting feature requests which are
+    more appropriately solved by using this functionality instead.
 
 
 Theme options
