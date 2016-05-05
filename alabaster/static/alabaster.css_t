@@ -58,6 +58,10 @@ div.body {
     padding: 0 30px 0 30px;
 }
 
+div.body > .section {
+    text-align: {{ theme_body_text_align }};
+}
+
 div.footer {
     width: {{ theme_page_width }};
     margin: 20px auto 30px auto;
@@ -165,8 +169,8 @@ div.sphinxsidebar input {
 div.sphinxsidebar hr {
     border: none;
     height: 1px;
-    color: {{ theme_sidebar_link_underscore }};
-    background: {{ theme_sidebar_link_underscore }};
+    color: {{ theme_sidebar_hr }};
+    background: {{ theme_sidebar_hr }};
 
     text-align: left;
     margin-left: 0;
@@ -375,6 +379,7 @@ blockquote {
 }
 
 ul, ol {
+    /* Matches the 30px from the narrow-screen "li > ul" selector below */
     margin: 10px 0 10px 30px;
     padding: 0;
 }
@@ -460,6 +465,11 @@ a:hover tt, a:hover code {
     ul {
     	margin-left: 0;
     }
+
+	li > ul {
+        /* Matches the 30px from the "ul, ol" selector above */
+		margin-left: 30px;
+	}
 
     .document {
     	width: auto;
