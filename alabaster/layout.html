@@ -2,6 +2,7 @@
 
 {%- block extrahead %}
   {{ super() }}
+  <link rel="stylesheet" href="{{ pathto('_static/custom.css', 1) }}" type="text/css" />
   {% if theme_touch_icon %}
     <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
   {% endif %}
@@ -11,6 +12,31 @@
 {# Disable base theme's top+bottom related navs; we have our own in sidebar #}
 {%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% endblock %}
+
+{# Nav should appear before content, not after #}
+{%- block content %}
+{%- if theme_fixed_sidebar|lower == 'true' %}
+  <div class="document">
+    {{ sidebar() }}
+    {%- block document %}
+      <div class="documentwrapper">
+      {%- if render_sidebar %}
+        <div class="bodywrapper">
+      {%- endif %}
+          <div class="body" role="main">
+            {% block body %} {% endblock %}
+          </div>
+      {%- if render_sidebar %}
+        </div>
+      {%- endif %}
+      </div>
+    {%- endblock %}
+    <div class="clearer"></div>
+  </div>
+{%- else %}
+{{ super() }}
+{%- endif %}
+{%- endblock %}
 
 {%- block footer %}
     <div class="footer">
