@@ -506,6 +506,9 @@ Changelog
   display bug. Thanks to Konstantin Molchanov for catch & patch.
 * #64: Add config options for font size and caption font size/family. Credit:
   Marçal Solà.
+* #78: Add custom stylesheet support. (This release will thus be the last to
+  merge simplistic style tweaks as feature toggles - only thorny CSS issues or
+  actual template-related changes will be merged afterwards.)
 
 
 .. _Codecov: https://codecov.io
