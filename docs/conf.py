@@ -28,6 +28,5 @@ html_theme_options = {
     'fixed_sidebar': True,
 }
 
-# Dogfood
-#extensions.append('releases')
-#releases_github_path = 'bitprophet/releases'
+extensions.append('releases')
+releases_github_path = 'bitprophet/releases'
