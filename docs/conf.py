@@ -30,3 +30,6 @@ html_theme_options = {
 
 extensions.append('releases')
 releases_github_path = 'bitprophet/releases'
+# Our pre-0.x releases are unstable / mix bugs+features
+releases_unstable_prehistory = True
+releases_debug = True
