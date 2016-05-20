@@ -65,10 +65,11 @@ Changelog
   links and making its display controllable via the new ``show_related`` theme
   option (which defaults to ``false`` for backwards compatibility).
 
-  **NOTE**: to enable the related-links nav, you'll need to set
-  ``show_related`` to ``true`` **and** add ``relations.html`` to your
-  ``html_sidebars`` (we've updated the example config in this README to
-  indicate this for new installs).
+  .. note::
+    To enable the related-links nav, you'll need to set ``show_related`` to
+    ``true`` **and** add ``relations.html`` to your ``html_sidebars`` (we've
+    updated the example config in this README to indicate this for new
+    installs).
 
   Thanks to Tomi Pieviläinen for the bug report.
 * Update the "Fork me on Github" banner image to use an ``https://`` URI so
