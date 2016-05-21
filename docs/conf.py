@@ -12,6 +12,7 @@ copyright = u'%d Jeff Forcier' % year
 
 exclude_patterns = ['_build']
 
+html_theme = 'alabaster'
 html_sidebars = {
     '**': [
         'about.html',
