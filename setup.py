@@ -20,7 +20,7 @@ setup(
     long_description=readme,
     author='Jeff Forcier',
     author_email='jeff@bitprophet.org',
-    url='https://alabaster.readthedocs.io
+    url='https://alabaster.readthedocs.io',
     packages=['alabaster'],
     include_package_data=True,
     classifiers=[
