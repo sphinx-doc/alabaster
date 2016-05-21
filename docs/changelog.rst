@@ -3,7 +3,8 @@ Changelog
 =========
 
 * :support:`7` Generate real documentation site, both because the README is
-  just too big now, and so we can dogfood because that's always nice.
+  just too big now, and so we can `eat our own dog food
+  <https://en.wikipedia.org/wiki/Eating_your_own_dog_food>`_.
 * :release:`0.7.8 <2016-05-05>`
 * #51 (via #67): Hide Github button if ``github_user`` and ``github_repo``
   aren't set. This is necessary since ``github_button`` defaults to True.
