@@ -126,6 +126,12 @@ Variables and feature toggles
 * ``touch_icon``: Path to an image (as with ``logo``, relative to
   ``$PROJECT/_static/``) to be used for an iOS application icon, for when
   pages are saved to an iOS device's home screen via Safari.
+* ``canonical_url``: If set, is used as the base URL (set before the relative
+  path/pagename) for a ``<link rel="canonical">`` `canonical URL
+  <https://support.google.com/webmasters/answer/139066?rd=1>`_ header tag.
+
+  .. note:: This value must end with a trailing slash.
+
 * ``extra_nav_links``: Dictionary mapping link names to link targets; these
   will be added in a UL below the main sidebar navigation (provided you've
   enabled ``navigation.html``.) Useful for static links outside your Sphinx

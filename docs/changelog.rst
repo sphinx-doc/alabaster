@@ -2,6 +2,8 @@
 Changelog
 =========
 
+* :feature:`80` Add support for ``<link rel="canonical">`` (i.e. canonical
+  URLs). Thanks to Ben Gamari for the patch.
 * :support:`7` Generate real documentation site, both because the README is
   just too big now, and so we can `eat our own dog food
   <https://en.wikipedia.org/wiki/Eating_your_own_dog_food>`_.
