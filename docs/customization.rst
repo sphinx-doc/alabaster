@@ -140,6 +140,10 @@ Variables and feature toggles
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
   copies of your navigation on your landing page.
+* ``sidebar_collapse``: Boolean determining whether  all TOC entries that 
+   are not ancestors of the current page are collapsed.
+   You can read more about this in the Sphinx toctree 
+   `docs <http://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
 * ``show_powered_by``: Boolean controlling display of the ``Powered by
   Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When ``true``, is
   displayed next to the copyright information; when ``false``, is hidden.
