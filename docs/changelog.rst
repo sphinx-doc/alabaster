@@ -2,6 +2,8 @@
 Changelog
 =========
 
+* :feature:`83` Expose Sphinx's toctree ``collapse`` option as the new
+  ``sidebar_collapse`` config option. Credit: Eric Holscher.
 * :feature:`80` Add support for ``<link rel="canonical">`` (i.e. canonical
   URLs). Thanks to Ben Gamari for the patch.
 * :support:`7` Generate real documentation site, both because the README is
