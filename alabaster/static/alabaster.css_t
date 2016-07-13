@@ -1,4 +1,5 @@
 {% set theme_body_bg = theme_body_bg or theme_base_bg %}
+{% set theme_code_highlight_bg = theme_code_highlight_bg or theme_body_bg %}
 {% set theme_sidebar_header = theme_sidebar_header or theme_gray_1 %}
 {% set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
 {% set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
@@ -262,7 +263,7 @@ div.admonition p.last {
 }
 
 div.highlight {
-    background-color: white;
+    background-color: {{ theme_code_highlight_bg }};
 }
 
 dt:target, .highlight {
