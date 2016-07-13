@@ -400,6 +400,10 @@ pre {
     line-height: 1.3em;
 }
 
+div.viewcode-block:target {
+    background: {{ theme_viewcode_target_bg }};
+}
+
 dl pre, blockquote pre, li pre {
     margin-left: 0;
     padding-left: 30px;
