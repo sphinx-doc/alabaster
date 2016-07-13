@@ -4,18 +4,45 @@
 {% set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
 {% set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
 
-{% set theme_note_bg = theme_note_bg or theme_gray_2 %}
 {% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
 {% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
 
+
+{# set up admonition styling #}
+{# - basic level #}
 {% set admonition_xref_bg = theme_admonition_xref_bg or theme_xref_bg %}
+{% set theme_admonition_bg = theme_admonition_bg or theme_gray_2 %}
+{% set theme_note_bg = theme_note_bg or theme_gray_2 %}
+{% set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
+
+{# - critical level #}
+{% set theme_danger_bg = theme_danger_bg or theme_pink_1 %}
+{% set theme_danger_border = theme_danger_border or theme_pink_2 %}
+{% set theme_danger_shadow = theme_danger_shadow or theme_pink_3 %}
+
+{% set theme_error_bg = theme_error_bg or theme_pink_1 %}
+{% set theme_error_border = theme_error_border or theme_pink_2 %}
+{% set theme_error_shadow = theme_error_shadow or theme_pink_3 %}
+
+{# - warning level #}
+{% set theme_caution_bg = theme_caution_bg or theme_pink_1 %}
+{% set theme_caution_border = theme_caution_border or theme_pink_2 %}
+
+{% set theme_attention_bg = theme_attention_bg or theme_pink_1 %}
+{% set theme_attention_border = theme_attention_border or theme_pink_2 %}
 
 {% set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
 {% set theme_warn_border = theme_warn_border or theme_pink_2 %}
 
+{# - normal level #}
+{% set theme_important_bg = theme_important_bg or theme_gray_2 %}
+{% set theme_tip_bg = theme_tip_bg or theme_gray_2 %}
+{% set theme_hint_bg = theme_hint_bg or theme_gray_2 %}
+
+{# /set up admonition styling #}
+
 {% set theme_shadow = theme_shadow or theme_gray_2 %}
 
-{% set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
 
 {% set theme_topic_bg = theme_topic_bg or theme_gray_2 %}
 
@@ -240,8 +267,8 @@ div.body p, div.body dd, div.body li {
 div.admonition {
     margin: 20px 0px;
     padding: 10px 30px;
-    background-color: {{ theme_warn_bg }};
-    border: 1px solid {{ theme_warn_border }};
+    background-color: {{ theme_admonition_bg }};
+    border: 1px solid {{ theme_admonition_border }};
 }
 
 div.admonition tt.xref, div.admonition code.xref, div.admonition a tt {
@@ -275,9 +302,55 @@ dt:target, .highlight {
     background: {{ theme_highlight_bg }};
 }
 
+div.warning {
+    background-color: {{ theme_warn_bg }};
+    border: 1px solid {{ theme_warn_border }};
+}
+
+div.danger {
+    background-color: {{ theme_danger_bg }};
+    border: 1px solid {{ theme_danger_border }};
+    -moz-box-shadow: 2px 2px 4px {{ theme_danger_shadow }};
+    -webkit-box-shadow: 2px 2px 4px {{ theme_danger_shadow }};
+    box-shadow: 2px 2px 4px {{ theme_danger_shadow }};
+}
+
+div.error {
+    background-color: {{ theme_error_bg }};
+    border: 1px solid {{ theme_error_border }};
+    -moz-box-shadow: 2px 2px 4px {{ theme_error_shadow }};
+    -webkit-box-shadow: 2px 2px 4px {{ theme_error_shadow }};
+    box-shadow: 2px 2px 4px {{ theme_error_shadow }};
+}
+
+div.caution {
+    background-color: {{ theme_caution_bg }};
+    border: 1px solid {{ theme_caution_border }};
+}
+
+div.attention {
+    background-color: {{ theme_attention_bg }};
+    border: 1px solid {{ theme_attention_border }};
+}
+
+div.important {
+    background-color: {{ theme_important_bg }};
+    border: 1px solid {{ theme_important_border }};
+}
+
 div.note {
     background-color: {{ theme_note_bg }};
     border: 1px solid {{ theme_note_border }};
+}
+
+div.tip {
+    background-color: {{ theme_tip_bg }};
+    border: 1px solid {{ theme_tip_border }};
+}
+
+div.hint {
+    background-color: {{ theme_hint_bg }};
+    border: 1px solid {{ theme_hint_border }};
 }
 
 div.seealso {
