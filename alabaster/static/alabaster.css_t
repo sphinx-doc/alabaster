@@ -1,3 +1,4 @@
+{% set theme_body_bg = theme_body_bg or theme_base_bg %}
 {% set theme_sidebar_header = theme_sidebar_header or theme_gray_1 %}
 {% set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
 {% set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
@@ -8,6 +9,8 @@
 
 {% set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
 {% set theme_warn_border = theme_warn_border or theme_pink_2 %}
+
+{% set theme_shadow = theme_shadow or theme_gray_2 %}
 
 {% set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
 
@@ -22,8 +25,8 @@
 body {
     font-family: {{ theme_font_family }};
     font-size: {{ theme_font_size }};
-    background-color: white;
-    color: #000;
+    background-color: {{ theme_base_bg }};
+    color: {{ theme_base_text }};
     margin: 0;
     padding: 0;
 }
@@ -50,11 +53,11 @@ div.sphinxsidebar {
 }
 
 hr {
-    border: 1px solid #B1B4B6;
+    border: 1px solid {{ theme_hr_border }};
 }
 
 div.body {
-    background-color: #ffffff;
+    background-color: {{ theme_body_bg  }};
     color: {{ theme_body_text }};
     padding: 0 30px 0 30px;
 }
@@ -263,7 +266,7 @@ div.highlight {
 }
 
 dt:target, .highlight {
-    background: #FAF3E8;
+    background: {{ theme_highlight_bg }};
 }
 
 div.note {
@@ -312,20 +315,20 @@ tt.descname, code.descname {
 }
 
 img.screenshot {
-    -moz-box-shadow: 2px 2px 4px #eee;
-    -webkit-box-shadow: 2px 2px 4px #eee;
-    box-shadow: 2px 2px 4px #eee;
+    -moz-box-shadow: 2px 2px 4px {{ theme_shadow }};
+    -webkit-box-shadow: 2px 2px 4px {{ theme_shadow }};
+    box-shadow: 2px 2px 4px {{ theme_shadow }};
 }
 
 table.docutils {
-    border: 1px solid #888;
-    -moz-box-shadow: 2px 2px 4px #eee;
-    -webkit-box-shadow: 2px 2px 4px #eee;
-    box-shadow: 2px 2px 4px #eee;
+    border: 1px solid {{ theme_table_border }};
+    -moz-box-shadow: 2px 2px 4px {{ theme_shadow }};
+    -webkit-box-shadow: 2px 2px 4px {{ theme_shadow }};
+    box-shadow: 2px 2px 4px {{ theme_shadow }};
 }
 
 table.docutils td, table.docutils th {
-    border: 1px solid #888;
+    border: 1px solid {{ theme_table_border }};
     padding: 0.25em 0.7em;
 }
 
@@ -408,14 +411,14 @@ dl dl pre {
 }
 
 tt, code {
-    background-color: #ecf0f3;
-    color: #222;
+    background-color: {{ theme_code_bg }};
+    color: {{ theme_code_text }};
     /* padding: 1px 2px; */
 }
 
 tt.xref, code.xref, a tt {
-    background-color: #FBFBFB;
-    border-bottom: 1px solid white;
+    background-color: {{ theme_xref_bg }};
+    border-bottom: 1px solid {{ theme_xref_border }};
 }
 
 a.reference {
@@ -444,7 +447,7 @@ a.footnote-reference:hover {
 }
 
 a:hover tt, a:hover code {
-    background: #EEE;
+    background: {{ theme_code_hover }};
 }
 
 
@@ -517,7 +520,7 @@ a:hover tt, a:hover code {
 
     div.documentwrapper {
         float: none;
-        background: white;
+        background: {{ base_bg }};
     }
 
     div.sphinxsidebar {
@@ -536,7 +539,7 @@ a:hover tt, a:hover code {
 
     div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar p,
     div.sphinxsidebar h3 a {
-        color: white;
+        color: {{ base_bg }};
     }
 
     div.sphinxsidebar a {
