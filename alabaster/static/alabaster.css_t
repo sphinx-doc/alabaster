@@ -8,6 +8,8 @@
 {% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
 {% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
 
+{% set admonition_xref_bg = theme_admonition_xref_bg or theme_xref_bg %}
+
 {% set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
 {% set theme_warn_border = theme_warn_border or theme_pink_2 %}
 
@@ -242,8 +244,9 @@ div.admonition {
     border: 1px solid {{ theme_warn_border }};
 }
 
-div.admonition tt.xref, div.admonition a tt {
-    border-bottom: 1px solid #fafafa;
+div.admonition tt.xref, div.admonition code.xref, div.admonition a tt {
+    background-color: {{ theme_admonition_xref_bg }};
+    border-bottom: 1px solid {{ theme_admonition_xref_border }};
 }
 
 dd div.admonition {
