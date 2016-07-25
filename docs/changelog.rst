@@ -2,6 +2,7 @@
 Changelog
 =========
 
+* :release:`0.7.9 <2016-07-25>`
 * :feature:`6` (and :issue:`70`, both via :issue:`84`) Make all remaining
   hardcoded style colors configurable, plus related cleanup (such as improving
   differentiation of some admonition blocks such as ``warn`` and ``note``,
