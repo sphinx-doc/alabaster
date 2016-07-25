@@ -111,7 +111,7 @@ div.footer a {
 }
 
 p.caption {
-    font-family: {{ theme_cation_font_family }};
+    font-family: {{ theme_caption_font_family }};
     font-size: {{ theme_caption_font_size }};
 }
 
