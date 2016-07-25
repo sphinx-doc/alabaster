@@ -603,7 +603,7 @@ a:hover tt, a:hover code {
 
     div.documentwrapper {
         float: none;
-        background: {{ base_bg }};
+        background: {{ theme_base_bg }};
     }
 
     div.sphinxsidebar {
@@ -622,7 +622,7 @@ a:hover tt, a:hover code {
 
     div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar p,
     div.sphinxsidebar h3 a {
-        color: {{ base_bg }};
+        color: {{ theme_base_bg }};
     }
 
     div.sphinxsidebar a {
