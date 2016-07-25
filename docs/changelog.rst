@@ -2,6 +2,11 @@
 Changelog
 =========
 
+* :feature:`6` (and :issue:`70`, both via :issue:`84`) Make all remaining
+  hardcoded style colors configurable, plus related cleanup (such as improving
+  differentiation of some admonition blocks such as ``warn`` and ``note``,
+  ensuring generic admonitions are left untouched, etc). Credit:
+  ``@ShadowKyogre``.
 * :feature:`83` Expose Sphinx's toctree ``collapse`` option as the new
   ``sidebar_collapse`` config option. Credit: Eric Holscher.
 * :feature:`80` Add support for ``<link rel="canonical">`` (i.e. canonical
