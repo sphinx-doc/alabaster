@@ -2,6 +2,8 @@
 Changelog
 =========
 
+* :feature:`87` Add support for arbitrary "edit source" link
+  targets. Credit: ``@anarcat``.
 * :support:`- backported` Miscellaneous project maintenance updates such as
   adding to Travis CI and enforcing the use of ``flake8``.
 * :feature:`110 backported` Add ``badge_branch`` option allowing

@@ -51,8 +51,13 @@
       {% endif %}
       {%- if show_source and has_source and sourcename %}
       {% if show_copyright or theme_show_powered_by %}|{% endif %}
+      {%- if source_url_prefix %}
+      <a href="{{ source_url_prefix }}{{ pagename }}{{ source_suffix }}"
+          rel="nofollow">{{ _('Page source') }}</a>
+      {%- else %}
       <a href="{{ pathto('_sources/' + sourcename, true)|e }}"
           rel="nofollow">{{ _('Page source') }}</a>
+      {%- endif %}
       {%- endif %}
     </div>
 
