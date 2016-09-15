@@ -15,6 +15,5 @@ Live examples of this theme can be seen on `this project's own website
 For more documentation, please see http://alabaster.readthedocs.io.
 
 .. note::
-    You can install the `development version
-    <https://github.com/bitprophet/alabaster/tarball/master#egg=alabaster-dev>`_
-    via ``pip install alabaster==dev``.
+    You can install the development version via ``pip install -e
+    git+https://github.com/bitprophet/alabaster/#egg=alabaster``.
