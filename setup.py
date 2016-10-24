@@ -26,6 +26,7 @@ setup(
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
+        'Framework :: Sphinx :: Theme',
         'Operating System :: OS Independent',
         'Topic :: Documentation',
         'Topic :: Software Development :: Documentation',
