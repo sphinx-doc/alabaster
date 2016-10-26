@@ -24,9 +24,10 @@ setup(
     packages=['alabaster'],
     include_package_data=True,
     classifiers=[
+        'Framework :: Sphinx',
+        'Framework :: Sphinx :: Theme',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
-        'Framework :: Sphinx :: Theme',
         'Operating System :: OS Independent',
         'Topic :: Documentation',
         'Topic :: Software Development :: Documentation',
@@ -36,5 +37,8 @@ setup(
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Documentation :: Sphinx',
     ],
 )
