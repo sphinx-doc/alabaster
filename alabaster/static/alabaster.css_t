@@ -443,6 +443,16 @@ table.field-list p {
     margin-bottom: 0.8em;
 }
 
+/* Cloned from
+ * https://github.com/sphinx-doc/sphinx/commit/ef60dbfce09286b20b7385333d63a60321784e68
+ */
+.field-name {
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+
 table.footnote td.label {
     width: .1px;
     padding: 0.3em 0 0.3em 0.5em;

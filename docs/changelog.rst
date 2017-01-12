@@ -2,6 +2,11 @@
 Changelog
 =========
 
+* :bug:`95` Independently ran across
+  `sphinx-doc/sphinx#3276 <https://github.com/sphinx-doc/sphinx/issues/3276>`_,
+  namely that parameter lists become squashed together if one is running on
+  Sphinx 1.4.x. While that fix was merged in Sphinx itself, we felt it prudent
+  to include it in our own stylesheet as well, for immediate relief.
 * :release:`0.7.9 <2016-07-25>`
 * :feature:`6` (and :issue:`70`, both via :issue:`84`) Make all remaining
   hardcoded style colors configurable, plus related cleanup (such as improving
