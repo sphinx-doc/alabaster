@@ -2,6 +2,7 @@
 Changelog
 =========
 
+* :bug:`96` ``admonition_xref`` had a template typo preventing it from receiving styling; this has been fixed. Credit: Kenzie Togami.
 * :bug:`95` Independently ran across
   `sphinx-doc/sphinx#3276 <https://github.com/sphinx-doc/sphinx/issues/3276>`_,
   namely that parameter lists become squashed together if one is running on
