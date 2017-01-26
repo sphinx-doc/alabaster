@@ -10,7 +10,7 @@
 
 {# set up admonition styling #}
 {# - basic level #}
-{% set admonition_xref_bg = theme_admonition_xref_bg or theme_xref_bg %}
+{% set theme_admonition_xref_bg = theme_admonition_xref_bg or theme_xref_bg %}
 {% set theme_admonition_bg = theme_admonition_bg or theme_gray_2 %}
 {% set theme_note_bg = theme_note_bg or theme_gray_2 %}
 {% set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
