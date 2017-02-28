@@ -7,7 +7,7 @@ Changelog
   (``.. note::``, ``.. warning::``, etc) and code blocks (``.. code::``) so
   they are no longer 'dedented' outside the main column of text they're
   embedded in. This is both a stylistic change and a bugfix, since e.g. nesting
-  code blocks _within_ note blocks looks actively broken. Thanks to Takayuki
+  code blocks *within* note blocks looks actively broken. Thanks to Takayuki
   Shimizukawa for the report.
 * :bug:`96` ``admonition_xref`` had a template typo preventing it from
   receiving styling; this has been fixed. Credit: Kenzie Togami.
