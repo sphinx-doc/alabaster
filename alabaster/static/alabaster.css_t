@@ -276,11 +276,6 @@ div.admonition tt.xref, div.admonition code.xref, div.admonition a tt {
     border-bottom: 1px solid {{ theme_admonition_xref_border }};
 }
 
-dd div.admonition {
-    margin-left: -60px;
-    padding-left: 60px;
-}
-
 div.admonition p.admonition-title {
     font-family: {{ theme_head_font_family }};
     font-weight: normal;
@@ -496,11 +491,6 @@ div.viewcode-block:target {
 dl pre, blockquote pre, li pre {
     margin-left: 0;
     padding-left: 30px;
-}
-
-dl dl pre {
-    margin-left: -90px;
-    padding-left: 90px;
 }
 
 tt, code {

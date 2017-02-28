@@ -2,6 +2,12 @@
 Changelog
 =========
 
+* :bug:`32` Update styling of various block-level elements such as admonitions
+  (``.. note::``, ``.. warning::``, etc) and code blocks (``.. code::``) so
+  they are no longer 'dedented' outside the main column of text they're
+  embedded in. This is both a stylistic change and a bugfix, since e.g. nesting
+  code blocks _within_ note blocks looks actively broken. Thanks to Takayuki
+  Shimizukawa for the report.
 * :bug:`96` ``admonition_xref`` had a template typo preventing it from receiving styling; this has been fixed. Credit: Kenzie Togami.
 * :bug:`95` Independently ran across
   `sphinx-doc/sphinx#3276 <https://github.com/sphinx-doc/sphinx/issues/3276>`_,
