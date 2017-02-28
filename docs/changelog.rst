@@ -2,6 +2,7 @@
 Changelog
 =========
 
+* :release:`0.7.10 <2017-02-28>`
 * :bug:`32` Update styling of various block-level elements such as admonitions
   (``.. note::``, ``.. warning::``, etc) and code blocks (``.. code::``) so
   they are no longer 'dedented' outside the main column of text they're
