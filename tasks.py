@@ -8,5 +8,6 @@ ns.configure({
     'packaging': {
         'sign': True,
         'wheel': True,
+        'changelog_file': 'docs/changelog.rst',
     }
 })
