@@ -55,3 +55,15 @@
 </a>
 </p>
 {% endif %}
+
+{% if theme_shield_list|lower != 'false' %}
+{% for shield in theme_shield_list %}
+<p>
+<a href="{{ shield['target'] }}">
+  <img
+  alt="{{ shield['image'] }}"
+  src="{{ shield['image'] }}"
+</a>
+</p>
+{% endfor %}
+{% endif %}
