@@ -108,10 +108,22 @@ Variables and feature toggles
   string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+
+  .. deprecated:: 0.7.11
+
+     This option is deprecated and will be eventually removed. Use
+     ``shield_list`` instead.
+
 * ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+
+  .. deprecated:: 0.7.11
+
+     This option is deprecated and will be eventually removed. Use
+     ``shield_list`` instead.
+
 * ``shield_list``: ``false`` or a list of dictionaries containing a
   ``"target"`` and ``"image"`` key.
 
