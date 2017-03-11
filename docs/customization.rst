@@ -125,7 +125,8 @@ Variables and feature toggles
      ``shield_list`` instead.
 
 * ``shield_list``: ``false`` or a list of dictionaries containing a
-  ``"target"`` and ``"image"`` key.
+  ``"target"`` and ``"image"`` key - these are used to display
+  arbitrary shields/buttons in the `about` section of the sidebar.
 
   .. code-block:: python
 
@@ -133,6 +134,9 @@ Variables and feature toggles
           {'image': 'https://img.shields.io/travis/fabric/fabric.svg',
            'target': 'https://travis-ci.org/fabric/fabric'}
       ]
+
+  `shields.io <http://shields.io/>`_ provides many high-quality
+  shields; these are recommended for use with ``shield_list``.
 
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
