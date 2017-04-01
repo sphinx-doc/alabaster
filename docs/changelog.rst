@@ -2,6 +2,9 @@
 Changelog
 =========
 
+* :feature:`18` add optional *next* and *previous* links at the top and bottom
+  of page content. Use theme option ``show_relbars`` to enable these. Credit:
+  William Minchin.
 * :release:`0.7.10 <2017-02-28>`
 * :bug:`32` Update styling of various block-level elements such as admonitions
   (``.. note::``, ``.. warning::``, etc) and code blocks (``.. code::``) so

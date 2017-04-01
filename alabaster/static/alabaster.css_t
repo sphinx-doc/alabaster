@@ -49,6 +49,8 @@
 {%- set theme_narrow_sidebar_link = theme_narrow_sidebar_link or theme_gray_3 %}
 {%- set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
 
+{%- set theme_relbar_border = theme_relbar_border or theme_gray_2 -%}
+
 
 @import url("basic.css");
 
@@ -703,4 +705,51 @@ table.docutils.citation, table.docutils.citation td, table.docutils.citation th 
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+
+/* relbar */
+
+.related {
+    line-height: 30px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.related.top {
+    border-bottom: 1px solid {{ theme_relbar_border }};
+    margin-bottom: 20px;
+}
+
+.related.bottom {
+    border-top: 1px solid {{ theme_relbar_border }};
+}
+
+.related ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.related li {
+    display: inline;
+}
+
+nav#rellinks {
+    float: right;
+}
+
+nav#rellinks li+li:before {
+    content: "|";
+}
+
+nav#breadcrumbs li+li:before {
+    content: "\00BB";
+}
+
+/* Hide certain items when printing */
+@media print {
+    div.related {
+        display: none;
+    }
 }
