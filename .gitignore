@@ -1,1 +1,3 @@
 docs/_build
+*.egg-info
+*.py[cod]
