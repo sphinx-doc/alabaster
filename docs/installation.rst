@@ -35,7 +35,7 @@ The bare minimum required to install Alabaster is as follows:
         Alabaster (as RTD defaults to using its own theme) by adding this line
         to your ``conf.py``::
 
-            html_theme = ['alabaster']
+            html_theme = 'alabaster'
 
 * **Either way**, add an explicit ``html_sidebars`` setting so Alabaster's
   customized sidebar templates are loaded:
