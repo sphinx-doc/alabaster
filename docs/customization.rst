@@ -104,6 +104,9 @@ Variables and feature toggles
      ``$PROJECT/_static/``) to be used as the banner image instead of the
      default.
 
+* ``badge_branch``: Set which branch to be used to show badges.
+  Defaults to ``master``.
+
 * ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
   string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
