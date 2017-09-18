@@ -23,7 +23,7 @@ setup(
     url='https://alabaster.readthedocs.io',
     packages=['alabaster'],
     include_package_data=True,
-    entry_points = {
+    entry_points={
         'sphinx.html_themes': [
             'alabaster = alabaster',
         ]
