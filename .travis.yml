@@ -38,7 +38,7 @@ install:
   # Install dev requirements
   - pip install -r dev-requirements.txt
   # Limit Sphinx version re: test matrix
-  - "pip install 'sphinx$SPHINX'"
+  - pip install "sphinx$SPHINX"
   # Sanity/debug-friendliness: list what got installed
   - pip list --format=columns
   # Dev tooling sanity test: can invoke list tasks?
