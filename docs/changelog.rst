@@ -2,6 +2,9 @@
 Changelog
 =========
 
+* :feature:`110` Add ``badge_branch`` option allowing configurability of which
+  specific Git branch the Travis, Codecov, etc buttons default to. Credit:
+  ``@TitanSnow``.
 * :support:`111 backported` Add setuptools-level entrypoint for improved theme
   distribution compatibility. Thanks to Aaron Carlisle for the patch.
 * :release:`0.7.10 <2017-02-28>`
