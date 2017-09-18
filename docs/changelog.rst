@@ -2,6 +2,8 @@
 Changelog
 =========
 
+* :support:`111 backported` Add setuptools-level entrypoint for improved theme
+  distribution compatibility. Thanks to Aaron Carlisle for the patch.
 * :release:`0.7.10 <2017-02-28>`
 * :bug:`32` Update styling of various block-level elements such as admonitions
   (``.. note::``, ``.. warning::``, etc) and code blocks (``.. code::``) so
