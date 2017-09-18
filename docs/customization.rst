@@ -104,7 +104,7 @@ Variables and feature toggles
      ``$PROJECT/_static/``) to be used as the banner image instead of the
      default.
 
-* ``badge_branch``: Set which branch to be used to show badges.
+* ``badge_branch``: Set which branch is used in Travis, CodeCov, etc badges.
   Defaults to ``master``.
 
 * ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
