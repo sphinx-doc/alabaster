@@ -48,6 +48,6 @@ script:
   # first off.
   - pip install .
   # Websites build OK? (Not on PyPy3, Sphinx is all "who the hell are you?" =/
-  - "[[ $TRAVIS_PYTHON_VERSION != 'pypy3' ]] && inv docs"
+  - "if [[ $TRAVIS_PYTHON_VERSION != 'pypy3' ]]; then inv docs; fi"
   # I have this in my git pre-push hook, but contributors probably don't
   - flake8
