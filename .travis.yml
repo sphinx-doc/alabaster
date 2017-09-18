@@ -19,14 +19,14 @@ env:
 matrix:
   exclude:
     # Sphinx dropped Python 2.6 support in version 1.5
-    - python: 2.6
+    - python: "2.6"
       env: SPHINX=">=1.5,<1.6"
-    - python: 2.6
+    - python: "2.6"
       env: SPHINX=">=1.6,<1.7"
     # And they dropped Python 3.3 support at some point too.
-    - python: 3.3
+    - python: "3.3"
       env: SPHINX=">=1.5,<1.6"
-    - python: 3.3
+    - python: "3.3"
       env: SPHINX=">=1.6,<1.7"
 install:
   # For some reason Travis' build envs have wildly different pip/setuptools
