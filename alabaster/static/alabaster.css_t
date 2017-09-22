@@ -121,6 +121,11 @@ div.relations {
 }
 {% endif %}
 
+div.sphinxsidebar {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
 div.sphinxsidebar a {
     color: {{ theme_sidebar_link }};
     text-decoration: none;
@@ -205,6 +210,10 @@ div.sphinxsidebar input {
     border: 1px solid {{ theme_sidebar_search_button }};
     font-family: {{ theme_font_family }};
     font-size: 1em;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    width: 160px;
 }
 
 div.sphinxsidebar .search > div {
