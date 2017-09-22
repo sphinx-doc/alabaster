@@ -207,6 +207,10 @@ div.sphinxsidebar input {
     font-size: 1em;
 }
 
+div.sphinxsidebar .search > div {
+    display: table-cell;
+}
+
 div.sphinxsidebar hr {
     border: none;
     height: 1px;
