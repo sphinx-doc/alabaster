@@ -55,3 +55,24 @@
 </a>
 </p>
 {% endif %}
+
+{% if theme_badges %}
+{% for badge in theme_badges %}
+<p>
+  <a href="{{ badge['target'] }}">
+    <img
+      src="{{ badge['image'] }}"
+      {% if 'alt' in badge %}
+      alt="{{ badge['alt'] }}"
+      {% endif %}
+      {% if 'width' in badge %}
+      width="{{ badge['width'] }}"
+      {% endif %}
+      {% if 'height' in badge %}
+      height="{{ badge['height'] }}"
+      {% endif %}
+    />
+</a>
+</p>
+{% endfor %}
+{% endif %}

@@ -2,6 +2,8 @@
 Changelog
 =========
 
+* :feature:`120` Support generic badges by ``badges`` config
+  option. Credit: Andrew Svetlov.
 * :support:`- backported` Miscellaneous project maintenance updates such as
   adding to Travis CI and enforcing the use of ``flake8``.
 * :feature:`110 backported` Add ``badge_branch`` option allowing

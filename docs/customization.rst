@@ -13,13 +13,13 @@ Alabaster's behavior & style can be customized in multiple ways:
   .. note::
     Some theme options implemented prior to 0.7.8 would have been more suitable
     as local custom stylesheet overrides. Therefore:
-    
+
     * We no longer accept feature requests which are more appropriately solved
       by using this functionality instead.
     * In future backwards-incompatible versions we may deprecate some of those
       options; as such we highly recommend leveraging the custom stylesheet
       whenever possible, even if an option is present below.
-      
+
         * When in doubt, simply check `the built-in stylesheet's template
           <https://github.com/bitprophet/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
           to see whether the option you're looking at is a basic variable
@@ -115,6 +115,31 @@ Variables and feature toggles
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+* ``badges``: A list of dictionaries to add a custom badges. Every
+  dict is a badge description with the following keys:
+
+  * *image*: badge's image URI
+  * *target*: destination link for badge, a target for
+    clicking on image.
+  * *alt* (optional): alternate text: a short description of the image,
+    displayed by applications that cannot display images, or spoken by
+    applications for visually impaired users.
+  * *width* (optional): the width of image
+  * *height* (optional): the height of image
+
+  Example::
+
+     html_theme_options = {
+        ...
+        'badges': [{'image': 'https://badge.fury.io/py/aiohttp.svg',
+                    'target': 'https://badge.fury.io/py/aiohttp',
+                    'alt': 'Latest PyPI package version'},
+                   {'image': 'https://badges.gitter.im/Join%20Chat.svg',
+                    'target': 'https://gitter.im/aio-libs/Lobby',
+                    'alt': 'Chat on Gitter'}],
+        ...
+     }
+
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
