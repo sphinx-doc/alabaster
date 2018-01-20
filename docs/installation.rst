@@ -48,7 +48,6 @@ The bare minimum required to install Alabaster is as follows:
                 'navigation.html',
                 'relations.html',
                 'searchbox.html',
-                'donate.html',
             ]
         }
 
@@ -67,9 +66,9 @@ care much.
 * See `the Sphinx docs
   <http://sphinx-doc.org/config.html#confval-html_sidebars>`_ for details on
   how this setting behaves.
-* Alabaster provides ``about.html`` (logo, github button + blurb),
-  ``donate.html`` (Gratipay blurb/button) and ``navigation.html`` (a more
-  flexible version of the builtin ``localtoc``/``globaltoc`` templates).
+* Alabaster provides ``about.html`` (logo, github button + blurb) and
+  ``navigation.html`` (a more flexible version of the builtin
+  ``localtoc``/``globaltoc`` templates).
   ``searchbox.html`` comes with Sphinx itself.
 
 
