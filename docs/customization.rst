@@ -139,6 +139,10 @@ Variables and feature toggles
   will be added in a UL below the main sidebar navigation (provided you've
   enabled ``navigation.html`` via the ``html_sidebars`` option; see
   :doc:`installation`.) Useful for static links outside your Sphinx doctree.
+
+  .. tip::
+     Use :class:`collections.OrderedDict` to retain the order of your links.
+
 * ``sidebar_includehidden``: Boolean determining whether the TOC sidebar
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
