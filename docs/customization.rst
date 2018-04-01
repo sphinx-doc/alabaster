@@ -13,13 +13,13 @@ Alabaster's behavior & style can be customized in multiple ways:
   .. note::
     Some theme options implemented prior to 0.7.8 would have been more suitable
     as local custom stylesheet overrides. Therefore:
-    
+
     * We no longer accept feature requests which are more appropriately solved
       by using this functionality instead.
     * In future backwards-incompatible versions we may deprecate some of those
       options; as such we highly recommend leveraging the custom stylesheet
       whenever possible, even if an option is present below.
-      
+
         * When in doubt, simply check `the built-in stylesheet's template
           <https://github.com/bitprophet/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
           to see whether the option you're looking at is a basic variable
@@ -111,10 +111,36 @@ Variables and feature toggles
   string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+
+  .. deprecated:: 0.7.11
+
+     This option is deprecated and will be eventually removed. Use
+     ``shield_list`` instead.
+
 * ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings; defaults to ``false.``
+
+  .. deprecated:: 0.7.11
+
+     This option is deprecated and will be eventually removed. Use
+     ``shield_list`` instead.
+
+* ``shield_list``: ``false`` or a list of dictionaries containing a
+  ``"target"`` and ``"image"`` key - these are used to display
+  arbitrary shields/buttons in the `about` section of the sidebar.
+
+  .. code-block:: python
+
+      'shield_list': [
+          {'image': 'https://img.shields.io/travis/fabric/fabric.svg',
+           'target': 'https://travis-ci.org/fabric/fabric'}
+      ]
+
+  `shields.io <http://shields.io/>`_ provides many high-quality
+  shields; these are recommended for use with ``shield_list``.
+
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
@@ -143,9 +169,9 @@ Variables and feature toggles
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
   copies of your navigation on your landing page.
-* ``sidebar_collapse``: Boolean determining whether  all TOC entries that 
+* ``sidebar_collapse``: Boolean determining whether  all TOC entries that
    are not ancestors of the current page are collapsed.
-   You can read more about this in the Sphinx toctree 
+   You can read more about this in the Sphinx toctree
    `docs <http://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
 * ``show_powered_by``: Boolean controlling display of the ``Powered by
   Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When ``true``, is
