@@ -161,9 +161,9 @@ Variables and feature toggles
   main body of the page scrolls but the sidebar remains visible. (Applies only
   to desktop window sizes; the mobile view is unaffected.) Defaults to
   ``false``.
-* ``show_relbars``: ``true`` or ``false`, defaults to ``false`` - used to
+* ``show_relbars``: ``true`` or ``false``, defaults to ``false`` - used to
   display *next* and *previous* links above and below the main page content. If
-  you only want to display one, this setting can be further overriden through
+  you only want to display one, this setting can be further overridden through
   the ``show_relbar_top`` and ``show_relbar_bottom`` settings.
 
 Style colors
@@ -216,7 +216,7 @@ colorscheme. The more granular settings can be used to override as needed.
 * ``narrow_sidebar_link``: Link color of same. Defaults to ``gray_3``.
 * ``code_highlight``: Color of highlight when using ``:emphasize-lines:`` in a code block.
 * ``relbar_border``: Color of border between bar holding *next* and *previous*
-  links, the rest of the page content. Defulats to ``gray_2``.
+  links, and the rest of the page content. Defaults to ``gray_2``.
 
 Fonts
 -----

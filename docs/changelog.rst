@@ -2,7 +2,7 @@
 Changelog
 =========
 
-* :feature:`18` add optional *next* and *previous* links at the top and bottom
+* :feature:`18` Add optional *next* and *previous* links at the top and bottom
   of page content. Use theme option ``show_relbars`` to enable these. Credit:
   William Minchin.
 * :support:`- backported` Miscellaneous project maintenance updates such as
