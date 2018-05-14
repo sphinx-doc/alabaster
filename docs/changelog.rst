@@ -2,9 +2,9 @@
 Changelog
 =========
 
-* :feature:`18` Add optional *next* and *previous* links at the top and bottom
-  of page content. Use theme option ``show_relbars`` to enable these. Credit:
-  William Minchin.
+* :feature:`18` (via :issue:`101`) Add optional *next* and *previous* links at
+  the top and bottom of page content. Use theme option ``show_relbars`` to
+  enable these. Credit: William Minchin.
 * :support:`- backported` Miscellaneous project maintenance updates such as
   adding to Travis CI and enforcing the use of ``flake8``.
 * :feature:`110 backported` Add ``badge_branch`` option allowing
