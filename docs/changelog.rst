@@ -12,14 +12,24 @@ Changelog
   - Set ``head_font_family`` so it falls back to the value of ``font_family``
     unless a user has explicitly set it themselves.
 
+  .. note::
+    You can always go back to the old values by :ref:`explicitly setting
+    <theme-options>` ``font_family`` and/or ``head_font_family`` in your
+    ``conf.py``'s ``html_theme_options``, e.g.::
+
+        html_theme_options = {
+            'description': 'My awesome project',
+            'font_family': "goudy old style, minion pro, bell mt, Georgia, Hiragino Mincho Pro, serif",
+        }
+
   .. warning::
     Depending on individual viewers' systems, this change *may* be **visually**
     backwards incompatible if you were not already overriding the font
     settings and those users had the fonts in question (which are not default
     on most systems).
 
-    You can *always* fix this with a configuration-level change after (or even
-    before) you upgrade!
+    As seen in the note above, you can **always** override the new defaults to
+    go back to the old behavior, using your config file.
 
 * :feature:`18 backported` (via :issue:`101`) Add optional *next* and
   *previous* links at the top and bottom of page content. Use theme option
