@@ -19,7 +19,6 @@ html_sidebars = {
         'navigation.html',
         'relations.html',
         'searchbox.html',
-        'donate.html',
     ]
 }
 html_theme_options = {
