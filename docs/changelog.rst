@@ -2,6 +2,25 @@
 Changelog
 =========
 
+* :bug:`73` Clean up some problematic font issues:
+
+  - Remove the outright broken Goudy Old Style, plus other mostly Adobe-only
+    fonts, from the ``font_family`` config setting; it is now simply ``Georgia,
+    serif`` which is what the majority of users were rendering anyways.
+  - Clear out the default value of ``head_font_family`` (which contained
+    ``Garamond``, a nice but also Adobe only font)
+  - Set ``head_font_family`` so it falls back to the value of ``font_family``
+    unless a user has explicitly set it themselves.
+
+  .. warning::
+    Depending on individual viewers' systems, this change *may* be **visually**
+    backwards incompatible if you were not already overriding the font
+    settings and those users had the fonts in question (which are not default
+    on most systems).
+
+    You can *always* fix this with a configuration-level change after (or even
+    before) you upgrade!
+
 * :feature:`18 backported` (via :issue:`101`) Add optional *next* and
   *previous* links at the top and bottom of page content. Use theme option
   ``show_relbars`` to enable these. Credit: William Minchin.

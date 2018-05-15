@@ -7,6 +7,7 @@
 {%- set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
 {%- set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
 
+{%- set theme_head_font_family = theme_head_font_family or theme_font_family %}
 
 {#- set up admonition styling #}
 {#- - basic level #}
