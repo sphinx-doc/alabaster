@@ -2,6 +2,7 @@
 Changelog
 =========
 
+* :release:`0.7.11 <2018-06-18>`
 * :bug:`73` Clean up some problematic font issues:
 
   - Remove the outright broken Goudy Old Style, plus other mostly Adobe-only
