@@ -60,7 +60,9 @@ set in ``conf.py`` alongside the rest, e.g.:
     }
 
 The following subsections detail available such options, including notes about
-behavior & default values.
+behavior. Default values can be found by viewing `theme.conf
+<https://github.com/bitprophet/alabaster/blob/master/alabaster/theme.conf>`_
+directly.
 
 Variables and feature toggles
 -----------------------------
@@ -74,30 +76,26 @@ Variables and feature toggles
 
 * ``logo_name``: Set to ``true`` to insert your site's ``project`` name
   under the logo image as text. Useful if your logo doesn't include the
-  project name itself. Defaults to ``false``.
+  project name itself.
 * ``logo_text_align``: Which CSS ``text-align`` value to use for logo text
   (if there is any.)
 * ``body_text_align``: Which CSS ``text-align`` value to use for body text
   (if there is any.)
 * ``description``: Text blurb about your project, to appear under the logo.
 * ``description_font_style``: Which CSS ``font-style`` to use for description
-  text. Defaults to ``normal``.
+  text.
 * ``github_user``, ``github_repo``: Used by ``github_button`` and
   ``github_banner`` (see below); does nothing if both of those are set to
   ``false``.
-* ``github_button``: ``true`` or ``false`` (default: ``true``) - whether to
-  link to your Github.
+* ``github_button``: ``true`` or ``false`` - whether to link to your Github.
 
    * If ``true``, requires that you set ``github_user`` and ``github_repo``.
-   * See also these other related options, which behave as described in
-     `Github Buttons' documentation
+   * There are also the ``github_type`` and ``github_count`` options, which
+     behave as described in `Github Buttons' documentation
      <https://ghbtns.com>`_:
 
-      * ``github_type``: Defaults to ``watch``.
-      * ``github_count``: Defaults to ``true``.
-
-* ``github_banner``: ``true`` or ``false`` (default: ``false``) - whether to
-  apply a 'Fork me on Github' banner in the top right corner of the page.
+* ``github_banner``: ``true`` or ``false`` - whether to apply a 'Fork me on
+  Github' banner in the top right corner of the page.
 
    * If ``true``, requires that you set ``github_user`` and ``github_repo``.
    * May also submit a string file path (as with ``logo``, relative to
@@ -105,16 +103,14 @@ Variables and feature toggles
      default.
 
 * ``badge_branch``: Set which branch is used in Travis, CodeCov, etc badges.
-  Defaults to ``master``.
-
 * ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
   string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
-  settings; defaults to ``false.``
+  settings.
 * ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
-  settings; defaults to ``false.``
+  settings.
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
@@ -154,17 +150,14 @@ Variables and feature toggles
   secondary navigation elements are hidden or displayed. Defaults to ``false``
   since on many sites these elements are superfluous.
 * ``page_width``: CSS width specifier controlling default content/page width.
-  Defaults to ``940px``.
 * ``sidebar_width``: CSS width specifier controlling default sidebar width.
-  Defaults to ``220px``.
 * ``fixed_sidebar``: Makes the sidebar 'fixed' or pinned in place, so that the
   main body of the page scrolls but the sidebar remains visible. (Applies only
-  to desktop window sizes; the mobile view is unaffected.) Defaults to
-  ``false``.
-* ``show_relbars``: ``true`` or ``false``, defaults to ``false`` - used to
-  display *next* and *previous* links above and below the main page content. If
-  you only want to display one, this setting can be further overridden through
-  the ``show_relbar_top`` and ``show_relbar_bottom`` settings.
+  to desktop window sizes; the mobile view is unaffected.)
+* ``show_relbars``: ``true`` or ``false`` - used to display *next* and
+  *previous* links above and below the main page content. If you only want to
+  display one, this setting can be further overridden through the
+  ``show_relbar_top`` and ``show_relbar_bottom`` settings.
 
 Style colors
 ------------
@@ -183,52 +176,49 @@ colorscheme. The more granular settings can be used to override as needed.
 * ``footer_text``: Footer text (includes links.)
 * ``link``: Non-hovered body links.
 * ``link_hover``: Body links, hovered.
-* ``sidebar_header``: Sidebar headers. Defaults to ``gray_1``.
+* ``sidebar_header``: Sidebar headers.
 * ``sidebar_text``: Sidebar paragraph text.
 * ``sidebar_link``: Sidebar links (there is no hover variant.) Applies to
-  both header & text links. Defaults to ``gray_1``.
+  both header & text links.
 * ``sidebar_link_underscore``: Sidebar links' underline (technically a
   bottom-border).
 * ``sidebar_search_button``: Background color of the search field's 'Go'
   button.
 * ``sidebar_list``: Foreground color of sidebar list bullets & unlinked text.
-* ``sidebar_hr``: Color of sidebar horizontal rule dividers. Defaults to
-  ``gray_3``.
+* ``sidebar_hr``: Color of sidebar horizontal rule dividers.
 * ``anchor``: Foreground color of section anchor links (the 'paragraph'
   symbol that shows up when you mouseover page section headers.)
 * ``anchor_hover_fg``: Foreground color of section anchor links (as above)
-  when moused over. Defaults to ``gray_1``.
+  when moused over.
 * ``anchor_hover_bg``: Background color of above.
-* ``note_bg``: Background of ``.. note::`` blocks. Defaults to ``gray_2``.
+* ``note_bg``: Background of ``.. note::`` blocks.
 * ``note_border``: Border of same.
-* ``seealso_bg``: Background of ``.. seealso::`` blocks. Defaults to
-  ``gray_2``.
+* ``seealso_bg``: Background of ``.. seealso::`` blocks.
 * ``seealso_border``: Border of same.
-* ``warn_bg``: Background of ``.. warn::`` blocks. Defaults to ``pink_1``.
-* ``warn_border``: Border of same. Defaults to ``pink_2``.
+* ``warn_bg``: Background of ``.. warn::`` blocks.
+* ``warn_border``: Border of same.
 * ``footnote_bg``: Background of footnote blocks.
-* ``footnote_border``: Border of same. Defaults to ``gray_2``.
+* ``footnote_border``: Border of same.
 * ``pre_bg``: Background of preformatted text blocks (including code
-  snippets.) Defaults to ``gray_2``.
+  snippets.)
 * ``narrow_sidebar_bg``: Background of 'sidebar' when narrow window forces
   it to the bottom of the page.
 * ``narrow_sidebar_fg``: Text color of same.
-* ``narrow_sidebar_link``: Link color of same. Defaults to ``gray_3``.
+* ``narrow_sidebar_link``: Link color of same.
 * ``code_highlight``: Color of highlight when using ``:emphasize-lines:`` in a code block.
 * ``relbar_border``: Color of border between bar holding *next* and *previous*
-  links, and the rest of the page content. Defaults to ``gray_2``.
+  links, and the rest of the page content.
 
 Fonts
 -----
 
-* ``font_family``: Font family of body text.  Defaults to ``'goudy old style',
-  'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif``.
-* ``font_size``: Font size of body text. Defaults to ``17px`` (``1.0625em``).
+* ``font_family``: Font family of body text. 
+* ``font_size``: Font size of body text.
 * ``head_font_family``: Font family of headings.  Defaults to ``'Garamond',
   'Georgia', serif``.
-* ``code_font_size``: Font size of code block text. Defaults to ``0.9em``.
+* ``code_font_size``: Font size of code block text.
 * ``code_font_family``: Font family of code block text. Defaults to
   ``'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
   monospace``.
-* ``caption_font_size``: Font size of caption block text. Defaults to ``font-size``.
-* ``caption_font_family``: Font family of caption block text. Defaults to ``font-family``.
+* ``caption_font_size``: Font size of caption block text.
+* ``caption_font_family``: Font family of caption block text.
