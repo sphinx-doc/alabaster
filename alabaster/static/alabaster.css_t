@@ -221,6 +221,14 @@ div.sphinxsidebar hr {
     width: 50%;
 }
 
+div.sphinxsidebar .badge {
+    border-bottom: none;
+}
+
+div.sphinxsidebar .badge:hover {
+    border-bottom: none;
+}
+
 /* -- body styles ----------------------------------------------------------- */
 
 a {
