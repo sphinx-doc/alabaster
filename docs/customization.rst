@@ -111,6 +111,13 @@ Variables and feature toggles
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings.
+* ``donate_url``: Set to the URL where you receive donations if you want
+  a 'Donate' section in your sidebar.
+* ``opencollective``: Set to you `OpenCollective <https://opencollective.com/>`_
+  collective name if you want an OpenCollective 'Donate' section in your
+  sidebar.
+* ``opencollective_button_color``: Set to the color for your "Donate To
+  Our Collective Button". May be ``"white"`` or ``"blue"``.
 * ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
   if you want a Gratipay 'Donate' section in your sidebar.
 
