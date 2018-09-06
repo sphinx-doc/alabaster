@@ -107,6 +107,8 @@ Variables and feature toggles
   string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings.
+* ``tidelift_url``: Set your `Tidelift <https://tidelift.com/>`_ project
+  URL if you want a "Professional support" section in your sidebar.
 * ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
