@@ -39,7 +39,7 @@ stylesheet as follows:
   ``_static/``, but this is solely convention) containing your desired
   overrides to the CSS found in Alabaster's ``static/alabaster_css_t``.
 * Set the core Sphinx option `html_static_path
-  <http://www.sphinx-doc.org/en/stable/config.html#confval-html_static_path>`_
+  <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path>`_
   to either that file's path, or the directory it lives within.
 
 
@@ -108,7 +108,7 @@ Third-party services (GitHub, Travis-CI, etc etc) and related badges or
 banners.
 
 * ``analytics_id``: Set to your `Google Analytics
-  <http://www.google.com/analytics/>`_ ID (e.g. ``UA-#######-##``) to enable
+  <https://marketingplatform.google.com/about/analytics/>`_ ID (e.g. ``UA-#######-##``) to enable
   tracking.
 * ``badge_branch``: Set which branch is used in the Travis, CodeCov, etc
   badges.
@@ -176,7 +176,7 @@ Sidebar-related options that aren't directly related to service links.
 * ``sidebar_collapse``: Boolean determining whether all TOC entries that
    are not ancestors of the current page are collapsed.
    You can read more about this in the Sphinx toctree
-   `docs <http://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
+   `docs <https://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
 * ``sidebar_includehidden``: Boolean determining whether the TOC sidebar
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
