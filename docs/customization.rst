@@ -220,7 +220,7 @@ Fonts
   'Georgia', serif``.
 * ``code_font_size``: Font size of code block text.
 * ``code_font_family``: Font family of code block text. Defaults to
-  ``'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
+  ``'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
   monospace``.
 * ``caption_font_size``: Font size of caption block text.
 * ``caption_font_family``: Font family of caption block text.
