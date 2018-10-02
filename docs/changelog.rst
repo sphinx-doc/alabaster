@@ -5,6 +5,10 @@ Changelog
 - :bug:`-` On some browsers/platforms, 'badge'-style sidebar elements were
   displaying dotted underlines. This was unintentional and explicit styling has
   been added to remove them. Credit to Steven Loria.
+- :support:`- backported` Reorganize the :doc:`customization page
+  </customization>` to break up the now rather long list of "variables and
+  feature toggles" into additional sections; includes alphabetizing those
+  lists, to make it a bit easier to find docs for a specific setting.
 - :bug:`128` Remove Gittip/Gratipay output from the ``donation.html`` sidebar
   component, since the actual service has been insolvent since 2017. The
   configuration options remain in place for the time being (to avoid breaking
