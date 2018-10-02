@@ -1,13 +1,3 @@
-{% if theme_gratipay_user or theme_gittip_user %}
-<h3>Donate</h3>
-<p>
-Consider supporting the authors on <a href="https://www.gratipay.com/">Gratipay</a>:
-<script data-gratipay-username="{{ theme_gratipay_user or theme_gittip_user }}"
-        data-gratipay-widget="button"
-        src="//gttp.co/v1.js"></script>
-</p>
-{% endif %}
-
 {% if theme_tidelift_url %}
 <h3>Professional support</h3>
 <p>

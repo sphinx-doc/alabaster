@@ -118,14 +118,10 @@ Variables and feature toggles
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings.
-* ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
-  if you want a Gratipay 'Donate' section in your sidebar.
-
-  * This used to be ``gittip_user`` before that service changed its name to
-    Gratipay; we've left the old setting in place as an alias for backwards
-    compatibility reasons. It may be removed in the future.
-  * If both options are given, ``gratipay_user`` wins.
-
+* ``gittip_user`` / ``gratipay_user``: **Deprecated**, as that service is no
+  longer running. These options still exist (removing them would break
+  backwards compatibility; Sphinx errors when users try to set nonexistent
+  options) but they no longer do anything.
 * ``analytics_id``: Set to your `Google Analytics
   <http://www.google.com/analytics/>`_ ID (e.g. ``UA-#######-##``) to enable
   tracking.
