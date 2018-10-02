@@ -2,6 +2,10 @@
 Changelog
 =========
 
+- :feature:`142 backported` Add a ``tidelift_url`` option, which when set
+  (default is ``None``/unset) adds a small text snippet to the
+  ``donation.html`` sidebar component, linking to the given URL string. Thanks
+  to Steven Loria for the patch.
 - :bug:`141` Fix a typo in the code-block font family, which incorrectly
   specified ``Deja Vu Sans Mono`` instead of ``DejaVu Sans Mono``. This would
   primarily impact systems lacking the first two fonts (``Consolas`` and
