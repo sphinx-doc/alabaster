@@ -27,7 +27,7 @@ html_theme_options = {
     "github_user": "bitprophet",
     "github_repo": "alabaster",
     "fixed_sidebar": True,
-    "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",
+    "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",  # noqa
 }
 
 extensions.append("releases")
