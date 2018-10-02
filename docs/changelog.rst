@@ -2,6 +2,9 @@
 Changelog
 =========
 
+- :bug:`-` On some browsers/platforms, 'badge'-style sidebar elements were
+  displaying dotted underlines. This was unintentional and explicit styling has
+  been added to remove them. Credit to Steven Loria.
 - :bug:`128` Remove Gittip/Gratipay output from the ``donation.html`` sidebar
   component, since the actual service has been insolvent since 2017. The
   configuration options remain in place for the time being (to avoid breaking
