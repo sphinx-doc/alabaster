@@ -17,7 +17,7 @@ Changelog
   We expect this to be followed-up on later with more service-specific options
   for services like Patreon. Thanks to Melanie Crutchfield for the report and
   Steven Loria for the initial patch.
-- :bug:`128` Remove Gittip/Gratipay output from the ``donation.html`` sidebar
+- :bug:`128` Remove Gittip/Gratipay output from the ``donate.html`` sidebar
   component, since the actual service has been insolvent since 2017. The
   configuration options remain in place for the time being (to avoid breaking
   backwards compatibility) but no longer do anything. Thanks to Joe Alcorn for
@@ -29,7 +29,7 @@ Changelog
 
 - :feature:`142 backported` Add a ``tidelift_url`` option, which when set
   (default is ``None``/unset) adds a small text snippet to the
-  ``donation.html`` sidebar component, linking to the given URL string. Thanks
+  ``donate.html`` sidebar component, linking to the given URL string. Thanks
   to Steven Loria for the patch.
 - :bug:`141` Fix a typo in the code-block font family, which incorrectly
   specified ``Deja Vu Sans Mono`` instead of ``DejaVu Sans Mono``. This would

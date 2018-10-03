@@ -118,7 +118,7 @@ banners.
   settings.
 * ``donate_url``: URL to generic/arbitrary donation service; causes display of
   a basic 'Donate' badge/shield (from https://shields.io) linking to the URL
-  given. Requires ``donation.html`` in your ``html_sidebars``.
+  given.
 * ``github_banner``: ``true`` or ``false`` - whether to apply a 'Fork me on
   Github' banner in the top right corner of the page.
 
@@ -146,7 +146,6 @@ banners.
 * ``tidelift_url``: Set this to your `Tidelift <https://tidelift.com/>`_
   project URL if you want a "Professional support" section in your sidebar.
 
-  - Requires ``donation.html`` to be enabled in your ``html_sidebars`` option.
   - If copying the URL straight from Tidelift's site, you'll probably want to
     change ``&utm_campaign=readme`` to ``&utm_campaign=docs``.
 
