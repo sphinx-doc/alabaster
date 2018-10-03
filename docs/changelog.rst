@@ -9,6 +9,14 @@ Changelog
   </customization>` to break up the now rather long list of "variables and
   feature toggles" into additional sections; includes alphabetizing those
   lists, to make it a bit easier to find docs for a specific setting.
+- :feature:`132 backported` (partially via :issue:`143`) Add a generic donation
+  badge/url option (visually powered by https://shields.io/) as well as a
+  service-specific donation option for `OpenCollective
+  <https://opencollective.com>`_.
+
+  We expect this to be followed-up on later with more service-specific options
+  for services like Patreon. Thanks to Melanie Crutchfield for the report and
+  Steven Loria for the initial patch.
 - :bug:`128` Remove Gittip/Gratipay output from the ``donation.html`` sidebar
   component, since the actual service has been insolvent since 2017. The
   configuration options remain in place for the time being (to avoid breaking

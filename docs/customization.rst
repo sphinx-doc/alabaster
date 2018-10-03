@@ -116,6 +116,9 @@ banners.
   string - used to display a `Codecov <https://codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings.
+* ``donate_url``: URL to generic/arbitrary donation service; causes display of
+  a basic 'Donate' badge/shield (from https://shields.io) linking to the URL
+  given. Requires ``donation.html`` in your ``html_sidebars``.
 * ``github_banner``: ``true`` or ``false`` - whether to apply a 'Fork me on
   Github' banner in the top right corner of the page.
 
