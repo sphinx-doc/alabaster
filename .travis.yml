@@ -31,8 +31,5 @@ install:
 script:
   - inv travis.blacken
   - flake8
-  # We have no real tests at present so we just make sure installation works,
-  # first off.
-  - pip install .
   # Does our own dogfooding website build ok? :D
   - inv docs
