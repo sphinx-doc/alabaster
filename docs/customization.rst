@@ -130,7 +130,8 @@ banners.
    * If ``true``, requires that you set ``github_user`` and ``github_repo``.
    * There are also the ``github_type`` and ``github_count`` options, which
      behave as described in `Github Buttons' documentation
-     <https://ghbtns.com>`_:
+     <https://ghbtns.com>`_.
+
 * ``github_repo``: Used by ``github_button`` and ``github_banner`` (see above);
   does nothing if both of those are set to ``false``.
 * ``github_user``: Used by ``github_button`` and ``github_banner`` (see above);
