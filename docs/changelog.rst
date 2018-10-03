@@ -2,6 +2,7 @@
 Changelog
 =========
 
+- :release:`0.7.12 <2018-10-02>`
 - :bug:`-` On some browsers/platforms, 'badge'-style sidebar elements were
   displaying dotted underlines. This was unintentional and explicit styling has
   been added to remove them. Credit to Steven Loria.
