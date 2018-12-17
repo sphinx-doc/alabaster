@@ -25,16 +25,11 @@
 {% endif %}
 
 {% if theme_travis_button|lower != 'false' %}
-{% if theme_travis_button|lower == 'true' %}
-    {% set path = theme_github_user + '/' + theme_github_repo %}
-{% else %}
-    {% set path = theme_travis_button %}
-{% endif %}
 <p>
-<a class="badge" href="https://travis-ci.org/{{ path }}">
+<a class="badge" href="{{ theme_travis_build_url }}">
     <img
-        alt="https://secure.travis-ci.org/{{ path }}.svg?branch={{ theme_badge_branch }}"
-        src="https://secure.travis-ci.org/{{ path }}.svg?branch={{ theme_badge_branch }}"
+        alt="{{ theme_travis_badge_url }}"
+        src="{{ theme_travis_badge_url }}"
     />
 </a>
 </p>
