@@ -5,7 +5,7 @@ semantic_version>=2.4,<2.5
 wheel==0.24
 twine==1.11.0
 releases>=1.5.1,<2.0
-flake8==2.4.0
+flake8==3.6.0
 
 # Install ourselves direct, even when being used on eg RTD. Otherwise we can't
 # dogfood our own changes until release to PyPI.
