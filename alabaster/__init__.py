@@ -33,7 +33,7 @@ def set_up_travis_context(context):
 
     travis_slug = github_slug if travis_button_enabled else travis_button
 
-    travis_tld = context["theme_travis_tld"].lower()
+    travis_tld = context["theme_travis_tld"].strip('.').lower()
     if travis_button_enabled and travis_tld == "auto":
         try:
             travis_api_response = requests.get(
