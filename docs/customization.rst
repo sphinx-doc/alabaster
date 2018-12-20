@@ -153,6 +153,9 @@ banners.
   string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings.
+* ``travis_tld``: ``com`` or ``org`` (default). If ``com``, the badge points
+  to the new `travis-ci.com <https://travis-ci.com>`_ platform, and points to
+  `travis-ci.org <https://travis-ci.org>`_ otherwise.
 
 Non-service sidebar control
 ---------------------------
