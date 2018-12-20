@@ -1,10 +1,5 @@
 import os
 
-try:
-    import requests
-except ImportError:
-    pass
-
 from alabaster import _version as version
 
 
@@ -34,26 +29,6 @@ def set_up_travis_context(context):
     travis_slug = github_slug if travis_button_enabled else travis_button
 
     travis_tld = context["theme_travis_tld"].strip('.').lower()
-    if travis_button_enabled and travis_tld == "auto":
-        try:
-            travis_api_response = requests.get(
-                "https://api.travis-ci.com/repo/{}".format(
-                    travis_slug.replace("/", "%2F")
-                ),
-                headers={
-                    "Travis-API-Version": "3",
-                    "User-Agent": "Sphinx-Alabaster-Theme/{version} "
-                    "(+https://github.com/bitprophet/alabaster)".format(
-                        version=version.__version__
-                    ),
-                },
-            )
-            is_travis_com_repo = 200 <= travis_api_response.status_code < 300
-            travis_tld = "com" if is_travis_com_repo else "org"
-        except NameError:
-            travis_tld = "com"
-    elif travis_tld != "com":
-        travis_tld = "org"
     travis_base_uri = "travis-ci.{}/{}".format(travis_tld, travis_slug)
     context["theme_travis_build_url"] = "https://{}".format(travis_base_uri)
     context["theme_travis_badge_url"] = "https://api.{}.svg?branch={}".format(
