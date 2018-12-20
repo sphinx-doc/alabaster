@@ -28,7 +28,7 @@ def set_up_travis_context(context):
 
     travis_slug = github_slug if travis_button_enabled else travis_button
 
-    travis_tld = context["theme_travis_tld"].strip('.').lower()
+    travis_tld = context["theme_travis_tld"].strip(".").lower()
     travis_base_uri = "travis-ci.{}/{}".format(travis_tld, travis_slug)
     context["theme_travis_build_url"] = "https://{}".format(travis_base_uri)
     context["theme_travis_badge_url"] = "https://api.{}.svg?branch={}".format(
