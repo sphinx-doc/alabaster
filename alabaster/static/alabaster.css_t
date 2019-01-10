@@ -1,53 +1,56 @@
-{% set theme_body_bg = theme_body_bg or theme_base_bg %}
-{% set theme_code_highlight_bg = theme_code_highlight_bg or theme_body_bg %}
-{% set theme_sidebar_header = theme_sidebar_header or theme_gray_1 %}
-{% set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
-{% set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
+{%- set theme_body_bg = theme_body_bg or theme_base_bg %}
+{%- set theme_code_highlight_bg = theme_code_highlight_bg or theme_body_bg %}
+{%- set theme_sidebar_header = theme_sidebar_header or theme_gray_1 %}
+{%- set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
+{%- set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
 
-{% set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
-{% set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
+{%- set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
+{%- set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
+
+{%- set theme_head_font_family = theme_head_font_family or theme_font_family %}
+
+{#- set up admonition styling #}
+{#- - basic level #}
+{%- set theme_admonition_xref_bg = theme_admonition_xref_bg or theme_xref_bg %}
+{%- set theme_admonition_bg = theme_admonition_bg or theme_gray_2 %}
+{%- set theme_note_bg = theme_note_bg or theme_gray_2 %}
+{%- set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
+
+{#- - critical level #}
+{%- set theme_danger_bg = theme_danger_bg or theme_pink_1 %}
+{%- set theme_danger_border = theme_danger_border or theme_pink_2 %}
+{%- set theme_danger_shadow = theme_danger_shadow or theme_pink_3 %}
+
+{%- set theme_error_bg = theme_error_bg or theme_pink_1 %}
+{%- set theme_error_border = theme_error_border or theme_pink_2 %}
+{%- set theme_error_shadow = theme_error_shadow or theme_pink_3 %}
+
+{#- - warning level #}
+{%- set theme_caution_bg = theme_caution_bg or theme_pink_1 %}
+{%- set theme_caution_border = theme_caution_border or theme_pink_2 %}
+
+{%- set theme_attention_bg = theme_attention_bg or theme_pink_1 %}
+{%- set theme_attention_border = theme_attention_border or theme_pink_2 %}
+
+{%- set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
+{%- set theme_warn_border = theme_warn_border or theme_pink_2 %}
+
+{#- - normal level #}
+{%- set theme_important_bg = theme_important_bg or theme_gray_2 %}
+{%- set theme_tip_bg = theme_tip_bg or theme_gray_2 %}
+{%- set theme_hint_bg = theme_hint_bg or theme_gray_2 %}
+
+{#- /set up admonition styling #}
+
+{%- set theme_shadow = theme_shadow or theme_gray_2 %}
 
 
-{# set up admonition styling #}
-{# - basic level #}
-{% set theme_admonition_xref_bg = theme_admonition_xref_bg or theme_xref_bg %}
-{% set theme_admonition_bg = theme_admonition_bg or theme_gray_2 %}
-{% set theme_note_bg = theme_note_bg or theme_gray_2 %}
-{% set theme_seealso_bg = theme_seealso_bg or theme_gray_2 %}
+{%- set theme_topic_bg = theme_topic_bg or theme_gray_2 %}
 
-{# - critical level #}
-{% set theme_danger_bg = theme_danger_bg or theme_pink_1 %}
-{% set theme_danger_border = theme_danger_border or theme_pink_2 %}
-{% set theme_danger_shadow = theme_danger_shadow or theme_pink_3 %}
+{%- set theme_narrow_sidebar_link = theme_narrow_sidebar_link or theme_gray_3 %}
+{%- set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
 
-{% set theme_error_bg = theme_error_bg or theme_pink_1 %}
-{% set theme_error_border = theme_error_border or theme_pink_2 %}
-{% set theme_error_shadow = theme_error_shadow or theme_pink_3 %}
-
-{# - warning level #}
-{% set theme_caution_bg = theme_caution_bg or theme_pink_1 %}
-{% set theme_caution_border = theme_caution_border or theme_pink_2 %}
-
-{% set theme_attention_bg = theme_attention_bg or theme_pink_1 %}
-{% set theme_attention_border = theme_attention_border or theme_pink_2 %}
-
-{% set theme_warn_bg = theme_warn_bg or theme_pink_1 %}
-{% set theme_warn_border = theme_warn_border or theme_pink_2 %}
-
-{# - normal level #}
-{% set theme_important_bg = theme_important_bg or theme_gray_2 %}
-{% set theme_tip_bg = theme_tip_bg or theme_gray_2 %}
-{% set theme_hint_bg = theme_hint_bg or theme_gray_2 %}
-
-{# /set up admonition styling #}
-
-{% set theme_shadow = theme_shadow or theme_gray_2 %}
-
-
-{% set theme_topic_bg = theme_topic_bg or theme_gray_2 %}
-
-{% set theme_narrow_sidebar_link = theme_narrow_sidebar_link or theme_gray_3 %}
-{% set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
+{%- set theme_relbar_border = theme_relbar_border or theme_gray_2 -%}
 
 
 @import url("basic.css");
@@ -216,6 +219,19 @@ div.sphinxsidebar hr {
     text-align: left;
     margin-left: 0;
     width: 50%;
+}
+
+div.sphinxsidebar .badge {
+    border-bottom: none;
+}
+
+div.sphinxsidebar .badge:hover {
+    border-bottom: none;
+}
+
+/* To address an issue with donation coming after search */
+div.sphinxsidebar h3.donation {
+    margin-top: 10px;
 }
 
 /* -- body styles ----------------------------------------------------------- */
@@ -703,4 +719,51 @@ table.docutils.citation, table.docutils.citation td, table.docutils.citation th 
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+
+/* relbar */
+
+.related {
+    line-height: 30px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.related.top {
+    border-bottom: 1px solid {{ theme_relbar_border }};
+    margin-bottom: 20px;
+}
+
+.related.bottom {
+    border-top: 1px solid {{ theme_relbar_border }};
+}
+
+.related ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.related li {
+    display: inline;
+}
+
+nav#rellinks {
+    float: right;
+}
+
+nav#rellinks li+li:before {
+    content: "|";
+}
+
+nav#breadcrumbs li+li:before {
+    content: "\00BB";
+}
+
+/* Hide certain items when printing */
+@media print {
+    div.related {
+        display: none;
+    }
 }
