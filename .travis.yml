@@ -7,6 +7,12 @@ python:
   - "3.6"
   - "pypy"
   - "pypy3"
+matrix:
+  include:
+  - python: 3.7
+    dist: xenial
+  - python: nightly
+    dist: xenial
 env:
   - SPHINX=">=1.3,<1.4"
   - SPHINX=">=1.4,<1.5"
