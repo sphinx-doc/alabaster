@@ -625,13 +625,13 @@ a:hover tt, a:hover code {
     div.sphinxsidebar {
         display: block;
         float: none;
-        width: 102.5%;
+        width: 100%;
         {%- if theme_fixed_sidebar|lower == 'true' %}
         margin: -20px -30px 20px -30px;
         {%- else %}
         margin: 50px -30px -20px -30px;
         {%- endif %}
-        padding: 10px 20px;
+        padding: 10px 30px;
         background: {{ theme_narrow_sidebar_bg }};
         color: {{ theme_narrow_sidebar_fg }};
     }
@@ -663,6 +663,9 @@ a:hover tt, a:hover code {
     }
 
     div.body {
+        /* reset basic.css */
+        min-width: unset;
+
         min-height: 0;
         padding: 0;
     }
