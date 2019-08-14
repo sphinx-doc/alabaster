@@ -1,5 +1,10 @@
 <h3>{{ _('Navigation') }}</h3>
-{{ toctree(includehidden=theme_sidebar_includehidden, collapse=theme_sidebar_collapse) }}
+{{ toctree(
+    collapse=theme_sidebar_collapse,
+    maxdepth=theme_sidebar_maxdepth|int,
+    titles_only=theme_sidebar_titles_only,
+    includehidden=theme_sidebar_includehidden
+) }}
 {% if theme_extra_nav_links %}
 <hr />
 <ul>
