@@ -31,7 +31,7 @@
     {% set path = theme_travis_button %}
 {% endif %}
 <p>
-<a href="https://travis-ci.org/{{ path }}">
+<a class="badge" href="https://travis-ci.org/{{ path }}">
     <img
         alt="https://secure.travis-ci.org/{{ path }}.svg?branch={{ theme_badge_branch }}"
         src="https://secure.travis-ci.org/{{ path }}.svg?branch={{ theme_badge_branch }}"
@@ -47,7 +47,7 @@
     {% set path = theme_codecov_button %}
 {% endif %}
 <p>
-<a href="https://codecov.io/github/{{ path }}">
+<a class="badge" href="https://codecov.io/github/{{ path }}">
     <img
     alt="https://codecov.io/github/{{ path }}/coverage.svg?branch={{ theme_badge_branch }}"
     src="https://codecov.io/github/{{ path }}/coverage.svg?branch={{ theme_badge_branch }}"

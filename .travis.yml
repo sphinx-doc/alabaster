@@ -12,6 +12,7 @@ env:
   - SPHINX=">=1.4,<1.5"
   - SPHINX=">=1.5,<1.6"
   - SPHINX=">=1.6,<1.7"
+  - SPHINX=">=1.7,<1.8"
 install:
   # For some reason Travis' build envs have wildly different pip/setuptools
   # versions between minor Python versions, and this can cause many hilarious
@@ -28,10 +29,7 @@ install:
   # Dev tooling sanity test: can invoke list tasks?
   - inv --list
 script:
-  # We have no real tests at present so we just make sure installation works,
-  # first off.
-  - pip install .
+  - inv travis.blacken
+  - flake8
   # Does our own dogfooding website build ok? :D
   - inv docs
-  # I have this in my git pre-push hook, but contributors probably don't
-  - flake8
