@@ -6,7 +6,9 @@
   {% if theme_touch_icon %}
     <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
   {% endif %}
-  {% if theme_canonical_url %}
+
+  {# Deprecated in favor of html_baseurl (pageurl). This is already set in the basic theme #}
+  {% if theme_canonical_url and not pageurl %}
     <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html"/>
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
