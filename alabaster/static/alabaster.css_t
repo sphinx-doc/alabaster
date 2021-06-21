@@ -636,7 +636,7 @@ div.sphinxsidebar {
     }
 
     ul {
-    	margin-left: 0;
+        margin-left: 0;
     }
 
     li > ul {
