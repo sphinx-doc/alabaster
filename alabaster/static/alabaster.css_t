@@ -576,7 +576,7 @@ div.sphinxsidebar {
     div.sphinxsidebar {
         display: block;
         float: none;
-        width: 102.5%;
+        width: unset;
         {%- if theme_fixed_sidebar|lower == 'true' %}
         margin: -20px -30px 20px -30px;
         position: static;
