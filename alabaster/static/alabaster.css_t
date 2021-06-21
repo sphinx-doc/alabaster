@@ -616,6 +616,7 @@ div.sphinxsidebar {
 
     div.body {
         min-height: 0;
+        min-width: auto;
         padding: 0;
     }
 
