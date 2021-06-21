@@ -616,8 +616,13 @@ div.sphinxsidebar {
 
     div.body {
         min-height: 0;
-        min-width: auto;
+        min-width: auto; /* fixes width on small screens, breaks .hll */
         padding: 0;
+    }
+    
+    .hll {
+        /* "fixes" the breakage */
+        width: max-content;
     }
 
     .rtd_doc_footer {
