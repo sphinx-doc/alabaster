@@ -12,7 +12,9 @@ Live examples of this theme can be seen on `this project's own website
 <http://alabaster.readthedocs.io>`_, `paramiko.org <http://paramiko.org>`_,
 `fabfile.org <http://fabfile.org>`_ and `pyinvoke.org <http://pyinvoke.org>`_.
 
-For more documentation, please see http://alabaster.readthedocs.io.
+For more documentation, please see http://alabaster.readthedocs.io. For a
+roadmap, see the maintainer's `roadmap page
+<http://bitprophet.org/projects#roadmap>`_.
 
 .. note::
     You can install the development version via ``pip install -e
