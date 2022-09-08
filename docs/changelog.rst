@@ -2,6 +2,8 @@
 Changelog
 =========
 
+- :support:`- backported` Tweak CSS somewhat for compatibility with modern
+  Sphinx versions' base stylesheet.
 - :release:`0.7.12 <2018-10-02>`
 - :bug:`-` On some browsers/platforms, 'badge'-style sidebar elements were
   displaying dotted underlines. This was unintentional and explicit styling has
