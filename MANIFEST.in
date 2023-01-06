@@ -1,4 +1,0 @@
-include LICENSE
-include README.rst
-recursive-include alabaster *.*
-recursive-exclude alabaster .*.swp

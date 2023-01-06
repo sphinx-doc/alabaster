@@ -1,6 +1,7 @@
 import os
 
-from alabaster import _version as version
+__version_info__ = (0, 7, 13)
+__version__ = "0.7.13"
 
 
 def get_path():
@@ -12,7 +13,7 @@ def get_path():
 
 
 def update_context(app, pagename, templatename, context, doctree):
-    context["alabaster_version"] = version.__version__
+    context["alabaster_version"] = __version__
 
 
 def setup(app):
@@ -20,4 +21,4 @@ def setup(app):
     theme_path = os.path.abspath(os.path.dirname(__file__))
     app.add_html_theme("alabaster", theme_path)
     app.connect("html-page-context", update_context)
-    return {"version": version.__version__, "parallel_read_safe": True}
+    return {"version": __version__, "parallel_read_safe": True}
