@@ -1,6 +1,7 @@
 import os
 
-from alabaster import _version as version
+__version_info__ = (0, 7, 12)
+__version__ = "0.7.12"
 
 
 def get_path():
