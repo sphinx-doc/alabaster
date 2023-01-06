@@ -6,9 +6,8 @@ templates_path = ["_templates"]
 source_suffix = ".rst"
 master_doc = "index"
 
-project = u"Alabaster"
-year = datetime.now().year
-copyright = u"%d Jeff Forcier" % year
+project = "Alabaster"
+copyright = f"{datetime.now().year} Jeff Forcier"
 
 exclude_patterns = ["_build"]
 
