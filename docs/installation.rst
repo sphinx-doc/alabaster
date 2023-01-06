@@ -2,43 +2,20 @@
 Installation
 ============
 
-The bare minimum required to install Alabaster is as follows:
+Alabaster requires **Sphinx 1.6 or newer**, and is included as the default
+theme.
 
-* If you're on **Sphinx 1.2 or older**:
+.. note::
+  If you distribute your documentation via `Read the Docs
+  <https://readthedocs.org>`_, you will need to explicitly enable
+  Alabaster by adding this line to your ``conf.py``::
 
-    * ``pip install alabaster`` or equivalent.
-    * Add the following to your ``conf.py`` so Alabaster's theme location &
-      mini-extension are located & loaded:
+  .. code:: python
 
-       .. code-block:: python
+     html_theme = 'alabaster'
 
-            import alabaster
-
-            html_theme_path = [alabaster.get_path()]
-            extensions = ['alabaster']
-            html_theme = 'alabaster'
-
-    * If you've installed Alabaster by hand (without using ``pip``) and/or are
-      doing funky things to your PYTHONPATH, you may need to replace the
-      ``alabaster.get_path()`` call with your own explicit string, as per `the
-      Sphinx config docs
-      <http://sphinx-doc.org/config.html#confval-html_theme_path>`_.
-
-* If you have **Sphinx 1.3 or above**:
-
-    * You already have Alabaster installed as a dependency! No need to manually
-      install it or explicitly load it.
-
-      .. note::
-        If you distribute your documentation via the excellent `Read the Docs
-        <https://readthedocs.org>`_, you may need to explicitly enable
-        Alabaster (as RTD defaults to using its own theme) by adding this line
-        to your ``conf.py``::
-
-            html_theme = 'alabaster'
-
-* **Either way**, add an explicit ``html_sidebars`` setting so Alabaster's
-  customized sidebar templates are loaded:
+To set-up Alabaster, add an explicit ``html_sidebars`` setting so
+Alabaster's customized sidebar templates are loaded:
    
    .. code-block:: python
     
