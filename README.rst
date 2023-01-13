@@ -1,4 +1,4 @@
-|version| |python| |license| |ci| |coverage|
+|version| |python| |license| |ci|
 
 .. |version| image:: https://img.shields.io/pypi/v/alabaster
     :target: https://pypi.org/project/alabaster/
@@ -12,9 +12,6 @@
 .. |ci| image:: https://img.shields.io/circleci/build/github/bitprophet/alabaster/main
     :target: https://app.circleci.com/pipelines/github/bitprophet/alabaster
     :alt: CircleCI
-.. |coverage| image:: https://img.shields.io/codecov/c/gh/bitprophet/alabaster
-    :target: https://app.codecov.io/gh/bitprophet/alabaster
-    :alt: Codecov
 
 What is Alabaster?
 ==================
