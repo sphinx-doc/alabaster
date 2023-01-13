@@ -1,10 +1,8 @@
-sphinx>=1.6
-invoke>=1.0.0
-invocations>=1.2.0
+#invoke>=2.0
+invoke @ git+https://github.com/pyinvoke/invoke@main
+invocations>=3.0
 semantic_version>=2.4,<2.5
-wheel==0.24
-twine==1.11.0
-releases>=1.5.1,<2.0
+releases>=2
 flake8==3.6.0
 black==19.10b0
 
