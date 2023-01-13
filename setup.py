@@ -13,6 +13,8 @@ version = _locals["__version__"]
 with codecs.open("README.rst", encoding="utf-8") as f:
     readme = f.read()
 
+code_ns = "bitprophet/alabaster"
+
 setup(
     name="alabaster",
     version=version,
@@ -21,6 +23,11 @@ setup(
     author="Jeff Forcier",
     author_email="jeff@bitprophet.org",
     url="https://alabaster.readthedocs.io",
+    project_urls={
+        "Source": f"https://github.com/{code_ns}",
+        "Changelog": f"https://github.com/{code_ns}/blob/main/docs/changelog.rst",  # noqa
+        "CI": f"https://app.circleci.com/pipelines/github/{code_ns}",
+    },
     packages=["alabaster"],
     include_package_data=True,
     entry_points={"sphinx.html_themes": ["alabaster = alabaster"]},
