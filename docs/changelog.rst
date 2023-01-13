@@ -2,6 +2,7 @@
 Changelog
 =========
 
+- :release:`0.7.13 <2023-01-13>`
 - :support:`- backported` Modernized the project: s/Travis/Circle/ for CI,
   README badges, ``setup.cfg`` removal, metadata refresh, etc.
 - :support:`- backported` Dropped support for Python 2 and Python <3.6. This
