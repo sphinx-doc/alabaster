@@ -7,11 +7,15 @@ orbs:
 jobs:
 
   compat:
+    # Default to the "bottom" values for the overall param lists. Would be nice
+    # to have better variables, does Circle do that?
     parameters:
       python:
         type: string
+        default: "3.6"
       sphinx:
         type: string
+        default: "1.6.7"
     executor:
       name: orb/default
       version: "<< parameters.python >>"
@@ -48,14 +52,12 @@ workflows:
       # We have no tests to matrix, and this is too niche for the orb, so just
       # do a bunch of install/run tests on different Python and Sphinx versions
       # for compat testing.
+      # Split it up into two broad dimensions to avoid a huge product!
       - compat:
-          name: "Docs (Py<< matrix.python >>/Sphinx << matrix.sphinx >>)"
-          # May as well not burn a lot of credits if something is seriously
-          # busted.
+          name: "Docs (Py3.6/Sphinx << matrix.sphinx >>)"
           requires: ["Docs"]
           matrix:
             parameters:
-              python: ["3.7", "3.8", "3.9", "3.10", "3.11"]
               # TODO: still need to find a way to solve escaping hell on circle
               # re: parameters containing >< symbols
               sphinx:
@@ -66,5 +68,16 @@ workflows:
                 - "3.5.4"
                 - "4.5.0"
                 - "5.3.0"
-                - "6.1.3"
-            exclude: []
+                # 6.x already covered by the base docs job
+      - compat:
+          name: "Docs (Py<< matrix.python >>/Sphinx 1.6.7)"
+          requires: ["Docs"]
+          matrix:
+            parameters:
+              python:
+                # 3.6 already covered by the base docs job
+                - "3.7"
+                - "3.8"
+                - "3.9"
+                - "3.10"
+                - "3.11"
