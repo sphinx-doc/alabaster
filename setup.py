@@ -24,6 +24,7 @@ setup(
     packages=["alabaster"],
     include_package_data=True,
     entry_points={"sphinx.html_themes": ["alabaster = alabaster"]},
+    python_requires=">=3.6",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
