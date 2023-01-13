@@ -1,3 +1,21 @@
+|version| |python| |license| |ci| |coverage|
+
+.. |version| image:: https://img.shields.io/pypi/v/alabaster
+    :target: https://pypi.org/project/alabaster/
+    :alt: PyPI - Package Version
+.. |python| image:: https://img.shields.io/pypi/pyversions/alabaster
+    :target: https://pypi.org/project/alabaster/
+    :alt: PyPI - Python Version
+.. |license| image:: https://img.shields.io/pypi/l/alabaster
+    :target: https://github.com/bitprophet/alabaster/blob/main/LICENSE
+    :alt: PyPI - License
+.. |ci| image:: https://img.shields.io/circleci/build/github/bitprophet/alabaster/main
+    :target: https://app.circleci.com/pipelines/github/bitprophet/alabaster
+    :alt: CircleCI
+.. |coverage| image:: https://img.shields.io/codecov/c/gh/bitprophet/alabaster
+    :target: https://app.codecov.io/gh/bitprophet/alabaster
+    :alt: Codecov
+
 What is Alabaster?
 ==================
 
