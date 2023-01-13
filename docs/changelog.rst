@@ -2,6 +2,8 @@
 Changelog
 =========
 
+- :support:`- backported` Modernized the project: s/Travis/Circle/ for CI,
+  README badges, ``setup.cfg`` removal, metadata refresh, etc.
 - :support:`- backported` Dropped support for Python 2 and Python <3.6. This
   includes various minor updates to work correctly with modern versions of
   Sphinx (1.6 at the very least). Thanks to Adam Turner for a pile of patches
