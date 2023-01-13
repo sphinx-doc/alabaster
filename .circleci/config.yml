@@ -49,6 +49,7 @@ workflows:
           name: Release test
       - orb/docs:
           name: Docs
+          task: "docs --nitpick"
       # We have no tests to matrix, and this is too niche for the orb, so just
       # do a bunch of install/run tests on different Python and Sphinx versions
       # for compat testing.
