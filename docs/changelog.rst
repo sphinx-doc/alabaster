@@ -2,6 +2,14 @@
 Changelog
 =========
 
+- :support:`- backported` Dropped support for Python 2 and Python <3.6. This
+  includes various minor updates to work correctly with modern versions of
+  Sphinx (1.6 at the very least). Thanks to Adam Turner for a pile of patches
+  here.
+
+  .. warning::
+    This change is backwards incompatible if you're on an old Python version.
+
 - :support:`- backported` Tweak CSS somewhat for compatibility with modern
   Sphinx versions' base stylesheet.
 - :release:`0.7.12 <2018-10-02>`
