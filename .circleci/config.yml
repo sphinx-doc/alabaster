@@ -7,15 +7,15 @@ orbs:
 jobs:
 
   compat:
-    # Default to the "bottom" values for the overall param lists. Would be nice
-    # to have better variables, does Circle do that?
     parameters:
       python:
         type: string
+        # baseline default, because why not
         default: "3.6"
       sphinx:
         type: string
-        default: "1.6.7"
+        # New-enough that most other deps in ecosystem won't get pissy
+        default: "4.5.0"
     executor:
       name: orb/default
       version: "<< parameters.python >>"
