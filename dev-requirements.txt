@@ -1,5 +1,4 @@
-#invoke>=2.0
-invoke @ git+https://github.com/pyinvoke/invoke@main
+invoke>=2.0
 invocations>=3.0
 semantic_version>=2.4,<2.5
 releases>=2
