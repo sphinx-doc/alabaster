@@ -13,7 +13,7 @@ version = _locals["__version__"]
 with codecs.open("README.rst", encoding="utf-8") as f:
     readme = f.read()
 
-code_ns = "bitprophet/alabaster"
+code_ns = "sphinx-doc/alabaster"
 
 setup(
     name="alabaster",

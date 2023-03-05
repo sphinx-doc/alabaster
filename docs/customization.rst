@@ -21,7 +21,7 @@ Alabaster's behavior & style can be customized in multiple ways:
       whenever possible, even if an option is present below.
 
         * When in doubt, simply check `the built-in stylesheet's template
-          <https://github.com/bitprophet/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
+          <https://github.com/sphinx-doc/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
           to see whether the option you're looking at is a basic variable
           insertion or something more complicated.)
 
@@ -55,13 +55,13 @@ set in ``conf.py`` alongside the rest, e.g.:
 
     html_theme_options = {
         'logo': 'logo.png',
-        'github_user': 'bitprophet',
+        'github_user': 'sphinx-doc',
         'github_repo': 'alabaster',
     }
 
 The following subsections detail available such options, including notes about
 behavior. Default values can be found by viewing `theme.conf
-<https://github.com/bitprophet/alabaster/blob/master/alabaster/theme.conf>`_
+<https://github.com/sphinx-doc/alabaster/blob/master/alabaster/theme.conf>`_
 directly.
 
 Basics

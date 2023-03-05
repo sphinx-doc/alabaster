@@ -7,10 +7,10 @@
     :target: https://pypi.org/project/alabaster/
     :alt: PyPI - Python Version
 .. |license| image:: https://img.shields.io/pypi/l/alabaster
-    :target: https://github.com/bitprophet/alabaster/blob/main/LICENSE
+    :target: https://github.com/sphinx-doc/alabaster/blob/main/LICENSE
     :alt: PyPI - License
-.. |ci| image:: https://img.shields.io/circleci/build/github/bitprophet/alabaster/main
-    :target: https://app.circleci.com/pipelines/github/bitprophet/alabaster
+.. |ci| image:: https://img.shields.io/circleci/build/github/sphinx-doc/alabaster/main
+    :target: https://app.circleci.com/pipelines/github/sphinx-doc/alabaster
     :alt: CircleCI
 
 What is Alabaster?
@@ -27,10 +27,8 @@ Live examples of this theme can be seen on `this project's own website
 <http://alabaster.readthedocs.io>`_, `paramiko.org <http://paramiko.org>`_,
 `fabfile.org <http://fabfile.org>`_ and `pyinvoke.org <http://pyinvoke.org>`_.
 
-For more documentation, please see http://alabaster.readthedocs.io. For a
-roadmap, see the maintainer's `roadmap page
-<http://bitprophet.org/projects#roadmap>`_.
+For more documentation, please see http://alabaster.readthedocs.io.
 
 .. note::
     You can install the development version via ``pip install -e
-    git+https://github.com/bitprophet/alabaster/#egg=alabaster``.
+    git+https://github.com/sphinx-doc/alabaster/#egg=alabaster``.

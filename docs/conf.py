@@ -23,13 +23,13 @@ html_sidebars = {
 }
 html_theme_options = {
     "description": "A light, configurable Sphinx theme",
-    "github_user": "bitprophet",
+    "github_user": "sphinx-doc",
     "github_repo": "alabaster",
     "fixed_sidebar": True,
     "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",  # noqa
 }
 
 extensions.append("releases")
-releases_github_path = "bitprophet/alabaster"
+releases_github_path = "sphinx-doc/alabaster"
 # Our pre-0.x releases are unstable / mix bugs+features
 releases_unstable_prehistory = True
