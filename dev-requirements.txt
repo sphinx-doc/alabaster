@@ -1,10 +1,11 @@
 invoke>=2.0
 invocations>=3.0
 semantic_version>=2.4,<2.5
-releases>=2
 flake8==3.6.0
 black==19.10b0
 
 # Install ourselves direct, even when being used on eg RTD. Otherwise we can't
 # dogfood our own changes until release to PyPI.
 -e .
+
+-r docs/requirements.txt
