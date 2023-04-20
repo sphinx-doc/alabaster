@@ -1,17 +1,19 @@
-|version| |python| |license| |ci|
+.. image:: https://img.shields.io/pypi/v/alabaster.svg
+   :target: https://pypi.org/project/alabaster/
+   :alt: Package on PyPI
 
-.. |version| image:: https://img.shields.io/pypi/v/alabaster
-    :target: https://pypi.org/project/alabaster/
-    :alt: PyPI - Package Version
-.. |python| image:: https://img.shields.io/pypi/pyversions/alabaster
-    :target: https://pypi.org/project/alabaster/
-    :alt: PyPI - Python Version
-.. |license| image:: https://img.shields.io/pypi/l/alabaster
-    :target: https://github.com/sphinx-doc/alabaster/blob/main/LICENSE
-    :alt: PyPI - License
-.. |ci| image:: https://img.shields.io/circleci/build/github/sphinx-doc/alabaster/main
+.. image:: https://img.shields.io/circleci/build/github/sphinx-doc/alabaster/main
     :target: https://app.circleci.com/pipelines/github/sphinx-doc/alabaster
-    :alt: CircleCI
+    :alt: CI Status
+
+.. image:: https://readthedocs.org/projects/alabaster/badge/?version=master
+   :target: https://alabaster.readthedocs.io/
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
+   :target: https://opensource.org/licenses/BSD-3-Clause
+   :alt: BSD 3 Clause
+
 
 What is Alabaster?
 ==================
