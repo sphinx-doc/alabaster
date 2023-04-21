@@ -6,7 +6,7 @@
     :target: https://app.circleci.com/pipelines/github/sphinx-doc/alabaster
     :alt: CI Status
 
-.. image:: https://readthedocs.org/projects/alabaster/badge/?version=master
+.. image:: https://readthedocs.org/projects/alabaster/badge/
    :target: https://alabaster.readthedocs.io/
    :alt: Documentation Status
 
