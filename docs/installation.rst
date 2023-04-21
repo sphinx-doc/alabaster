@@ -8,9 +8,9 @@ theme.
 .. note::
   If you distribute your documentation via `Read the Docs
   <https://readthedocs.org>`_, you will need to explicitly enable
-  Alabaster by adding this line to your ``conf.py``::
+  Alabaster by adding this line to your ``conf.py``:
 
-  .. code:: python
+  .. code-block:: python
 
      html_theme = 'alabaster'
 

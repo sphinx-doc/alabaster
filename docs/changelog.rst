@@ -64,7 +64,9 @@ Changelog
   .. note::
     You can always go back to the old values by :ref:`explicitly setting
     <theme-options>` ``font_family`` and/or ``head_font_family`` in your
-    ``conf.py``'s ``html_theme_options``, e.g.::
+    ``conf.py``'s ``html_theme_options``, e.g.:
+
+    .. code-block:: python
 
         html_theme_options = {
             'description': 'My awesome project',
