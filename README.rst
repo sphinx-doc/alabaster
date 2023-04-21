@@ -30,7 +30,3 @@ Live examples of this theme can be seen on `this project's own website
 `fabfile.org <http://fabfile.org>`_ and `pyinvoke.org <http://pyinvoke.org>`_.
 
 For more documentation, please see http://alabaster.readthedocs.io.
-
-.. note::
-    You can install the development version via ``pip install -e
-    git+https://github.com/sphinx-doc/alabaster/#egg=alabaster``.
