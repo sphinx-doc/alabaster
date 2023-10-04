@@ -20,7 +20,7 @@ requires-python = ">=3.6"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Framework :: Sphinx",
-	"Framework :: Sphinx :: Theme",
+    "Framework :: Sphinx :: Theme",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
