@@ -2,6 +2,9 @@
 Changelog
 =========
 
+- :support:`- backported` Dropped support for Python 3.8 and earlier.
+- :support:`- backported` Dropped support for Sphinx 3.3 and earlier.
+
 - :release:`0.7.13 <2023-01-13>`
 - :support:`- backported` Modernized the project: s/Travis/Circle/ for CI,
   README badges, ``setup.cfg`` removal, metadata refresh, etc.

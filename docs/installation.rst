@@ -2,7 +2,7 @@
 Installation
 ============
 
-Alabaster requires **Sphinx 1.6 or newer**, and is included as the default
+Alabaster requires **Sphinx 3.4 or newer**, and is included as the default
 theme.
 
 .. note::

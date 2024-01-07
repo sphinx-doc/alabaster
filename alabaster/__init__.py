@@ -17,7 +17,7 @@ def update_context(app, pagename, templatename, context, doctree):
 
 
 def setup(app):
-    app.require_sphinx("1.6")
+    app.require_sphinx("3.4")
     theme_path = os.path.abspath(os.path.dirname(__file__))
     app.add_html_theme("alabaster", theme_path)
     app.connect("html-page-context", update_context)
