@@ -1,7 +1,7 @@
 from datetime import datetime
 
 extensions = [
-    "sphinx.ext.extlinks"
+    "sphinx.ext.extlinks",
 ]
 templates_path = ["_templates"]
 source_suffix = ".rst"
@@ -13,10 +13,10 @@ copyright = f"{datetime.now().year} Jeff Forcier"
 exclude_patterns = ["_build"]
 
 extlinks = {
-    'git_tag': ('https://github.com/sphinx-doc/alabaster/tree/%s', '%s'),
-    'bug': ('https://github.com/sphinx-doc/alabaster/issues/%s', '#%s'),
-    'feature': ('https://github.com/sphinx-doc/alabaster/issues/%s', '#%s'),
-    'issue': ('https://github.com/sphinx-doc/alabaster/issues/%s', '#%s'),
+    "git_tag": ("https://github.com/sphinx-doc/alabaster/tree/%s", "%s"),
+    "bug": ("https://github.com/sphinx-doc/alabaster/issues/%s", "#%s"),
+    "feature": ("https://github.com/sphinx-doc/alabaster/issues/%s", "#%s"),
+    "issue": ("https://github.com/sphinx-doc/alabaster/issues/%s", "#%s"),
 }
 
 html_theme = "alabaster"
