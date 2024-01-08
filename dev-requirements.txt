@@ -1,5 +1,4 @@
-flake8==3.6.0
-black==19.10b0
+ruff==0.1.11
 
 # Install ourselves direct, even when being used on eg RTD. Otherwise we can't
 # dogfood our own changes until release to PyPI.

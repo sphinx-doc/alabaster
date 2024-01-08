@@ -1,19 +1,17 @@
-# flake8: noqa
-
 from pygments.style import Style
 from pygments.token import (
-    Keyword,
-    Name,
     Comment,
-    String,
     Error,
+    Generic,
+    Keyword,
+    Literal,
+    Name,
     Number,
     Operator,
-    Generic,
-    Whitespace,
-    Punctuation,
     Other,
-    Literal,
+    Punctuation,
+    String,
+    Whitespace,
 )
 
 
