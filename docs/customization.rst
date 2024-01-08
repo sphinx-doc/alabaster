@@ -173,10 +173,15 @@ Sidebar-related options that aren't directly related to service links.
     header/footer options; the two visual components are orthogonal and may be
     enabled/disabled independently of one another.
 
-* ``sidebar_collapse``: Boolean determining whether all TOC entries that
-   are not ancestors of the current page are collapsed.
-   You can read more about this in the Sphinx toctree
-   `docs <http://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
+* ``sidebar_collapse``: Boolean determining whether all TOC entries that are not
+  ancestors of the current page are collapsed.  You can read more about this
+  and the following settings in the Sphinx toctree
+  `docs <http://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
+* ``sidebar_maxdepth``: Integer setting the maximum depth the sidebar will
+  expand to.  This defaults to 2.  You may set this to -1 to disable limiting
+  the depth. 
+* ``sidebar_titles_only``: Boolean determining whether the sidebar will show
+  only page titles or all page sections.
 * ``sidebar_includehidden``: Boolean determining whether the TOC sidebar
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
