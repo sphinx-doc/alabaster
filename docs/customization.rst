@@ -73,7 +73,7 @@ Settings related to text display, logo, etc.
   (if there is any.)
 * ``canonical_url``: If set, is used as the base URL (set before the relative
   path/pagename) for a ``<link rel="canonical">`` `canonical URL
-  <https://support.google.com/webmasters/answer/139066?rd=1>`_ header tag.
+  <https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls>`_ header tag.
 
   .. note:: This value must end with a trailing slash.
 
@@ -113,7 +113,7 @@ banners.
 * ``badge_branch``: Set which branch is used in the Travis, CodeCov, etc
   badges.
 * ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
-  string - used to display a `Codecov <https://codecov.io>`_ build status
+  string - used to display a `Codecov <https://about.codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings.
 * ``donate_url``: URL to generic/arbitrary donation service; causes display of
@@ -176,7 +176,7 @@ Sidebar-related options that aren't directly related to service links.
 * ``sidebar_collapse``: Boolean determining whether all TOC entries that
    are not ancestors of the current page are collapsed.
    You can read more about this in the Sphinx toctree
-   `docs <https://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
+   `docs <https://www.sphinx-doc.org/en/master/development/templating.html#toctree>`_.
 * ``sidebar_includehidden``: Boolean determining whether the TOC sidebar
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x

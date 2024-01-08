@@ -193,7 +193,7 @@ Next release (in development)
   Solà.
 - Fix a handful of mismatched/unclosed HTML tags in the templates. Thanks to
   Marvin Pinto for catch & patch.
-- Add `Codecov <https://codecov.io>`_ badge support to sidebar.
+- Add `Codecov <https://about.codecov.io>`_ badge support to sidebar.
 
 :git_tag:`0.7.6` -- 2015-06-22
 ------------------------------
