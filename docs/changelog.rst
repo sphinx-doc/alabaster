@@ -5,8 +5,18 @@ Changelog
 Next release (in development)
 -----------------------------
 
+:git_tag:`0.7.14` -- 2024-01-08
+-------------------------------
+
 - Dropped support for Python 3.8 and earlier.
 - Dropped support for Sphinx 3.3 and earlier.
+- :issue:`198` Fix horizontal scrolling on mobile.
+- :issue:`206` Properly support the ``html_support_sphinx`` config value.
+- :issue:`211` Fix the GitHub 'forkme' banner.
+- Added ``alabaster_version_info`` to the HTML template context.
+- Declare support for Python 3.13.
+- Adopt the Ruff linter and formatter.
+- Migrate from CircleCI to GitHub Actions.
 
 :git_tag:`0.7.13` -- 2023-01-13
 -------------------------------
