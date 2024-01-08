@@ -5,6 +5,17 @@ Changelog
 Next release (in development)
 -----------------------------
 
+:git_tag:`0.7.15` -- 2024-01-08
+-------------------------------
+
+- :feature:`213` Allow an arbitrary string in the ``logo_name`` option.
+- :feature:`114` Improved sidebar CSS styles.
+- :issue:`178` Deprecated ``canonical_url`` in favor of ``html_baseurl``.
+- :bug:`200` Removed duplicate ``<meta name="viewport" ... />`` tag.
+- :bug:`188` Removed underline from whitespace.
+- :bug:`164` Removed ``type="text/javascript"`` from <script> elements.
+- :bug:`161` Replaced ``&copy;`` with unicode decimal code entity ``#169;``.
+
 :git_tag:`0.7.14` -- 2024-01-08
 -------------------------------
 
