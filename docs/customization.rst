@@ -71,11 +71,14 @@ Settings related to text display, logo, etc.
 
 * ``body_text_align``: Which CSS ``text-align`` value to use for body text
   (if there is any.)
-* ``canonical_url``: If set, is used as the base URL (set before the relative
+* ``canonical_url``: **Deprecated**, please use the html_baseurl_ Sphinx option instead.
+  If set, is used as the base URL (set before the relative
   path/pagename) for a ``<link rel="canonical">`` `canonical URL
   <https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls>`_ header tag.
 
   .. note:: This value must end with a trailing slash.
+
+  .. _html_baseurl: https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_baseurl
 
 * ``description``: Text blurb about your project, to appear under the logo.
 * ``description_font_style``: Which CSS ``font-style`` to use for description
