@@ -34,6 +34,7 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
     "Topic :: Software Development :: Documentation",
 ]
 dependencies = []
