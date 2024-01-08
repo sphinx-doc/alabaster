@@ -90,9 +90,9 @@ Settings related to text display, logo, etc.
     level Sphinx config) will be used in a text header instead. This
     preserves a link back to your homepage from inner doc pages.
 
-* ``logo_name``: Set to ``true`` to insert your site's ``project`` name
-  under the logo image as text. Useful if your logo doesn't include the
-  project name itself.
+* ``logo_name``: Set to ``True`` to insert your site's ``project`` name
+  under the logo image as text, or to any string to include arbitrary text.
+  Useful if your logo doesn't include the project name itself.
 * ``logo_text_align``: Which CSS ``text-align`` value to use for logo text
   (if there is any.)
 * ``page_width``: CSS width specifier controlling default content/page width.
