@@ -49,3 +49,10 @@ name = "The Sphinx Developers"
 
 [project.entry-points."sphinx.html_themes"]
 alabaster = "alabaster"
+
+[tool.flit.sdist]
+include = [
+    "LICENSE.rst",
+    # Documentation
+    "docs/",
+]
