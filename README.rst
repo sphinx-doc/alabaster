@@ -2,8 +2,8 @@
    :target: https://pypi.org/project/alabaster/
    :alt: Package on PyPI
 
-.. image:: https://img.shields.io/circleci/build/github/sphinx-doc/alabaster/main
-    :target: https://app.circleci.com/pipelines/github/sphinx-doc/alabaster
+.. image:: https://github.com/sphinx-doc/alabaster/actions/workflows/test.yml/badge.svg
+    :target: https://github.com/sphinx-doc/alabaster/actions/workflows/test.yml
     :alt: CI Status
 
 .. image:: https://readthedocs.org/projects/alabaster/badge/
