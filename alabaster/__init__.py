@@ -14,6 +14,7 @@ def get_path():
 
 def update_context(app, pagename, templatename, context, doctree):
     context["alabaster_version"] = __version__
+    context["alabaster_version_info"] = __version_info__
 
     # Convert 'show_powered_by' in the theme options to
     # the preferred option, html_show_sphinx.
