@@ -1,2 +1,1 @@
 Sphinx>=3.4
-releases>=2

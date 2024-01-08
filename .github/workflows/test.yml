@@ -34,7 +34,6 @@ jobs:
     - name: Install Sphinx
       run: |
         python -m pip install -U pip
-        python -m pip install -U releases
         python -m pip install "sphinx~=${{ matrix.sphinx-version }}.0"
         python -m pip install .
 
@@ -67,7 +66,7 @@ jobs:
     - name: Install Sphinx
       run: |
         python -m pip install -U pip
-        python -m pip install -U sphinx releases
+        python -m pip install -U sphinx
         python -m pip install .
 
     - name: Run Sphinx
@@ -93,7 +92,6 @@ jobs:
     - name: Install Sphinx
       run: |
         python -m pip install -U pip
-        python -m pip install -U releases
         python -m pip install "sphinx~=3.4.0" "Jinja2<3.1" "docutils<0.18"
         python -m pip install .
 
