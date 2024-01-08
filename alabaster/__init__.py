@@ -15,6 +15,16 @@ def get_path():
 def update_context(app, pagename, templatename, context, doctree):
     context["alabaster_version"] = __version__
 
+    # Convert 'show_powered_by' in the theme options to
+    # the preferred option, html_show_sphinx.
+    html_theme_options = app.config.html_theme_options
+    if "show_powered_by" in html_theme_options:
+        show_powered_by = html_theme_options["show_powered_by"]
+        if isinstance(show_powered_by, str):
+            context["show_sphinx"] = show_powered_by.lower() == "true"
+        else:
+            context["show_sphinx"] = bool(show_powered_by)  # to allow int values
+
 
 def setup(app):
     app.require_sphinx("3.4")

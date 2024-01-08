@@ -191,6 +191,10 @@ same.
 * ``show_powered_by``: Boolean controlling display of the ``Powered by
   Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When ``true``, is
   displayed next to the copyright information; when ``false``, is hidden.
+
+  .. deprecated:: 0.17.14
+     Set ``html_show_sphinx`` to ``True`` or ``False`` in ``conf.py`` instead.
+
 * ``show_relbars``: ``true`` or ``false`` - used to display *next* and
   *previous* links above and below the main page content. If you only want to
   display one, this setting can be further overridden through the
