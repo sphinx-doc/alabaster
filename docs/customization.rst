@@ -193,13 +193,7 @@ same.
   displayed next to the copyright information; when ``false``, is hidden.
 
   .. deprecated:: 0.17.14
-     Use ``html_show_sphinx=True`` or ``html_show_sphinx=False`` in ``conf.py``
-     instead. For backward compatibility, the following is still supported:
-
-     .. code-block:: python
-
-        # equivalent to html_show_sphinx = flag
-        html_theme_options = {'show_powered_by': flag}
+     Set ``html_show_sphinx`` to ``True`` or ``False`` in ``conf.py`` instead.
 
 * ``show_relbars``: ``true`` or ``false`` - used to display *next* and
   *previous* links above and below the main page content. If you only want to

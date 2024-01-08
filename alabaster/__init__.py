@@ -1,7 +1,8 @@
 import os
 
-__version_info__ = (0, 7, 14)
-__version__ = "0.7.14"
+__version_info__ = (0, 7, 13)
+__version__ = "0.7.13"
+
 
 def get_path():
     """
@@ -13,18 +14,16 @@ def get_path():
 
 def update_context(app, pagename, templatename, context, doctree):
     context["alabaster_version"] = __version__
-    # either use 'show_powered_by' when specified in 'html_theme_options'
-    # or the top-level configuration value 'html_show_sphinx' directly
+
+    # Convert 'show_powered_by' in the theme options to
+    # the preferred option, html_show_sphinx.
     html_theme_options = app.config.html_theme_options
-    if 'show_powered_by' in html_theme_options:
-        show_powered_by = html_theme_options['show_powered_by']
+    if "show_powered_by" in html_theme_options:
+        show_powered_by = html_theme_options["show_powered_by"]
         if isinstance(show_powered_by, str):
-            show_powered_by = show_powered_by.lower() == 'true'
-    else:
-        show_powered_by = context['show_sphinx']
-    show_powered_by = bool(show_powered_by)  # to allow int values
-    # keep `theme_show_powered_by` flag for backward compatibility
-    context['show_sphinx'] = context['theme_show_powered_by'] = show_powered_by
+            context["show_sphinx"] = show_powered_by.lower() == "true"
+        else:
+            context["show_sphinx"] = bool(show_powered_by)  # to allow int values
 
 
 def setup(app):
