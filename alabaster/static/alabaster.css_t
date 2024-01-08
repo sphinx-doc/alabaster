@@ -124,6 +124,11 @@ div.relations {
 }
 {% endif %}
 
+div.sphinxsidebar {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
 div.sphinxsidebar a {
     color: {{ theme_sidebar_link }};
     text-decoration: none;
@@ -208,6 +213,14 @@ div.sphinxsidebar input {
     border: 1px solid {{ theme_sidebar_search_button }};
     font-family: {{ theme_font_family }};
     font-size: 1em;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    width: 160px;
+}
+
+div.sphinxsidebar .search > div {
+    display: table-cell;
 }
 
 div.sphinxsidebar hr {
@@ -474,7 +487,9 @@ table.footnote td {
 }
 
 dl {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -702,14 +717,6 @@ a:hover tt, a:hover code {
 
 .revsys-inline {
     display: none!important;
-}
-
-/* Make nested-list/multi-paragraph items look better in Releases changelog
- * pages. Without this, docutils' causes inconsistent
- * formatting between different release sub-lists.
- */
-div#changelog > div.section > ul > li > p:only-child {
-    margin-bottom: 0;
 }
 
 /* Hide ugly table cell borders in ..bibliography:: directive output */
