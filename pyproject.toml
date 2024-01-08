@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 # project metadata
 [project]
 name = "alabaster"
-description = "A configurable sidebar-enabled Sphinx theme"
+description = "A light, configurable Sphinx theme"
 readme = "README.rst"
 urls.Changelog = "https://alabaster.readthedocs.io/en/latest/changelog.html"
 urls.Documentation = "https://alabaster.readthedocs.io/"
