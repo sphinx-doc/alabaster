@@ -1,0 +1,51 @@
+[build-system]
+requires = ["flit_core>=3.7"]
+build-backend = "flit_core.buildapi"
+
+# project metadata
+[project]
+name = "alabaster"
+description = "A light, configurable Sphinx theme"
+readme = "README.rst"
+urls.Changelog = "https://alabaster.readthedocs.io/en/latest/changelog.html"
+urls.Documentation = "https://alabaster.readthedocs.io/"
+urls.Download = "https://pypi.org/project/alabaster/"
+urls.Homepage = "https://alabaster.readthedocs.io/"
+urls."Issue tracker" = "https://github.com/bitprophet/alabaster/issues"
+urls.Source = "https://github.com/sphinx-doc/alabaster"
+license.text = "BSD-3-Clause"
+requires-python = ">=3.9"
+
+# Classifiers list: https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Theme",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Documentation",
+]
+dependencies = []
+dynamic = ["version"]
+
+[[project.authors]]
+name = "Jeff Forcier"
+email = "jeff@bitprophet.org"
+
+[[project.maintainers]]
+name = "The Sphinx Developers"
+
+[project.entry-points."sphinx.html_themes"]
+alabaster = "alabaster"

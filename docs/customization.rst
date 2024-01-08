@@ -21,7 +21,7 @@ Alabaster's behavior & style can be customized in multiple ways:
       whenever possible, even if an option is present below.
 
         * When in doubt, simply check `the built-in stylesheet's template
-          <https://github.com/bitprophet/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
+          <https://github.com/sphinx-doc/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
           to see whether the option you're looking at is a basic variable
           insertion or something more complicated.)
 
@@ -39,7 +39,7 @@ stylesheet as follows:
   ``_static/``, but this is solely convention) containing your desired
   overrides to the CSS found in Alabaster's ``static/alabaster_css_t``.
 * Set the core Sphinx option `html_static_path
-  <http://www.sphinx-doc.org/en/stable/config.html#confval-html_static_path>`_
+  <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path>`_
   to either that file's path, or the directory it lives within.
 
 
@@ -55,13 +55,13 @@ set in ``conf.py`` alongside the rest, e.g.:
 
     html_theme_options = {
         'logo': 'logo.png',
-        'github_user': 'bitprophet',
+        'github_user': 'sphinx-doc',
         'github_repo': 'alabaster',
     }
 
 The following subsections detail available such options, including notes about
 behavior. Default values can be found by viewing `theme.conf
-<https://github.com/bitprophet/alabaster/blob/master/alabaster/theme.conf>`_
+<https://github.com/sphinx-doc/alabaster/blob/master/alabaster/theme.conf>`_
 directly.
 
 Basics
@@ -71,11 +71,14 @@ Settings related to text display, logo, etc.
 
 * ``body_text_align``: Which CSS ``text-align`` value to use for body text
   (if there is any.)
-* ``canonical_url``: If set, is used as the base URL (set before the relative
+* ``canonical_url``: **Deprecated**, please use the html_baseurl_ Sphinx option instead.
+  If set, is used as the base URL (set before the relative
   path/pagename) for a ``<link rel="canonical">`` `canonical URL
-  <https://support.google.com/webmasters/answer/139066?rd=1>`_ header tag.
+  <https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls>`_ header tag.
 
   .. note:: This value must end with a trailing slash.
+
+  .. _html_baseurl: https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_baseurl
 
 * ``description``: Text blurb about your project, to appear under the logo.
 * ``description_font_style``: Which CSS ``font-style`` to use for description
@@ -90,9 +93,9 @@ Settings related to text display, logo, etc.
     level Sphinx config) will be used in a text header instead. This
     preserves a link back to your homepage from inner doc pages.
 
-* ``logo_name``: Set to ``true`` to insert your site's ``project`` name
-  under the logo image as text. Useful if your logo doesn't include the
-  project name itself.
+* ``logo_name``: Set to ``True`` to insert your site's ``project`` name
+  under the logo image as text, or to any string to include arbitrary text.
+  Useful if your logo doesn't include the project name itself.
 * ``logo_text_align``: Which CSS ``text-align`` value to use for logo text
   (if there is any.)
 * ``page_width``: CSS width specifier controlling default content/page width.
@@ -108,12 +111,12 @@ Third-party services (GitHub, Travis-CI, etc etc) and related badges or
 banners.
 
 * ``analytics_id``: Set to your `Google Analytics
-  <http://www.google.com/analytics/>`_ ID (e.g. ``UA-#######-##``) to enable
+  <https://marketingplatform.google.com/about/analytics/>`_ ID (e.g. ``UA-#######-##``) to enable
   tracking.
 * ``badge_branch``: Set which branch is used in the Travis, CodeCov, etc
   badges.
 * ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
-  string - used to display a `Codecov <https://codecov.io>`_ build status
+  string - used to display a `Codecov <https://about.codecov.io>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
   settings.
 * ``donate_url``: URL to generic/arbitrary donation service; causes display of
@@ -176,7 +179,7 @@ Sidebar-related options that aren't directly related to service links.
 * ``sidebar_collapse``: Boolean determining whether all TOC entries that
    are not ancestors of the current page are collapsed.
    You can read more about this in the Sphinx toctree
-   `docs <http://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
+   `docs <https://www.sphinx-doc.org/en/master/development/templating.html#toctree>`_.
 * ``sidebar_includehidden``: Boolean determining whether the TOC sidebar
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
@@ -191,6 +194,10 @@ same.
 * ``show_powered_by``: Boolean controlling display of the ``Powered by
   Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When ``true``, is
   displayed next to the copyright information; when ``false``, is hidden.
+
+  .. deprecated:: 0.17.14
+     Set ``html_show_sphinx`` to ``True`` or ``False`` in ``conf.py`` instead.
+
 * ``show_relbars``: ``true`` or ``false`` - used to display *next* and
   *previous* links above and below the main page content. If you only want to
   display one, this setting can be further overridden through the
