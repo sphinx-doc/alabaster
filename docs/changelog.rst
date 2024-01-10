@@ -5,6 +5,8 @@ Changelog
 Next release (in development)
 -----------------------------
 
+- :bug:`215` Do not display ``logo_name`` if it is set to ``False``.
+
 :git_tag:`0.7.15` -- 2024-01-08
 -------------------------------
 
