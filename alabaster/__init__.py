@@ -1,7 +1,7 @@
 import os
 
-__version_info__ = (0, 7, 15)
-__version__ = "0.7.15"
+__version_info__ = (0, 7, 16)
+__version__ = "0.7.16"
 
 
 def get_path():
