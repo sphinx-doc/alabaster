@@ -18,13 +18,13 @@
   <nav id="rellinks">
     <ul>
       {%- if prev %}
-        <li>
+        <li class="related prev">
           &larr;
           <a href="{{ prev.link|e }}" title="Previous document">{{ prev.title }}</a>
         </li>
       {%- endif %}
       {%- if next %}
-        <li>
+        <li class="related next">
           <a href="{{ next.link|e }}" title="Next document">{{ next.title }}</a>
           &rarr;
         </li>
