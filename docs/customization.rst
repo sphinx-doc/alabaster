@@ -13,15 +13,15 @@ Alabaster's behavior & style can be customized in multiple ways:
   .. note::
     Some theme options implemented prior to 0.7.8 would have been more suitable
     as local custom stylesheet overrides. Therefore:
-    
+
     * We no longer accept feature requests which are more appropriately solved
       by using this functionality instead.
     * In future backwards-incompatible versions we may deprecate some of those
       options; as such we highly recommend leveraging the custom stylesheet
       whenever possible, even if an option is present below.
-      
+
         * When in doubt, simply check `the built-in stylesheet's template
-          <https://github.com/bitprophet/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
+          <https://github.com/sphinx-doc/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
           to see whether the option you're looking at is a basic variable
           insertion or something more complicated.)
 
@@ -39,7 +39,7 @@ stylesheet as follows:
   ``_static/``, but this is solely convention) containing your desired
   overrides to the CSS found in Alabaster's ``static/alabaster_css_t``.
 * Set the core Sphinx option `html_static_path
-  <http://www.sphinx-doc.org/en/stable/config.html#confval-html_static_path>`_
+  <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path>`_
   to either that file's path, or the directory it lives within.
 
 
@@ -55,16 +55,37 @@ set in ``conf.py`` alongside the rest, e.g.:
 
     html_theme_options = {
         'logo': 'logo.png',
-        'github_user': 'bitprophet',
+        'github_user': 'sphinx-doc',
         'github_repo': 'alabaster',
     }
 
 The following subsections detail available such options, including notes about
-behavior & default values.
+behavior. Default values can be found by viewing `theme.conf
+<https://github.com/sphinx-doc/alabaster/blob/master/alabaster/theme.conf>`_
+directly.
 
-Variables and feature toggles
------------------------------
+Basics
+------
 
+Settings related to text display, logo, etc.
+
+* ``body_text_align``: Which CSS ``text-align`` value to use for body text
+  (if there is any.)
+* ``canonical_url``: **Deprecated**, please use the html_baseurl_ Sphinx option instead.
+  If set, is used as the base URL (set before the relative
+  path/pagename) for a ``<link rel="canonical">`` `canonical URL
+  <https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls>`_ header tag.
+
+  .. note:: This value must end with a trailing slash.
+
+  .. _html_baseurl: https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_baseurl
+
+* ``description``: Text blurb about your project, to appear under the logo.
+* ``description_font_style``: Which CSS ``font-style`` to use for description
+  text.
+* ``fixed_sidebar``: Makes the sidebar 'fixed' or pinned in place, so that the
+  main body of the page scrolls but the sidebar remains visible. (Applies only
+  to desktop window sizes; the mobile view is unaffected.)
 * ``logo``: Relative path (from ``$PROJECT/_static/``) to a logo image, which
   will appear in the upper left corner above the name of the project.
 
@@ -72,92 +93,119 @@ Variables and feature toggles
     level Sphinx config) will be used in a text header instead. This
     preserves a link back to your homepage from inner doc pages.
 
-* ``logo_name``: Set to ``true`` to insert your site's ``project`` name
-  under the logo image as text. Useful if your logo doesn't include the
-  project name itself. Defaults to ``false``.
+* ``logo_name``: Set to ``True`` to insert your site's ``project`` name
+  under the logo image as text, or to any string to include arbitrary text.
+  Useful if your logo doesn't include the project name itself.
 * ``logo_text_align``: Which CSS ``text-align`` value to use for logo text
   (if there is any.)
-* ``body_text_align``: Which CSS ``text-align`` value to use for body text
-  (if there is any.)
-* ``description``: Text blurb about your project, to appear under the logo.
-* ``description_font_style``: Which CSS ``font-style`` to use for description
-  text. Defaults to ``normal``.
-* ``github_user``, ``github_repo``: Used by ``github_button`` and
-  ``github_banner`` (see below); does nothing if both of those are set to
-  ``false``.
-* ``github_button``: ``true`` or ``false`` (default: ``true``) - whether to
-  link to your Github.
+* ``page_width``: CSS width specifier controlling default content/page width.
+* ``sidebar_width``: CSS width specifier controlling default sidebar width.
+* ``touch_icon``: Path to an image (as with ``logo``, relative to
+  ``$PROJECT/_static/``) to be used for an iOS application icon, for when
+  pages are saved to an iOS device's home screen via Safari.
 
-   * If ``true``, requires that you set ``github_user`` and ``github_repo``.
-   * See also these other related options, which behave as described in
-     `Github Buttons' documentation
-     <https://ghbtns.com>`_:
+Service links and badges
+------------------------
 
-      * ``github_type``: Defaults to ``watch``.
-      * ``github_count``: Defaults to ``true``.
+Third-party services (GitHub, Travis-CI, etc etc) and related badges or
+banners.
 
-* ``github_banner``: ``true`` or ``false`` (default: ``false``) - whether to
-  apply a 'Fork me on Github' banner in the top right corner of the page.
+* ``analytics_id``: Set to your `Google Analytics
+  <https://marketingplatform.google.com/about/analytics/>`_ ID (e.g. ``UA-#######-##``) to enable
+  tracking.
+* ``badge_branch``: Set which branch is used in the Travis, CodeCov, etc
+  badges.
+* ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
+  string - used to display a `Codecov <https://about.codecov.io>`_ build status
+  button in the sidebar. If ``true``, uses your ``github_(user|repo)``
+  settings.
+* ``donate_url``: URL to generic/arbitrary donation service; causes display of
+  a basic 'Donate' badge/shield (from https://shields.io) linking to the URL
+  given.
+* ``github_banner``: ``true`` or ``false`` - whether to apply a 'Fork me on
+  Github' banner in the top right corner of the page.
 
-   * If ``true``, requires that you set ``github_user`` and ``github_repo``.
+   * If ``true``, requires that you set ``github_user`` and ``github_repo``
+     (see below).
    * May also submit a string file path (as with ``logo``, relative to
      ``$PROJECT/_static/``) to be used as the banner image instead of the
      default.
 
+* ``github_button``: ``true`` or ``false`` - whether to link to your Github.
+
+   * If ``true``, requires that you set ``github_user`` and ``github_repo``.
+   * There are also the ``github_type`` and ``github_count`` options, which
+     behave as described in `Github Buttons' documentation
+     <https://ghbtns.com>`_.
+
+* ``github_repo``: Used by ``github_button`` and ``github_banner`` (see above);
+  does nothing if both of those are set to ``false``.
+* ``github_user``: Used by ``github_button`` and ``github_banner`` (see above);
+  does nothing if both of those are set to ``false``.
+* ``gittip_user`` / ``gratipay_user``: **Deprecated**, as that service is no
+  longer running. These options still exist (removing them would break
+  backwards compatibility; Sphinx errors when users try to set nonexistent
+  options) but they no longer do anything.
+* ``tidelift_url``: Set this to your `Tidelift <https://tidelift.com/>`_
+  project URL if you want a "Professional support" section in your sidebar.
+
+  - If copying the URL straight from Tidelift's site, you'll probably want to
+    change ``&utm_campaign=readme`` to ``&utm_campaign=docs``.
+
 * ``travis_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
   string - used to display a `Travis-CI <https://travis-ci.org>`_ build status
   button in the sidebar. If ``true``, uses your ``github_(user|repo)``
-  settings; defaults to ``false.``
-* ``codecov_button``: ``true``, ``false`` or a Github-style ``"account/repo"``
-  string - used to display a `Codecov <https://codecov.io>`_ build status
-  button in the sidebar. If ``true``, uses your ``github_(user|repo)``
-  settings; defaults to ``false.``
-* ``gratipay_user``: Set to your `Gratipay <https://gratipay.com>`_ username
-  if you want a Gratipay 'Donate' section in your sidebar.
+  settings.
 
-  * This used to be ``gittip_user`` before that service changed its name to
-    Gratipay; we've left the old setting in place as an alias for backwards
-    compatibility reasons. It may be removed in the future.
-  * If both options are given, ``gratipay_user`` wins.
+Non-service sidebar control
+---------------------------
 
-* ``analytics_id``: Set to your `Google Analytics
-  <http://www.google.com/analytics/>`_ ID (e.g. ``UA-#######-##``) to enable
-  tracking.
-* ``touch_icon``: Path to an image (as with ``logo``, relative to
-  ``$PROJECT/_static/``) to be used for an iOS application icon, for when
-  pages are saved to an iOS device's home screen via Safari.
-* ``canonical_url``: If set, is used as the base URL (set before the relative
-  path/pagename) for a ``<link rel="canonical">`` `canonical URL
-  <https://support.google.com/webmasters/answer/139066?rd=1>`_ header tag.
-
-  .. note:: This value must end with a trailing slash.
+Sidebar-related options that aren't directly related to service links.
 
 * ``extra_nav_links``: Dictionary mapping link names to link targets; these
   will be added in a UL below the main sidebar navigation (provided you've
   enabled ``navigation.html`` via the ``html_sidebars`` option; see
   :doc:`installation`.) Useful for static links outside your Sphinx doctree.
+* ``show_related``: Boolean controlling whether the sidebar
+  'next/previous/related' secondary navigation elements are hidden or
+  displayed. Defaults to ``false`` since on many sites these elements are
+  superfluous.
+
+  .. note::
+    This is distinct from the ``show_relbars`` setting found in the
+    header/footer options; the two visual components are orthogonal and may be
+    enabled/disabled independently of one another.
+
+* ``sidebar_collapse``: Boolean determining whether all TOC entries that
+   are not ancestors of the current page are collapsed.
+   You can read more about this in the Sphinx toctree
+   `docs <https://www.sphinx-doc.org/en/master/development/templating.html#toctree>`_.
 * ``sidebar_includehidden``: Boolean determining whether the TOC sidebar
   should include hidden Sphinx toctree elements. Defaults to ``true`` so you
   can use ``:hidden:`` in your index page's root toctree & avoid having 2x
   copies of your navigation on your landing page.
-* ``sidebar_collapse``: Boolean determining whether  all TOC entries that 
-   are not ancestors of the current page are collapsed.
-   You can read more about this in the Sphinx toctree 
-   `docs <http://www.sphinx-doc.org/en/stable/templating.html#toctree>`_.
+
+Header/footer options
+---------------------
+
+Which elements should appear in the header and/or footer, or modification of
+same.
+
 * ``show_powered_by``: Boolean controlling display of the ``Powered by
   Sphinx N.N.N. & Alabaster M.M.M`` section of the footer. When ``true``, is
   displayed next to the copyright information; when ``false``, is hidden.
-* ``show_related``: Boolean controlling whether the 'next/previous/related'
-  secondary navigation elements are hidden or displayed. Defaults to ``false``
-  since on many sites these elements are superfluous.
-* ``page_width``: CSS width specifier controlling default content/page width.
-  Defaults to ``940px``.
-* ``sidebar_width``: CSS width specifier controlling default sidebar width.
-  Defaults to ``220px``.
-* ``fixed_sidebar``: Makes the sidebar 'fixed' or pinned in place, so that the
-  main body of the page scrolls but the sidebar remains visible. (Applies only
-  to desktop window sizes; the mobile view is unaffected.) Defaults to
-  ``false``.
+
+  .. deprecated:: 0.17.14
+     Set ``html_show_sphinx`` to ``True`` or ``False`` in ``conf.py`` instead.
+
+* ``show_relbars``: ``true`` or ``false`` - used to display *next* and
+  *previous* links above and below the main page content. If you only want to
+  display one, this setting can be further overridden through the
+  ``show_relbar_top`` and ``show_relbar_bottom`` settings.
+
+  .. note::
+    This is distinct from the ``show_related`` setting found in the sidebar
+    control options, which controls sidebar-only next/previous links.
 
 Style colors
 ------------
@@ -167,59 +215,58 @@ These should be fully qualified CSS color specifiers such as ``#004B6B`` or
 for many of the others; update these to make sweeping changes to the
 colorscheme. The more granular settings can be used to override as needed.
 
+* ``anchor``: Foreground color of section anchor links (the 'paragraph'
+  symbol that shows up when you mouseover page section headers.)
+* ``anchor_hover_bg``: Background color of ``anchor`` text.
+* ``anchor_hover_fg``: Foreground color of section anchor links (as above)
+  when moused over.
+* ``body_text``: Main content text.
+* ``code_highlight``: Color of highlight when using ``:emphasize-lines:`` in a code block.
+* ``footer_text``: Footer text (includes links.)
+* ``footnote_bg``: Background of footnote blocks.
+* ``footnote_border``: Border of same.
 * ``gray_1``: Dark gray.
 * ``gray_2``: Light gray.
 * ``gray_3``: Medium gray.
+* ``link_hover``: Body links, hovered.
+* ``link``: Non-hovered body links.
+* ``narrow_sidebar_bg``: Background of 'sidebar' when narrow window forces
+  it to the bottom of the page.
+* ``narrow_sidebar_fg``: Text color of same.
+* ``narrow_sidebar_link``: Link color of same.
+* ``note_bg``: Background of ``.. note::`` blocks.
+* ``note_border``: Border of same.
 * ``pink_1``: Light pink.
 * ``pink_2``: Medium pink.
-* ``body_text``: Main content text.
-* ``footer_text``: Footer text (includes links.)
-* ``link``: Non-hovered body links.
-* ``link_hover``: Body links, hovered.
-* ``sidebar_header``: Sidebar headers. Defaults to ``gray_1``.
-* ``sidebar_text``: Sidebar paragraph text.
+* ``pre_bg``: Background of preformatted text blocks (including code
+  snippets.)
+* ``relbar_border``: Color of border between bar holding *next* and *previous*
+  links, and the rest of the page content.
+* ``seealso_bg``: Background of ``.. seealso::`` blocks.
+* ``seealso_border``: Border of same.
+* ``sidebar_header``: Sidebar headers.
+* ``sidebar_hr``: Color of sidebar horizontal rule dividers.
 * ``sidebar_link``: Sidebar links (there is no hover variant.) Applies to
-  both header & text links. Defaults to ``gray_1``.
+  both header & text links.
+* ``sidebar_list``: Foreground color of sidebar list bullets & unlinked text.
 * ``sidebar_link_underscore``: Sidebar links' underline (technically a
   bottom-border).
 * ``sidebar_search_button``: Background color of the search field's 'Go'
   button.
-* ``sidebar_list``: Foreground color of sidebar list bullets & unlinked text.
-* ``sidebar_hr``: Color of sidebar horizontal rule dividers. Defaults to
-  ``gray_3``.
-* ``anchor``: Foreground color of section anchor links (the 'paragraph'
-  symbol that shows up when you mouseover page section headers.)
-* ``anchor_hover_fg``: Foreground color of section anchor links (as above)
-  when moused over. Defaults to ``gray_1``.
-* ``anchor_hover_bg``: Background color of above.
-* ``note_bg``: Background of ``.. note::`` blocks. Defaults to ``gray_2``.
-* ``note_border``: Border of same.
-* ``seealso_bg``: Background of ``.. seealso::`` blocks. Defaults to
-  ``gray_2``.
-* ``seealso_border``: Border of same.
-* ``warn_bg``: Background of ``.. warn::`` blocks. Defaults to ``pink_1``.
-* ``warn_border``: Border of same. Defaults to ``pink_2``.
-* ``footnote_bg``: Background of footnote blocks.
-* ``footnote_border``: Border of same. Defaults to ``gray_2``.
-* ``pre_bg``: Background of preformatted text blocks (including code
-  snippets.) Defaults to ``gray_2``.
-* ``narrow_sidebar_bg``: Background of 'sidebar' when narrow window forces
-  it to the bottom of the page.
-* ``narrow_sidebar_fg``: Text color of same.
-* ``narrow_sidebar_link``: Link color of same. Defaults to ``gray_3``.
-* ``code_highlight``: Color of highlight when using ``:emphasize-lines:`` in a code block.
+* ``sidebar_text``: Sidebar paragraph text.
+* ``warn_bg``: Background of ``.. warn::`` blocks.
+* ``warn_border``: Border of same.
 
 Fonts
 -----
 
-* ``font_family``: Font family of body text.  Defaults to ``'goudy old style',
-  'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif``.
-* ``font_size``: Font size of body text. Defaults to ``17px`` (``1.0625em``).
+* ``caption_font_size``: Font size of caption block text.
+* ``caption_font_family``: Font family of caption block text.
+* ``code_font_size``: Font size of code block text.
+* ``code_font_family``: Font family of code block text. Defaults to
+  ``'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  monospace``.
+* ``font_family``: Font family of body text.
+* ``font_size``: Font size of body text.
 * ``head_font_family``: Font family of headings.  Defaults to ``'Garamond',
   'Georgia', serif``.
-* ``code_font_size``: Font size of code block text. Defaults to ``0.9em``.
-* ``code_font_family``: Font family of code block text. Defaults to
-  ``'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
-  monospace``.
-* ``caption_font_size``: Font size of caption block text. Defaults to ``font-size``.
-* ``caption_font_family``: Font family of caption block text. Defaults to ``font-family``.

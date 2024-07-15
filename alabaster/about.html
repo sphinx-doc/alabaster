@@ -1,9 +1,11 @@
 {% if theme_logo %}
 <p class="logo">
   <a href="{{ pathto(master_doc) }}">
-    <img class="logo" src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="Logo"/>
+    <img class="logo" src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="Logo" />
     {% if theme_logo_name|lower == 'true' %}
     <h1 class="logo logo-name">{{ project }}</h1>
+    {% elif theme_logo_name|lower != 'false' %}
+    <h1 class="logo logo-name">{{ theme_logo_name }}</h1>
     {% endif %}
   </a>
 </p>
@@ -31,10 +33,10 @@
     {% set path = theme_travis_button %}
 {% endif %}
 <p>
-<a href="https://travis-ci.org/{{ path }}">
+<a class="badge" href="https://travis-ci.org/{{ path }}">
     <img
-        alt="https://secure.travis-ci.org/{{ path }}.svg?branch=master"
-        src="https://secure.travis-ci.org/{{ path }}.svg?branch=master"
+        alt="https://secure.travis-ci.org/{{ path }}.svg?branch={{ theme_badge_branch }}"
+        src="https://secure.travis-ci.org/{{ path }}.svg?branch={{ theme_badge_branch }}"
     />
 </a>
 </p>
@@ -47,10 +49,10 @@
     {% set path = theme_codecov_button %}
 {% endif %}
 <p>
-<a href="https://codecov.io/github/{{ path }}">
+<a class="badge" href="https://codecov.io/github/{{ path }}">
     <img
-    alt="https://codecov.io/github/{{ path }}/coverage.svg?branch=master"
-    src="https://codecov.io/github/{{ path }}/coverage.svg?branch=master"
+    alt="https://codecov.io/github/{{ path }}/coverage.svg?branch={{ theme_badge_branch }}"
+    src="https://codecov.io/github/{{ path }}/coverage.svg?branch={{ theme_badge_branch }}"
     />
 </a>
 </p>
