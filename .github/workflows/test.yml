@@ -20,10 +20,8 @@ jobs:
       fail-fast: false
       matrix:
         sphinx-version:
-        - "4.5"
-        - "5.3"
         - "6.2"
-        - "7.2"
+        - "7.4"
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
