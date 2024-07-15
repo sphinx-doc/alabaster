@@ -1,5 +1,5 @@
-target-version = "py39"  # Pin Ruff to Python 3.9
-show-source = true
+target-version = "py310"  # Pin Ruff to Python 3.10
+output-format = "full"
 
 [lint]
 preview = true
