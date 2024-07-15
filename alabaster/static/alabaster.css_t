@@ -1,11 +1,10 @@
 {%- set theme_body_bg = theme_body_bg or theme_base_bg %}
-{%- set theme_code_highlight_bg = theme_code_highlight_bg or theme_body_bg %}
 {%- set theme_sidebar_header = theme_sidebar_header or theme_gray_1 %}
 {%- set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
 {%- set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
 
 {%- set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
-{%- set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
+{%- set theme_pre_bg = theme_pre_bg or 'unset' %}
 
 {%- set theme_head_font_family = theme_head_font_family or theme_font_family %}
 
@@ -322,9 +321,11 @@ div.admonition p.last {
     margin-bottom: 0;
 }
 
+{%- if theme_code_highlight_bg  %}
 div.highlight {
     background-color: {{ theme_code_highlight_bg }};
 }
+{%- endif %}
 
 dt:target, .highlight {
     background: {{ theme_highlight_bg }};
