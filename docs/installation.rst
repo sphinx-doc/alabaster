@@ -22,9 +22,9 @@ Alabaster's customized sidebar templates are loaded:
         html_sidebars = {
             '**': [
                 'about.html',
+                'searchfield.html',
                 'navigation.html',
                 'relations.html',
-                'searchbox.html',
                 'donate.html',
             ]
         }
@@ -47,7 +47,7 @@ care much.
 * Alabaster provides ``about.html`` (logo, github button + blurb),
   ``donate.html`` (donation/support buttons/links) and ``navigation.html`` (a
   more flexible version of the builtin ``localtoc``/``globaltoc`` templates).
-  ``searchbox.html`` comes with Sphinx itself.
+  ``searchfield.html`` comes with Sphinx itself.
 
 
 .. _static-path:
