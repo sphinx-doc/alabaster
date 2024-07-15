@@ -123,6 +123,11 @@ div.relations {
 }
 {% endif %}
 
+div.sphinxsidebar {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
 div.sphinxsidebar a {
     color: {{ theme_sidebar_link }};
     text-decoration: none;
@@ -207,6 +212,18 @@ div.sphinxsidebar input {
     border: 1px solid {{ theme_sidebar_search_button }};
     font-family: {{ theme_font_family }};
     font-size: 1em;
+}
+
+div.sphinxsidebar #searchbox {
+    margin: 1em 0;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    width: 160px;
+}
+
+div.sphinxsidebar .search > div {
+    display: table-cell;
 }
 
 div.sphinxsidebar hr {
@@ -475,7 +492,9 @@ table.footnote td {
 }
 
 dl {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -526,13 +545,13 @@ a.reference {
     border-bottom: 1px dotted {{ theme_link }};
 }
 
+a.reference:hover {
+    border-bottom: 1px solid {{ theme_link_hover }};
+}
+
 /* Don't put an underline on images */
 a.image-reference, a.image-reference:hover {
     border-bottom: none;
-}
-
-a.reference:hover {
-    border-bottom: 1px solid {{ theme_link_hover }};
 }
 
 a.footnote-reference {
@@ -705,15 +724,7 @@ a:hover tt, a:hover code {
     display: none!important;
 }
 
-/* Make nested-list/multi-paragraph items look better in Releases changelog
- * pages. Without this, docutils' magical list fuckery causes inconsistent
- * formatting between different release sub-lists.
- */
-div#changelog > div.section > ul > li > p:only-child {
-    margin-bottom: 0;
-}
-
-/* Hide fugly table cell borders in ..bibliography:: directive output */
+/* Hide ugly table cell borders in ..bibliography:: directive output */
 table.docutils.citation, table.docutils.citation td, table.docutils.citation th {
   border: none;
   /* Below needed in some edge cases; if not applied, bottom shadows appear */
@@ -767,4 +778,11 @@ nav#breadcrumbs li+li:before {
     div.related {
         display: none;
     }
+}
+
+img.github  {
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
 }
