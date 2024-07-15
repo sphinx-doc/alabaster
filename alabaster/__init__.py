@@ -28,8 +28,12 @@ def update_context(app, pagename, templatename, context, doctree):
 
 
 def setup(app):
-    app.require_sphinx("3.4")
+    app.require_sphinx("6.2")
     theme_path = os.path.abspath(os.path.dirname(__file__))
     app.add_html_theme("alabaster", theme_path)
     app.connect("html-page-context", update_context)
-    return {"version": __version__, "parallel_read_safe": True}
+    return {
+        "version": __version__,
+        "parallel_read_safe": True,
+        "parallel_write_safe": True,
+    }

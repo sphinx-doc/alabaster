@@ -20,7 +20,7 @@ What is Alabaster?
 
 Alabaster is a visually (c)lean, responsive, configurable theme for the `Sphinx
 <https://www.sphinx-doc.org>`_ documentation system.
-It requires Python 3.10 or newer and Sphinx 3.4 or newer.
+It requires Python 3.10 or newer and Sphinx 6.2 or newer.
 
 It began as a third-party theme, and is still maintained separately, but as of
 Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
