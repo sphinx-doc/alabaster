@@ -778,3 +778,10 @@ nav#breadcrumbs li+li:before {
         display: none;
     }
 }
+
+img.github  {
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+}

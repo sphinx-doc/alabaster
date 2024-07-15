@@ -1,4 +1,4 @@
-ruff==0.1.11
+ruff==0.5.2
 
 # Install ourselves direct, even when being used on eg RTD. Otherwise we can't
 # dogfood our own changes until release to PyPI.

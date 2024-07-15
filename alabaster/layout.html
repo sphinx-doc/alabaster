@@ -2,9 +2,9 @@
 
 {%- block extrahead %}
   {{ super() }}
-  <link rel="stylesheet" href="{{ pathto('_static/custom.css', 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto('_static/custom.css', resource=True) }}" type="text/css" />
   {% if theme_touch_icon %}
-    <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}" />
+    <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, resource=True) }}" />
   {% endif %}
 
   {# Deprecated in favor of html_baseurl (pageurl). This is already set in the basic theme #}
@@ -95,14 +95,18 @@
       {% endif %}
       {%- if show_source and has_source and sourcename %}
       {% if show_copyright or show_sphinx %}|{% endif %}
-      <a href="{{ pathto('_sources/' + sourcename, true)|e }}"
+      <a href="{{ pathto('_sources/' + sourcename, resource=True)|e }}"
           rel="nofollow">{{ _('Page source') }}</a>
       {%- endif %}
     </div>
 
     {% if theme_github_banner|lower != 'false' %}
     <a href="https://github.com/{{ theme_github_user }}/{{ theme_github_repo }}" class="github">
-        <img style="position: absolute; top: 0; right: 0; border: 0;" src="{{ pathto('_static/' ~ theme_github_banner, 1) if theme_github_banner|lower != 'true' else 'https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png' }}" alt="Fork me on GitHub"  class="github"/>
+        {%- if theme_github_banner|lower == 'true' %}
+        <img src="{{ pathto('_static/github-banner.svg', resource=True) }}" alt="Fork me on GitHub" class="github"/>
+        {%- else %}
+        <img src="{{ pathto('_static/' ~ theme_github_banner, resource=True) }}" alt="Fork me on GitHub" class="github"/>
+        {%- endif %}
     </a>
     {% endif %}
 
