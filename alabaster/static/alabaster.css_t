@@ -215,6 +215,10 @@ div.sphinxsidebar input {
     font-size: 1em;
 }
 
+div.sphinxsidebar #searchbox {
+    margin: 1em 0;
+}
+
 div.sphinxsidebar #searchbox input[type="text"] {
     width: 160px;
 }

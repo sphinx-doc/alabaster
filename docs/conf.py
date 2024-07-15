@@ -22,9 +22,9 @@ html_theme = "alabaster"
 html_sidebars = {
     "**": [
         "about.html",
+        "searchfield.html",
         "navigation.html",
         "relations.html",
-        "searchbox.html",
         "donate.html",
     ]
 }
