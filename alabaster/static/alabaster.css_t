@@ -218,10 +218,6 @@ div.sphinxsidebar #searchbox {
     margin: 1em 0;
 }
 
-div.sphinxsidebar #searchbox input[type="text"] {
-    width: 160px;
-}
-
 div.sphinxsidebar .search > div {
     display: table-cell;
 }
