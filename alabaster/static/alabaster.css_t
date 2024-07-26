@@ -566,67 +566,14 @@ a:hover tt, a:hover code {
 }
 
 
-@media screen and (max-width: 870px) {
-
-    div.sphinxsidebar {
-    	display: none;
-    }
-
-    div.document {
-       width: 100%;
-
-    }
-
-    div.documentwrapper {
-    	margin-left: 0;
-    	margin-top: 0;
-    	margin-right: 0;
-    	margin-bottom: 0;
-    }
-
-    div.bodywrapper {
-    	margin-top: 0;
-    	margin-right: 0;
-    	margin-bottom: 0;
-    	margin-left: 0;
-    }
-
-    ul {
-    	margin-left: 0;
-    }
-
-	li > ul {
-        /* Matches the 30px from the "ul, ol" selector above */
-		margin-left: 30px;
-	}
-
-    .document {
-    	width: auto;
-    }
-
-    .footer {
-    	width: auto;
-    }
-
-    .bodywrapper {
-    	margin: 0;
-    }
-
-    .footer {
-    	width: auto;
-    }
-
-    .github {
-        display: none;
-    }
-
-
-
+{%- if theme_fixed_sidebar|lower == 'true' %}
+div.sphinxsidebar {
+    position: fixed;
+    margin-left: 0;
 }
+{%- endif %}
 
-
-
-@media screen and (max-width: 875px) {
+@media screen and (max-width: {{ theme_page_width }}) {
 
     body {
         margin: 0;
@@ -636,14 +583,19 @@ a:hover tt, a:hover code {
     div.documentwrapper {
         float: none;
         background: {{ theme_base_bg }};
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     div.sphinxsidebar {
         display: block;
         float: none;
-        width: 102.5%;
+        width: unset;
         {%- if theme_fixed_sidebar|lower == 'true' %}
         margin: -20px -30px 20px -30px;
+        position: static;
         {%- else %}
         margin: 50px -30px -20px -30px;
         {%- endif %}
@@ -680,7 +632,13 @@ a:hover tt, a:hover code {
 
     div.body {
         min-height: 0;
+        min-width: auto; /* fixes width on small screens, breaks .hll */
         padding: 0;
+    }
+    
+    .hll {
+        /* "fixes" the breakage */
+        width: max-content;
     }
 
     .rtd_doc_footer {
@@ -695,23 +653,19 @@ a:hover tt, a:hover code {
         width: auto;
     }
 
-    .footer {
-        width: auto;
-    }
-
     .github {
         display: none;
     }
-}
 
-{%- if theme_fixed_sidebar|lower == 'true' %}
-@media screen and (min-width: 876px) {
-    div.sphinxsidebar {
-        position: fixed;
+    ul {
         margin-left: 0;
     }
+
+    li > ul {
+       /* Matches the 30px from the "ul, ol" selector above */
+        margin-left: 30px;
+    }
 }
-{%- endif %}
 
 
 /* misc. */
