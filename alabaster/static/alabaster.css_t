@@ -51,9 +51,6 @@
 
 {%- set theme_relbar_border = theme_relbar_border or theme_gray_2 -%}
 
-
-@import url("basic.css");
-
 /* -- page layout ----------------------------------------------------------- */
 
 body {
