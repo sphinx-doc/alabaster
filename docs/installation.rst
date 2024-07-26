@@ -2,52 +2,29 @@
 Installation
 ============
 
-The bare minimum required to install Alabaster is as follows:
+Alabaster requires **Sphinx 6.2 or newer**, and is included as the default
+theme.
 
-* If you're on **Sphinx 1.2 or older**:
+.. note::
+  If you distribute your documentation via `Read the Docs
+  <https://readthedocs.org>`_, you will need to explicitly enable
+  Alabaster by adding this line to your ``conf.py``:
 
-    * ``pip install alabaster`` or equivalent.
-    * Add the following to your ``conf.py`` so Alabaster's theme location &
-      mini-extension are located & loaded:
+  .. code-block:: python
 
-       .. code-block:: python
+     html_theme = 'alabaster'
 
-            import alabaster
-
-            html_theme_path = [alabaster.get_path()]
-            extensions = ['alabaster']
-            html_theme = 'alabaster'
-
-    * If you've installed Alabaster by hand (without using ``pip``) and/or are
-      doing funky things to your PYTHONPATH, you may need to replace the
-      ``alabaster.get_path()`` call with your own explicit string, as per `the
-      Sphinx config docs
-      <http://sphinx-doc.org/config.html#confval-html_theme_path>`_.
-
-* If you have **Sphinx 1.3 or above**:
-
-    * You already have Alabaster installed as a dependency! No need to manually
-      install it or explicitly load it.
-
-      .. note::
-        If you distribute your documentation via the excellent `Read the Docs
-        <https://readthedocs.org>`_, you may need to explicitly enable
-        Alabaster (as RTD defaults to using its own theme) by adding this line
-        to your ``conf.py``::
-
-            html_theme = 'alabaster'
-
-* **Either way**, add an explicit ``html_sidebars`` setting so Alabaster's
-  customized sidebar templates are loaded:
+To set-up Alabaster, add an explicit ``html_sidebars`` setting so
+Alabaster's customized sidebar templates are loaded:
    
    .. code-block:: python
     
         html_sidebars = {
             '**': [
                 'about.html',
+                'searchfield.html',
                 'navigation.html',
                 'relations.html',
-                'searchbox.html',
                 'donate.html',
             ]
         }
@@ -65,12 +42,12 @@ assuming you'll always have ``about.html`` activated, but otherwise it doesn't
 care much.
 
 * See `the Sphinx docs
-  <http://sphinx-doc.org/config.html#confval-html_sidebars>`_ for details on
+  <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars>`_ for details on
   how this setting behaves.
 * Alabaster provides ``about.html`` (logo, github button + blurb),
   ``donate.html`` (donation/support buttons/links) and ``navigation.html`` (a
   more flexible version of the builtin ``localtoc``/``globaltoc`` templates).
-  ``searchbox.html`` comes with Sphinx itself.
+  ``searchfield.html`` comes with Sphinx itself.
 
 
 .. _static-path:
@@ -83,7 +60,7 @@ If you're using any of the image-related options listed on :doc:`customization`
 you'll also want to tell Sphinx where to get these files from. If so, add a
 line like this (changing the path if necessary; see `the Sphinx docs for
 'html_static_path'
-<http://sphinx-doc.org/config.html?highlight=static#confval-html_static_path>`_) to your ``conf.py``:
+<https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path>`_) to your ``conf.py``:
 
 .. code-block:: python
 

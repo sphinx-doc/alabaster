@@ -1,19 +1,17 @@
-# flake8: noqa
-
 from pygments.style import Style
 from pygments.token import (
-    Keyword,
-    Name,
     Comment,
-    String,
     Error,
+    Generic,
+    Keyword,
+    Literal,
+    Name,
     Number,
     Operator,
-    Generic,
-    Whitespace,
-    Punctuation,
     Other,
-    Literal,
+    Punctuation,
+    String,
+    Whitespace,
 )
 
 
@@ -25,7 +23,7 @@ class Alabaster(Style):
     styles = {
         # No corresponding class for the following:
         # Text:                     "", # class:  ''
-        Whitespace: "underline #f8f8f8",  # class: 'w'
+        Whitespace: "#f8f8f8",  # class: 'w'
         Error: "#a40000 border:#ef2929",  # class: 'err'
         Other: "#000000",  # class 'x'
         Comment: "italic #8f5902",  # class: 'c'

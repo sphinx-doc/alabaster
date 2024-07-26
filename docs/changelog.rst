@@ -2,15 +2,65 @@
 Changelog
 =========
 
-- :release:`0.7.12 <2018-10-02>`
-- :bug:`-` On some browsers/platforms, 'badge'-style sidebar elements were
+Next release (in development)
+-----------------------------
+
+:git_tag:`0.7.16` -- 2024-01-10
+-------------------------------
+
+- :bug:`215` Do not display ``logo_name`` if it is set to ``False``.
+
+:git_tag:`0.7.15` -- 2024-01-08
+-------------------------------
+
+- :feature:`213` Allow an arbitrary string in the ``logo_name`` option.
+- :feature:`114` Improved sidebar CSS styles.
+- :issue:`178` Deprecated ``canonical_url`` in favor of ``html_baseurl``.
+- :bug:`200` Removed duplicate ``<meta name="viewport" ... />`` tag.
+- :bug:`188` Removed underline from whitespace.
+- :bug:`164` Removed ``type="text/javascript"`` from <script> elements.
+- :bug:`161` Replaced ``&copy;`` with unicode decimal code entity ``#169;``.
+
+:git_tag:`0.7.14` -- 2024-01-08
+-------------------------------
+
+- Dropped support for Python 3.8 and earlier.
+- Dropped support for Sphinx 3.3 and earlier.
+- :issue:`198` Fix horizontal scrolling on mobile.
+- :issue:`206` Properly support the ``html_support_sphinx`` config value.
+- :issue:`211` Fix the GitHub 'forkme' banner.
+- Added ``alabaster_version_info`` to the HTML template context.
+- Declare support for Python 3.13.
+- Adopt the Ruff linter and formatter.
+- Migrate from CircleCI to GitHub Actions.
+
+:git_tag:`0.7.13` -- 2023-01-13
+-------------------------------
+
+- Modernized the project: s/Travis/Circle/ for CI,
+  README badges, ``setup.cfg`` removal, metadata refresh, etc.
+- Dropped support for Python 2 and Python <3.6. This
+  includes various minor updates to work correctly with modern versions of
+  Sphinx (1.6 at the very least). Thanks to Adam Turner for a pile of patches
+  here.
+
+  .. warning::
+    This change is backwards incompatible if you're on an old Python version.
+
+- Tweak CSS somewhat for compatibility with modern
+  Sphinx versions' base stylesheet.
+
+:git_tag:`0.7.12` -- 2018-10-02
+-------------------------------
+
+- On some browsers/platforms, 'badge'-style sidebar elements were
   displaying dotted underlines. This was unintentional and explicit styling has
   been added to remove them. Credit to Steven Loria.
-- :support:`- backported` Reorganize the :doc:`customization page
+- Reorganize the :doc:`customization page
   </customization>` to break up the now rather long list of "variables and
   feature toggles" into additional sections; includes alphabetizing those
   lists, to make it a bit easier to find docs for a specific setting.
-- :feature:`132 backported` (partially via :issue:`143`) Add a generic donation
+- :feature:`132` (partially via :issue:`143`) Add a generic donation
   badge/url option (visually powered by https://shields.io/) as well as a
   service-specific donation option for `OpenCollective
   <https://opencollective.com>`_.
@@ -28,7 +78,7 @@ Changelog
     See the changelog entry for ``#132``, which re-introduces a more generic
     donation sidebar framework.
 
-- :feature:`142 backported` Add a ``tidelift_url`` option, which when set
+- :feature:`142` Add a ``tidelift_url`` option, which when set
   (default is ``None``/unset) adds a small text snippet to the
   ``donate.html`` sidebar component, linking to the given URL string. Thanks
   to Steven Loria for the patch.
@@ -37,7 +87,10 @@ Changelog
   primarily impact systems lacking the first two fonts (``Consolas`` and
   ``Menlo``) such as Linux desktops. Thanks to Ilya Trukhanov for catch &
   patch.
-- :release:`0.7.11 <2018-06-18>`
+
+:git_tag:`0.7.11` -- 2018-06-18
+-------------------------------
+
 - :bug:`73` Clean up some problematic font issues:
 
   - Remove the outright broken Goudy Old Style, plus other mostly Adobe-only
@@ -51,7 +104,9 @@ Changelog
   .. note::
     You can always go back to the old values by :ref:`explicitly setting
     <theme-options>` ``font_family`` and/or ``head_font_family`` in your
-    ``conf.py``'s ``html_theme_options``, e.g.::
+    ``conf.py``'s ``html_theme_options``, e.g.:
+
+    .. code-block:: python
 
         html_theme_options = {
             'description': 'My awesome project',
@@ -67,17 +122,20 @@ Changelog
     As seen in the note above, you can **always** override the new defaults to
     go back to the old behavior, using your config file.
 
-- :feature:`18 backported` (via :issue:`101`) Add optional *next* and
+- :feature:`18` (via :issue:`101`) Add optional *next* and
   *previous* links at the top and bottom of page content. Use theme option
   ``show_relbars`` to enable these. Credit: William Minchin.
-- :support:`- backported` Miscellaneous project maintenance updates such as
+- Miscellaneous project maintenance updates such as
   adding to Travis CI and enforcing the use of ``flake8``.
-- :feature:`110 backported` Add ``badge_branch`` option allowing
+- :feature:`110` Add ``badge_branch`` option allowing
   configurability of which specific Git branch the Travis, Codecov, etc buttons
   default to. Credit: ``@TitanSnow``.
-- :support:`111 backported` Add setuptools-level entrypoint for improved theme
+- :feature:`111` Add setuptools-level entrypoint for improved theme
   distribution compatibility. Thanks to Aaron Carlisle for the patch.
-- :release:`0.7.10 <2017-02-28>`
+
+:git_tag:`0.7.10` -- 2017-02-28
+-------------------------------
+
 - :bug:`32` Update styling of various block-level elements such as admonitions
   (``.. note::``, ``.. warning::``, etc) and code blocks (``.. code::``) so
   they are no longer 'dedented' outside the main column of text they're
@@ -91,7 +149,10 @@ Changelog
   namely that parameter lists become squashed together if one is running on
   Sphinx 1.4.x. While that fix was merged in Sphinx itself, we felt it prudent
   to include it in our own stylesheet as well, for immediate relief.
-- :release:`0.7.9 <2016-07-25>`
+
+:git_tag:`0.7.9` -- 2016-07-25
+------------------------------
+
 - :feature:`6` (and :issue:`70`, both via :issue:`84`) Make all remaining
   hardcoded style colors configurable, plus related cleanup (such as improving
   differentiation of some admonition blocks such as ``warn`` and ``note``,
@@ -101,10 +162,13 @@ Changelog
   ``sidebar_collapse`` config option. Credit: Eric Holscher.
 - :feature:`80` Add support for ``<link rel="canonical">`` (i.e. canonical
   URLs). Thanks to Ben Gamari for the patch.
-- :support:`7` Generate real documentation site, both because the README is
+- :feature:`7` Generate real documentation site, both because the README is
   just too big now, and so we can `eat our own dog food
   <https://en.wikipedia.org/wiki/Eating_your_own_dog_food>`_.
-- :release:`0.7.8 <2016-05-05>`
+
+:git_tag:`0.7.8` -- 2016-05-05
+------------------------------
+
 - #51 (via #67): Hide Github button if ``github_user`` and ``github_repo``
   aren't set. This is necessary since ``github_button`` defaults to True.
   Thanks to Sam Whited for the report & Dmitry Shachnev for the patch.
@@ -130,7 +194,10 @@ Changelog
 - #77: Fix image link styling to remove a bottom border which appears in some
   situations. Thanks to Eric Holscher for the patch & ``@barbara-sfx`` for the
   report.
-- :release:`0.7.7 <2015-12-21>`
+
+:git_tag:`0.7.7` -- 2015-12-21
+------------------------------
+
 - Add some ``margin-bottom`` to ``table.field-list p`` so field lists (e.g.
   Python function parameter lists in docstrings) written as multiple
   paragraphs, look like actual paragraphs instead of all globbing together.
@@ -142,8 +209,11 @@ Changelog
   Solà.
 - Fix a handful of mismatched/unclosed HTML tags in the templates. Thanks to
   Marvin Pinto for catch & patch.
-- Add `Codecov <https://codecov.io>`_ badge support to sidebar.
-- :release:`0.7.6 <2015-06-22>`
+- Add `Codecov <https://about.codecov.io>`_ badge support to sidebar.
+
+:git_tag:`0.7.6` -- 2015-06-22
+------------------------------
+
 - Update how ``setup.py`` handles the ``README.rst`` file - load it explicitly
   as UTF-8 so the changelog containing non-ASCII characters doesn't generate
   ``UnicodeDecodeError`` in terminal environments whose default encoding is not
@@ -154,7 +224,10 @@ Changelog
 - Expose page & sidebar widths as theme options ``page_width`` and
   ``sidebar_width``. Their defaults are the same as the previously static
   values.
-- :release:`0.7.5 <2015-06-15>`
+
+:git_tag:`0.7.5` -- 2015-06-15
+------------------------------
+
 - Honor Sphinx's core ``html_show_copyright`` option when rendering page
   footer. Thanks to Marcin Wojdyr for the report.
 - Pre-history versions of Alabaster attempted to remove the "related"
@@ -177,18 +250,30 @@ Changelog
   ``@nikolas`` for the patch.
 - Remove an orphaned ``</li>`` from the footer 'show source' section. Credit to
   Marcin Wojdyr.
-- :release:`0.7.4 <2015-05-03>`
+
+:git_tag:`0.7.4` -- 2015-05-03
+------------------------------
+
 - Add ``code_highlight`` option (which includes general fixes to styling of
   code blocks containing highlighted lines). Thanks to Steven Loria.
-- :release:`0.7.3 <2015-03-20>`
+
+:git_tag:`0.7.3` -- 2015-03-20
+------------------------------
+
 - Hide ``shadow`` related styles on bibliography elements, in addition to the
   earlier change re: ``border``. Thanks again to Philippe Dessus.
-- :release:`0.7.2 <2015-03-10>`
+
+:git_tag:`0.7.2` -- 2015-03-10
+------------------------------
+
 - Updated CSS stylesheets to apply monospace styling to both ``tt`` and
   ``code`` elements, instead of just to ``tt``. This addresses a change in HTML
   generation in Sphinx 1.3 while retaining support for Sphinx 1.2. Thanks to
   Eric Holscher for the heads up.
-- :release:`0.7.1 <2015-02-27>`
+
+:git_tag:`0.7.1` -- 2015-02-27
+------------------------------
+
 - Finally add a changelog. To the README, for now, because a full doc site
   isn't worthwhile just yet.
 - Allow configuring a custom Github banner image (instead of simply toggling a
@@ -209,35 +294,68 @@ Changelog
   element. Credit: Steven Loria.
 - Add styling to disable default cell borders on ``.. bibliography::``
   directives' output. Thanks to Philippe Dessus for the report.
-- :release:`0.6.2 <2014-11-25>`
+
+:git_tag:`0.6.2` -- 2014-11-25
+------------------------------
+
 - Make ``.. warn::`` blocks have a pink background (instead of having no
   background, which was apparently an oversight of the themes Alabaster is
   based on) and also make that color configurable.
-- :release:`0.6.1 <2014-09-04>`
+
+:git_tag:`0.6.1` -- 2014-09-04
+------------------------------
+
 - Update Gittip support to acknowledge the service's rename to Gratipay.
-- :release:`0.6.0 <2014-04-17>`
+
+:git_tag:`0.6.0` -- 2014-04-17
+------------------------------
+
 - Allow hiding the 'powered by' section of the footer.
 - Fix outdated name in ``setup.py`` URL field.
-- :release:`0.5.1 <2014-04-15>`
+
+:git_tag:`0.5.1` -- 2014-04-15
+------------------------------
+
 - Fix a bug in the new Travis support, re: its default value.
-- :release:`0.5.0 <2014-04-09>`
+
+:git_tag:`0.5.0` -- 2014-04-09
+------------------------------
+
 - Add support for sidebar Travis status buttons.
-- :release:`0.4.1 <2014-04-06>`
+
+:git_tag:`0.4.1` -- 2014-04-06
+------------------------------
+
 - Fix an inaccuracy in the description of ``logo_text_align``.
 - Update logo & text styling to be more sensible.
-- :release:`0.4.0 <2014-04-06>`
+
+:git_tag:`0.4.0` -- 2014-04-06
+------------------------------
+
 - Add an option to allow un-hiding one's toctree.
-- :release:`0.3.1 <2014-03-13>`
+
+:git_tag:`0.3.1` -- 2014-03-13
+------------------------------
+
 - Improved Python 3 compatibility.
 - Update styling of changelog pages generated by `bitprophet/releases
   <https://github.com/bitprophet/releases>`_.
-- :release:`0.3.0 <2014-02-03>`
+
+:git_tag:`0.3.0` -- 2014-02-03
+------------------------------
+
 - Display Alabaster version in footers alongside Sphinx version (necessitating
   use of a mini Sphinx extension) plus other footer tweaks.
-- :release:`0.2.0 <2014-01-28>`
+
+:git_tag:`0.2.0` -- 2014-01-28
+------------------------------
+
 - Allow control of logo replacement text's alignment.
 - Add customized navigation sidebar element.
 - Tweak page margins a bit.
 - Add a 3rd level of medium-gray to the stylesheet & apply in a few places.
-- :release:`0.1.0 <2013-12-31>`
+
+:git_tag:`0.1.0` -- 2013-12-31
+------------------------------
+
 - First tagged/PyPI'd version.
