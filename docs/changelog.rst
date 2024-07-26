@@ -5,6 +5,21 @@ Changelog
 Next release (in development)
 -----------------------------
 
+:git_tag:`1.0.0` -- 2024-07-26
+------------------------------
+
+- Dropped support for Python 3.9 and earlier.
+- Dropped support for Sphinx 6.1 and earlier.
+- Use a new SVG image for the GitHub banner.
+- :feature:`217` Use the new *searchfield* component for the search box.
+  Patch by Tim Hoffmann.
+- :feature:`104` Allow translating strings in ``relations.html``.
+- :bug:`125` Do not underline linked images.
+   Patch by Joshua Bronson.
+- :bug:`169` Do not ignore the Pygments background colour.
+  Patch by Matthias Geier.
+- :bug:`174` Fix clipping caused by incorrect CSS breakpoints.
+
 :git_tag:`0.7.16` -- 2024-01-10
 -------------------------------
 
