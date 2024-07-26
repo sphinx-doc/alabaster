@@ -1,11 +1,10 @@
 {%- set theme_body_bg = theme_body_bg or theme_base_bg %}
-{%- set theme_code_highlight_bg = theme_code_highlight_bg or theme_body_bg %}
 {%- set theme_sidebar_header = theme_sidebar_header or theme_gray_1 %}
 {%- set theme_sidebar_link = theme_sidebar_link or theme_gray_1 %}
 {%- set theme_anchor_hover_fg = theme_anchor_hover_fg or theme_gray_1 %}
 
 {%- set theme_footnote_border = theme_footnote_border or theme_gray_2 %}
-{%- set theme_pre_bg = theme_pre_bg or theme_gray_2 %}
+{%- set theme_pre_bg = theme_pre_bg or 'unset' %}
 
 {%- set theme_head_font_family = theme_head_font_family or theme_font_family %}
 
@@ -51,9 +50,6 @@
 {%- set theme_sidebar_hr = theme_sidebar_hr or theme_gray_3 %}
 
 {%- set theme_relbar_border = theme_relbar_border or theme_gray_2 -%}
-
-
-@import url("basic.css");
 
 /* -- page layout ----------------------------------------------------------- */
 
@@ -125,6 +121,11 @@ div.relations {
     display: none;
 }
 {% endif %}
+
+div.sphinxsidebar {
+    max-height: 100%;
+    overflow-y: auto;
+}
 
 div.sphinxsidebar a {
     color: {{ theme_sidebar_link }};
@@ -212,6 +213,14 @@ div.sphinxsidebar input {
     font-size: 1em;
 }
 
+div.sphinxsidebar #searchbox {
+    margin: 1em 0;
+}
+
+div.sphinxsidebar .search > div {
+    display: table-cell;
+}
+
 div.sphinxsidebar hr {
     border: none;
     height: 1px;
@@ -221,6 +230,19 @@ div.sphinxsidebar hr {
     text-align: left;
     margin-left: 0;
     width: 50%;
+}
+
+div.sphinxsidebar .badge {
+    border-bottom: none;
+}
+
+div.sphinxsidebar .badge:hover {
+    border-bottom: none;
+}
+
+/* To address an issue with donation coming after search */
+div.sphinxsidebar h3.donation {
+    margin-top: 10px;
 }
 
 /* -- body styles ----------------------------------------------------------- */
@@ -294,9 +316,11 @@ div.admonition p.last {
     margin-bottom: 0;
 }
 
+{%- if theme_code_highlight_bg  %}
 div.highlight {
     background-color: {{ theme_code_highlight_bg }};
 }
+{%- endif %}
 
 dt:target, .highlight {
     background: {{ theme_highlight_bg }};
@@ -463,7 +487,9 @@ table.footnote td {
 }
 
 dl {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -514,13 +540,13 @@ a.reference {
     border-bottom: 1px dotted {{ theme_link }};
 }
 
+a.reference:hover {
+    border-bottom: 1px solid {{ theme_link_hover }};
+}
+
 /* Don't put an underline on images */
 a.image-reference, a.image-reference:hover {
     border-bottom: none;
-}
-
-a.reference:hover {
-    border-bottom: 1px solid {{ theme_link_hover }};
 }
 
 a.footnote-reference {
@@ -539,67 +565,14 @@ a:hover tt, a:hover code {
 }
 
 
-@media screen and (max-width: 870px) {
-
-    div.sphinxsidebar {
-    	display: none;
-    }
-
-    div.document {
-       width: 100%;
-
-    }
-
-    div.documentwrapper {
-    	margin-left: 0;
-    	margin-top: 0;
-    	margin-right: 0;
-    	margin-bottom: 0;
-    }
-
-    div.bodywrapper {
-    	margin-top: 0;
-    	margin-right: 0;
-    	margin-bottom: 0;
-    	margin-left: 0;
-    }
-
-    ul {
-    	margin-left: 0;
-    }
-
-	li > ul {
-        /* Matches the 30px from the "ul, ol" selector above */
-		margin-left: 30px;
-	}
-
-    .document {
-    	width: auto;
-    }
-
-    .footer {
-    	width: auto;
-    }
-
-    .bodywrapper {
-    	margin: 0;
-    }
-
-    .footer {
-    	width: auto;
-    }
-
-    .github {
-        display: none;
-    }
-
-
-
+{%- if theme_fixed_sidebar|lower == 'true' %}
+div.sphinxsidebar {
+    position: fixed;
+    margin-left: 0;
 }
+{%- endif %}
 
-
-
-@media screen and (max-width: 875px) {
+@media screen and (max-width: {{ theme_page_width }}) {
 
     body {
         margin: 0;
@@ -609,14 +582,19 @@ a:hover tt, a:hover code {
     div.documentwrapper {
         float: none;
         background: {{ theme_base_bg }};
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     div.sphinxsidebar {
         display: block;
         float: none;
-        width: 102.5%;
+        width: unset;
         {%- if theme_fixed_sidebar|lower == 'true' %}
         margin: -20px -30px 20px -30px;
+        position: static;
         {%- else %}
         margin: 50px -30px -20px -30px;
         {%- endif %}
@@ -653,7 +631,13 @@ a:hover tt, a:hover code {
 
     div.body {
         min-height: 0;
+        min-width: auto; /* fixes width on small screens, breaks .hll */
         padding: 0;
+    }
+    
+    .hll {
+        /* "fixes" the breakage */
+        width: max-content;
     }
 
     .rtd_doc_footer {
@@ -668,23 +652,19 @@ a:hover tt, a:hover code {
         width: auto;
     }
 
-    .footer {
-        width: auto;
-    }
-
     .github {
         display: none;
     }
-}
 
-{%- if theme_fixed_sidebar|lower == 'true' %}
-@media screen and (min-width: 876px) {
-    div.sphinxsidebar {
-        position: fixed;
+    ul {
         margin-left: 0;
     }
+
+    li > ul {
+       /* Matches the 30px from the "ul, ol" selector above */
+        margin-left: 30px;
+    }
 }
-{%- endif %}
 
 
 /* misc. */
@@ -693,15 +673,7 @@ a:hover tt, a:hover code {
     display: none!important;
 }
 
-/* Make nested-list/multi-paragraph items look better in Releases changelog
- * pages. Without this, docutils' magical list fuckery causes inconsistent
- * formatting between different release sub-lists.
- */
-div#changelog > div.section > ul > li > p:only-child {
-    margin-bottom: 0;
-}
-
-/* Hide fugly table cell borders in ..bibliography:: directive output */
+/* Hide ugly table cell borders in ..bibliography:: directive output */
 table.docutils.citation, table.docutils.citation td, table.docutils.citation th {
   border: none;
   /* Below needed in some edge cases; if not applied, bottom shadows appear */
@@ -755,4 +727,11 @@ nav#breadcrumbs li+li:before {
     div.related {
         display: none;
     }
+}
+
+img.github  {
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
 }

@@ -1,35 +1,38 @@
 from datetime import datetime
 
-
-extensions = []
+extensions = [
+    "sphinx.ext.extlinks",
+]
 templates_path = ["_templates"]
-source_suffix = ".rst"
 master_doc = "index"
 
-project = u"Alabaster"
-year = datetime.now().year
-copyright = u"%d Jeff Forcier" % year
+project = "Alabaster"
+copyright = f"{datetime.now().year} Jeff Forcier"
 
 exclude_patterns = ["_build"]
+
+extlinks = {
+    "git_tag": ("https://github.com/sphinx-doc/alabaster/tree/%s", "%s"),
+    "bug": ("https://github.com/sphinx-doc/alabaster/issues/%s", "#%s"),
+    "feature": ("https://github.com/sphinx-doc/alabaster/issues/%s", "#%s"),
+    "issue": ("https://github.com/sphinx-doc/alabaster/issues/%s", "#%s"),
+}
 
 html_theme = "alabaster"
 html_sidebars = {
     "**": [
         "about.html",
+        "searchfield.html",
         "navigation.html",
         "relations.html",
-        "searchbox.html",
         "donate.html",
     ]
 }
 html_theme_options = {
     "description": "A light, configurable Sphinx theme",
-    "github_user": "bitprophet",
+    "github_user": "sphinx-doc",
     "github_repo": "alabaster",
     "fixed_sidebar": True,
+    "tidelift_url": "https://tidelift.com/subscription/pkg/pypi-alabaster?utm_source=pypi-alabaster&utm_medium=referral&utm_campaign=docs",  # noqa
+    "github_banner": True,
 }
-
-extensions.append("releases")
-releases_github_path = "bitprophet/alabaster"
-# Our pre-0.x releases are unstable / mix bugs+features
-releases_unstable_prehistory = True

@@ -1,4 +1,4 @@
-Copyright (c) 2018 Jeff Forcier.
+Copyright (c) 2020 Jeff Forcier.
 
 Based on original work copyright (c) 2011 Kenneth Reitz and copyright (c) 2010
 Armin Ronacher.
