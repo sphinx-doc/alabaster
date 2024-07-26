@@ -7,7 +7,7 @@ templates_path = ["_templates"]
 master_doc = "index"
 
 project = "Alabaster"
-copyright = f"{datetime.now().year} Jeff Forcier"
+copyright = f"{datetime.now().year}, the Sphinx developers"
 
 exclude_patterns = ["_build"]
 

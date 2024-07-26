@@ -39,12 +39,12 @@ classifiers = [
 dependencies = []
 dynamic = ["version"]
 
-[[project.authors]]
-name = "Jeff Forcier"
-email = "jeff@bitprophet.org"
+[[project.maintainers]]
+name = "Adam Turner"
 
 [[project.maintainers]]
-name = "The Sphinx Developers"
+name = "Jeff Forcier"
+email = "jeff@bitprophet.org"
 
 [project.entry-points."sphinx.html_themes"]
 alabaster = "alabaster"
