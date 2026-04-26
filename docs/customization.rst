@@ -21,7 +21,7 @@ Alabaster's behavior & style can be customized in multiple ways:
       whenever possible, even if an option is present below.
 
         * When in doubt, simply check `the built-in stylesheet's template
-          <https://github.com/sphinx-doc/alabaster/blob/master/alabaster/static/alabaster.css_t>`_
+          <https://github.com/sphinx-doc/alabaster/blob/master/alabaster/static/alabaster.css.jinja>`_
           to see whether the option you're looking at is a basic variable
           insertion or something more complicated.)
 
@@ -37,7 +37,7 @@ stylesheet as follows:
 
 * Create a file named ``custom.css`` anywhere you prefer (typically
   ``_static/``, but this is solely convention) containing your desired
-  overrides to the CSS found in Alabaster's ``static/alabaster.css_t``.
+  overrides to the CSS found in Alabaster's ``static/alabaster.css.jinja``.
 * Set the core Sphinx option `html_static_path
   <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path>`_
   to either that file's path, or the directory it lives within.
