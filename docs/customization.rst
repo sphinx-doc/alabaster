@@ -37,7 +37,7 @@ stylesheet as follows:
 
 * Create a file named ``custom.css`` anywhere you prefer (typically
   ``_static/``, but this is solely convention) containing your desired
-  overrides to the CSS found in Alabaster's ``static/alabaster_css_t``.
+  overrides to the CSS found in Alabaster's ``static/alabaster.css_t``.
 * Set the core Sphinx option `html_static_path
   <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path>`_
   to either that file's path, or the directory it lives within.
