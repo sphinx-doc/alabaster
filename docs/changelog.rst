@@ -5,6 +5,9 @@ Changelog
 Next release (in development)
 -----------------------------
 
+- Dropped support for Sphinx 7.3 and earlier.
+- Use recommended ``.jinja`` suffix for Jinja templates
+
 :git_tag:`1.0.0` -- 2024-07-26
 ------------------------------
 
