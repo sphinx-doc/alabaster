@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core>=3.7"]
+requires = ["flit_core>=3.11"]
 build-backend = "flit_core.buildapi"
 
 # project metadata
@@ -13,7 +13,8 @@ urls.Download = "https://pypi.org/project/alabaster/"
 urls.Homepage = "https://alabaster.readthedocs.io/"
 urls."Issue tracker" = "https://github.com/sphinx-doc/alabaster/issues"
 urls.Source = "https://github.com/sphinx-doc/alabaster"
-license.text = "BSD-3-Clause"
+license = "BSD-3-Clause"
+license-files = ["LICENSE.rst"]
 requires-python = ">=3.10"
 
 # Classifiers list: https://pypi.org/classifiers/
@@ -22,7 +23,6 @@ classifiers = [
     "Framework :: Sphinx",
     "Framework :: Sphinx :: Theme",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
