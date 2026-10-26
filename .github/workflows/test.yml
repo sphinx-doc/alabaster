@@ -35,6 +35,9 @@ jobs:
         python -m pip install "sphinx~=${{ matrix.sphinx-version }}.0"
         python -m pip install .
 
+    - name: Test theme templates
+      run: python -m unittest discover -s tests
+
     - name: Run Sphinx
       run: >
         sphinx-build
